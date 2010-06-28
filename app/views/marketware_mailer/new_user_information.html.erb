@@ -1,0 +1,10 @@
+<%= @user.name %> has just requested to watch the demo for <%= @product.titleize %>.
+
+Here are the details:
+---------------------
+Name:		<%= @user.name %>
+Company:	<%= @user.company %>
+Phone:		<%= @user.phone %>
+Email:		<%= @user.email %>
+
+<%= "#{@user.name}'s" %> info was recorded on <%= Time.now.strftime("%x") %> at <%= Time.now.strftime("%X%p") %>

@@ -1,0 +1,23 @@
+.contact-form, .contact-info {
+	float:left;
+	width:300px;
+	margin-bottom:1em;
+}
+.contact-form textarea {
+	width:250px;
+	height:150px;
+}
+.contact-form label,
+.contact-info dt {
+	color:#666;
+	font-style: italic;
+}
+.contact-info dd {
+	margin-bottom:.5em;
+}
+.note {
+	color:#666;
+	font-style: italic;
+	clear:both;
+
+}

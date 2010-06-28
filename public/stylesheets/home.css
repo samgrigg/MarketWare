@@ -1,0 +1,71 @@
+#home-banner {
+	width:938px;
+	height:532px;
+	background:url(../images/home-banner.jpg) no-repeat top left;
+	position:relative;
+}
+#home-banner .tagline {
+	height:0;
+	overflow:hidden;
+	position:absolute;
+}
+
+#home-banner .product {
+	position:relative;
+}
+#home-banner .product:after {
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+#home-banner .product a.overview-link {
+	height:0px;
+	height:130px;
+	text-indent:-999em;
+	display:block;
+	width:170px;
+	margin-left:30px;
+	float:left;
+}
+#home-banner .description {height:0;overflow:hidden;position:absolute;}
+#home-banner #physician_relations {top:40px;}
+#home-banner #physician_recruiting {top:53px;}
+#home-banner #custom_crm {top:68px;}
+
+#home-banner .btn-yellow, #home-banner .btn-gray {float:left;margin-left:12px;margin-top:73px;}
+#home-banner .txt-link {float:left;margin-left:12px;margin-top:73px;height:37px;line-height:37px;display:block;}
+
+#success-stories img {
+	max-width:170px;
+	margin-right:10px;
+}
+
+.info {text-align:center;margin:1em 0px;}
+
+.qtip .qtip-content{
+   padding: 10px;
+   overflow: hidden;
+}
+   
+   .qtip .qtip-content .qtip-title,
+   .qtip-cream .qtip-content .qtip-title{
+      background-color: #F0DE7D;
+   }
+   
+   .qtip-light .qtip-content .qtip-title{
+      background-color: #f1f1f1;
+   }
+
+   .qtip-dark .qtip-content .qtip-title{
+      background-color: #404040;
+   }
+
+   .qtip-red .qtip-content .qtip-title{
+      background-color: #F28279;
+   }
+   
+   .qtip-green .qtip-content .qtip-title{
+      background-color: #B9DB8C;
+   }

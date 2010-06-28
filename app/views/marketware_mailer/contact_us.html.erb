@@ -1,0 +1,11 @@
+<%= @name %> has just send a message from Marketware.com.
+
+Here are the details:
+---------------------
+Name:		<%= @name %>
+Phone:		<%= @phone %>
+Email:		<%= @email %>
+Message:
+<%= @message %>
+
+Message was sent on <%= DateTime.now.strftime("%x") %> at <%= DateTime.now.strftime("%X%p") %>

@@ -1,0 +1,43 @@
+.page-header {height:2em;line-height:2em;}
+.page-header:after {content:".";height:0px;visibility:hidden;clear:both;display:block;}
+.page-header h2 {}
+.page-header .nav {text-align:right;}
+.page-header .nav a {color:#333;}
+
+.product-call-to-action-buttons {
+	margin-top:3em;
+}
+.product-call-to-action-buttons a {
+	clear:left;
+	margin-bottom:.75em;
+}
+.more-testimonials {
+	float:right;
+	margin-top:-1.5em;
+}
+
+.product-content {display:none;}
+
+#user-form-box {
+	width:250px;
+}
+
+#demo-couplet {
+	width:380px;
+	height:285px;
+	position:relative;
+	
+}
+#demo-couplet img {
+	width:380px;
+	height:285px;
+}
+#demo-couplet a.demo {
+	width:380px;
+	height:285px;
+	display:block;
+	position:absolute;top:0;left:0;
+}
+#demo-couplet a.demo span {
+	position:absolute;top:-100em;left:-100em;
+}

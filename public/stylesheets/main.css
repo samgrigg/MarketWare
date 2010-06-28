@@ -1,0 +1,308 @@
+/*
+––––HEX LEGEND––––
+	Blue
+		Gradient Start:	4242FF
+		Gradient End:	2222A8
+	Yellow
+		Gradient Start:	FFE266
+		Gradient End:	BFA430
+	Orange
+		Gradient Start	FF6340
+		Gradient End:	B32D0E
+	Gray
+		Gradient Start:	D4D6D9
+		Gradient End:	949699
+*/
+/*
+	button height:		38px
+	button cap width: 	7px
+*/
+
+
+/*
+	Global Styles
+*/
+body {
+}
+
+.right-align {
+text-align: right;
+}
+
+a {
+text-decoration: none;
+}
+a:link {
+color: #2222A8;
+}
+a:visited {
+color: #2222A8;
+}
+a:link:hover {
+color: #4242FF;
+}
+a:active {
+}
+
+a.delete-link {
+color: #B32D0E;
+}
+
+.info {
+font-family: georgia, serif;
+font-style: italic;
+color: #444;
+}
+
+.small {
+font-size: 80%;
+}
+.float-right {float:right!important;}
+
+.mktwr_list {
+	margin:0;padding:0;
+}
+.mktwr_list li {
+	margin:0;
+	padding:.5em;
+	list-style-type:none;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ddd;
+	background-color:#eee;
+}
+.mktwr_list li:after {content:".";clear:both;display:block;height:0;visibility:hidden;}
+.mktwr_list .title {
+	color:#333;
+	font-weight:bold;
+	font-size:14px;
+}
+.mktwr_list .description {
+	color:#444;
+	font-size:12px;
+}
+
+.btn-yellow, .btn-gray, .btn-orange {
+float: left;
+padding: 0 5px;
+height: 37px;
+line-height: 37px;
+overflow: hidden;
+padding-left: 7px;
+}
+.btn-yellow span, .btn-gray span, .btn-orange span {
+height: 37px;
+display: block;
+padding-left: 3px;
+padding-right: 10px;
+}
+
+.btn-yellow {
+background: url(../images/btn-yellow-left.png) no-repeat left top;
+}
+.btn-yellow span {
+background: url(../images/btn-yellow-right.png) no-repeat right top;
+color: #000;
+}
+
+.btn-orange {
+background: url(../images/btn-orange-left.png) no-repeat left top;
+}
+.btn-orange span {
+background: url(../images/btn-orange-right.png) no-repeat right top;
+color: #fff;
+}
+
+.btn-gray {
+background: url(../images/btn-gray-left.png) no-repeat left top;
+}
+.btn-gray span {
+background: url(../images/btn-gray-right.png) no-repeat right top;
+color: #fff;
+}
+
+.btn-yellow:hover, .btn-gray:hover, .btn-orange:hover {
+background-position: -39px left;
+color: #c00!important;
+}
+.btn-yellow:hover span, .btn-gray:hover span, .btn-orange:hover span {
+background-position: -39px right;
+}
+
+.btn-yellow:active, .btn-gray:active, .btn-orange:active {
+background-position: -78px left;
+color: #c00!important;
+}
+.btn-yellow:active span, .btn-gray:active span, .btn-orange:active span {
+background-position: -78px right;
+}
+
+.content-box {
+height: 390px;
+background: url(../images/content-bg-main.png) no-repeat left top;
+}
+.small-content-box {
+height: 301px;
+background: url(../images/content-bg-small.png) no-repeat left top;
+}
+
+.flash-notice, .flash-error {
+background: url(../images/information.png) no-repeat 7px 5px;
+padding: 5px 7px;
+padding-left: 27px;
+color: #333;
+border-left: 1px solid #4242FF;
+}
+.flash-error {
+background-image: url(../images/exclamation.png);
+color: #B32D0E;
+border-left-color: #FF6340;
+}
+
+form .required label,
+.required-example {
+	color:#B32D0E;
+	font-weight:bold;
+}
+
+.margin-md {
+margin: 30px;
+}
+
+.fancybox-content {
+/*	position:absolute;
+	left:-99em;
+	top:-99em;*/
+}
+#fancybox-inner .fancybox-content {
+/*	display:block;
+	position:static;*/
+}
+
+/*
+	Testimonials (and Slideshow ...)
+*/
+.product-main {
+margin-bottom: 2em;
+}
+.testimonials {
+background: url(../images/inset-large-quotes.png) no-repeat top left;
+}
+
+.testimonials ul li {
+width: 300px;
+height: 12em;
+}
+.testimonials.wide ul li {
+width: 400px;
+}
+.testimonials cite {
+color: #ED1C24;
+font-size: 1.2em;
+}
+#slideshow {
+}
+#slideshow ul, #slideshow li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#slideshow, #slideshow li {
+height: 11em;
+overflow: hidden;
+}
+span#prevBtn {
+}
+span#nextBtn {
+}
+
+
+/*
+	Site Header
+*/
+header {
+margin-bottom: 1em;
+}
+header h1 {
+margin: 0 0 0 3px;
+}
+header h1 a {
+display: block;
+width: 248px;
+height: 0;
+overflow: hidden;
+padding-top: 52px;
+background: url(../images/mw_header_type.png) no-repeat top left;
+}
+
+header nav {
+display: block;
+background: url(../images/navigation-bar.png) no-repeat top left;
+height: 36px;
+padding: 2px 0;
+line-height: 35px;
+}
+header nav a {
+float: left;
+padding: 0 20px;
+height: 35px;
+background: url(../images/nav-bar-divider.png) no-repeat top right;
+}
+header nav a:link,
+header nav a:visited {
+color: #333;
+}
+header nav a:hover {
+color: #000;
+}
+header nav .phone-number {
+float: right;
+margin-right: 20px;
+color: #000;
+}
+
+header .sub-nav {
+height: 52px;
+line-height: 52px;
+}
+
+/*
+	Testimonials
+*/
+
+
+/*
+	Super Footer
+*/
+#super-footer {
+background-color: #D4D6D9;
+color: #555;
+padding-top: 40px;
+padding-bottom: 40px;
+margin-top: 40px;
+}
+#footer-logo a {
+display: block;
+background: url(../images/marketware-48.png) no-repeat center left;
+text-indent: -9999px;
+height: 165px;
+overflow: hidden;
+width: 48px;
+margin: 0 auto;
+}
+#footer-nav {
+font-size: 80%;
+}
+#footer-nav h6 {
+margin: 0;
+}
+#footer-nav a {
+display: block;
+margin: .25em 0;
+}
+#super-footer footer {
+margin: 1em 0;
+}
+#super-footer footer nav {
+display: block;
+margin: 1em 0;
+}

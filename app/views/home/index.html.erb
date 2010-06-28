@@ -1,0 +1,150 @@
+<% content_for :header do %>
+	<%= stylesheet_link_tag "home" %>
+	<%= stylesheet_link_tag "jquery.fancybox-1.3.1" %>
+	
+	<%= javascript_include_tag 'jquery.media' %>
+	<%= javascript_include_tag "easySlider1.7"%>
+	<%= javascript_include_tag "jquery.qtip-1.0.0-rc3.min" %>
+	<script type="text/javascript">
+	$(function() {
+		if ($("#slideshow")) {
+			$("#slideshow").easySlider();
+		}
+		$("#success-stories a").qtip(
+		{
+		   content: 'Some basic content for the tooltip' // Give it some content, in this case a simple string
+		});
+		
+		$(".register_user, .demo").fancybox({
+			'scrolling'		: 'no',
+			'titleShow'		: false,
+			'overlayOpacity'	: 	.65,
+			'overlayColor'		: 	'#000',
+			'width'			:380,
+			'height'		:285,
+			'hideOnContentClick'	: false
+		});
+		
+		$(".btn-gray").click(function() {
+			var prod_id = this.id.substring(this.id.lastIndexOf("-")+1);
+			$("#response_type_"+prod_id).val("try_it_free")
+		});
+	})
+	
+	function startDownload(prod_id) {
+		$("#try-it-free-btn-download-" + prod_id).click()
+	}
+	
+	function showDemo(prod_id) {
+		$("#demo-video-show-" + prod_id).fancybox({
+			'scrolling'		: 'no',
+			'titleShow'		: false,
+			'overlayOpacity'	: 	.65,
+			'overlayColor'		: 	'#000',
+			'width'			:380,
+			'height'		:285
+		});
+		$("#demo-video-show-" + prod_id).click();
+	}
+	
+	</script>
+<% end %>
+<div id="home-banner">
+	<div class="tagline">Better understanding brings better results.</div>
+
+	<!-- ==================================================================== -->
+	<!-- = Physician Relations: links to demo, trial, and product info page = -->
+	<!-- ==================================================================== -->
+	<div id="physician_relations" class="product">
+		<h2><%= link_to "Physician Relations", physician_relations_path, :class => "overview-link" %></h2>
+		<div id="physician_relations_wrapper" class="demo-video">
+			<a href="<%= @physician_relations_demo_url %>" class="btn-yellow demo" id="physician_relations_demo"><span>View Demo</span></a>
+		</div>
+			
+		<a href="<%= @physician_relations_trial_url %>" id="try_it_physician_relations" class="btn-gray"><span>Free Trial</span></a>
+		
+		<%= link_to "Learn More", physician_relations_path, :class => "txt-link" %>
+		
+		<!-- User Registration Form for the Physician Relations product -->
+		<div style="display:none">
+			<div id="user_form_box_physican_relations" class="margin-md fancybox-content">
+				<h5>Please enter your contact information:</h5>
+				<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations"} %>
+				<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ===================================================================== -->
+	<!-- = Physician Recruiting: links to demo, trial, and product info page = -->
+	<!-- ===================================================================== -->
+	<div id="physician_recruiting" class="product">
+		<h2><%= link_to "Physician Recruiting", physician_recruiting_path, :class => "overview-link" %></h2>
+		<div id="physician_recruiting_wrapper" class="demo-video">
+			<a href="<%= @physician_recruiting_demo_url %>" class="btn-yellow demo" id="physician_recruiting_demo"><span>View Demo</span></a>
+		</div>
+		<a href="<%= @physician_recruiting_trial_url %>" id="try_it_physician_recruiting" class="btn-gray"><span>Free Trial</span></a>
+		
+		<%= link_to "Learn More", physician_recruiting_path, :class => "txt-link" %>
+		
+		<!-- User Registration Form for the Physician Recruiting product -->
+		<div style="display:none">
+			<div id="user_form_box_physican_recruiting" class="margin-md fancybox-content">
+				<h5>Please enter your contact information:</h5>
+				<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_recruiting"} %>
+				<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!-- =========================================================== -->
+	<!-- = Custom CRM: links to demo, trial, and product info page = -->
+	<!-- =========================================================== -->
+	<div id="custom_crm" class="product">
+		<h2><%= link_to "Custom CRM", custom_crm_path, :class => "overview-link" %></h2>
+		<div id="custom_crm_wrapper" class="demo-video">
+			<a href="<%= @custom_crm_demo_url %>" class="btn-yellow demo" id="custom_crm_demo_demo"><span>View Demo</span></a>
+		</div>
+			
+		<a href="<%= @custom_crm_trial_url %>" id="try_it_custom_crm" class="btn-gray"><span>Free Trial</span></a>
+		
+		<%= link_to "Learn More", custom_crm_path, :class => "txt-link" %>
+		
+		<!-- User Registration Form for the Custom CRM product -->
+		<div style="display:none">
+			<div id="user_form_box_custom_crm" class="margin-md fancybox-content">
+				<h5>Please enter your contact information:</h5>
+				<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "custom_crm"} %>
+				<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
+			</div>
+		</div>
+	</div>
+		
+
+</div>
+
+<div class="info grid_16 alpha omega">
+	<p>
+		Each MarketWare solution can be integrated with each other to create a Complete Database Solution for your Organization.
+	</p>
+</div>
+
+<div id="success-stories" class="grid_8 alpha">
+	
+	<a href="#" title="Company Name One"><img src="http://marketware.com.s3.amazonaws.com/Pictures/3po.jpg" /></a>
+	<img src="http://marketware.com.s3.amazonaws.com/Pictures/FFFFOUND____45_Vintage_%E2%80%98Space_Age%E2%80%99_Illustrations_--_WellMedicated_2.png" title="Company Name One" />
+	<img src="http://marketware.com.s3.amazonaws.com/Pictures/parabol.gif" title="Company Name One" />
+	
+	<div>
+		<%= link_to "more success stories &hellip;", success_stories_path %>
+	</div>
+</div>
+
+<div id="home-testimonials" class="testimonials grid_4 omega">
+	<div id="slideshow">
+		<ul>
+			<%= render :partial => 'shared/testimonials' %>
+		</ul>
+	</div>
+</div>

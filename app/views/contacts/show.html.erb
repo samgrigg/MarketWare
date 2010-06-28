@@ -1,0 +1,40 @@
+<% content_for :header do %>
+	<%= stylesheet_link_tag "contact", :cache => true %>
+<% end -%>
+<h2>Contact Us</h2>
+<p class="note">Required items are in <span class="required-example">bold orange</span> text.</p>
+<% form_tag(contact_path, :class => "contact-form") do %>
+	<dl class="required">
+		<dt><%= label_tag "name" %></dt>
+		<dd><%= text_field_tag "name" %></dd>
+	</dl>
+	<dl class="required">
+		<dt><%= label_tag "email" %></dt>
+		<dd><%= text_field_tag "email" %></dd>
+	</dl>
+	<dl>
+		<dt><%= label_tag "phone" %></dt>
+		<dd><%= text_field_tag "phone" %></dd>
+	</dl>
+	<dl class="required">
+		<dt><%= label_tag "message" %></dt>
+		<dd><%= text_area_tag "message" %></dd>
+	</dl>
+	<%= submit_tag "Send" %>
+<% end -%>
+
+<dl class="contact-info">
+	<dt>Toll Free:</dt>
+	<dd>800 777 6368</dd>
+
+	<dt>Telephone:</dt>
+	<dd>801 944 4230</dd>
+
+	<dt>FAX:</dt>
+	<dd>801 606 3575</dd>
+
+	<dt>E-mail:</dt>
+	<dd><a href="mailto:info@marketware.com">info[at]marketware.com</a></dd>
+
+	<dt>We are available from 8:30 - 5:00 Mountain time Monday - Friday (except holidays) for all sales and support questions.</dt>
+</dl>

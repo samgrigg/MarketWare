@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>test</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Sam Grigg">
+	<!-- Date: 2010-06-26 -->
+	
+
+	<script src="/javascripts/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	// Create the tooltips only on document load
+	$(document).ready(function() 
+	{
+	   // Match all link elements with href attributes within the content div
+	   $('#content a[href]').qtip(
+	   {
+	      content: 'Some basic content for the tooltip' // Give it some content, in this case a simple string
+	   });
+	});
+	</script>
+	
+	
+</head>
+<body>
+<div id="content">
+<h1>Hi</h1>
+<a href="#" id="test" title="foo">This link goes nowhere</a>
+</div>
+
+<script src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" type="text/javascript"></script>
+
+</body>
+</html>

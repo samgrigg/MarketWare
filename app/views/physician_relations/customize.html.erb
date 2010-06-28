@@ -1,0 +1,85 @@
+<% content_for :header do %>
+	<%= stylesheet_link_tag "jquery.fancybox-1.3.1" %>
+	<%= stylesheet_link_tag "product" %>
+	
+	<%= javascript_include_tag "jquery.fancybox-1.3.1" %>
+	<%= javascript_include_tag 'jquery.media' %>
+	<%= javascript_include_tag 'product' %>
+	<%= javascript_include_tag "easySlider1.7"%>
+	<script type="text/javascript">
+		$(function() {
+			//Hook up the 'modal' type box for gathering user information and showing the product demo
+			$(".register_user, .demo").fancybox({
+				'scrolling'		: 'no',
+				'titleShow'		: false,
+				'overlayOpacity'	: 	.65,
+				'overlayColor'		: 	'#000',
+				'width'			:380,
+				'height'		:285,
+				'hideOnContentClick'	: false
+			});
+			
+			//Make slideshow out of testimonials
+			if ($("#slideshow")) {
+				$("#slideshow").easySlider();
+			}
+			
+			$("#try-it-free-btn-register").click(function() {
+				$("#response_type").val("try_it_free")
+			});
+		})
+		
+		function startDownload(prod_id) {
+			$("#try-it-free-btn-download-" + prod_id).click()
+		}
+		
+		function showDemo(prod_id) {
+			$(".demo").fancybox({
+				'scrolling'		: 'no',
+				'titleShow'		: false,
+				'overlayOpacity'	: 	.65,
+				'overlayColor'		: 	'#000',
+				'width'			:380,
+				'height'		:285
+			});
+			$(".demo").click();
+		}
+	</script>
+<% end -%>
+
+
+<div class="page-header">
+	<h2 class="grid_4 alpha">Physician Relations</h2>
+	
+	<div class="nav grid_8 omega">
+		<%= link_to "Product Demo",		{:controller => :physician_relations} %> |
+		<%= link_to "Customize It", 	{:controller => :physician_relations, :action => :customize} %> |
+		<%= link_to "Reporting",		{:controller => :physician_relations, :action => :reporting} %> |
+		<%= link_to "Technical Specs",	{:controller => :physician_relations, :action => :tech_specs} %>
+	</div>
+</div>
+
+<div class="product-main content-box grid_12 alpha omega">
+	<div class='margin-md'>
+		<div id="customization" class="product-content">
+			<p>Morbi a enim in magna semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci.</p>
+			<p>Nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi.</p>
+		</div>
+	</div>
+</div>
+
+<div class="small-content-box grid_6 alpha">
+	<div class="margin-md">	
+	  <%= markdown_parse(@product.description) %>
+	</div>
+</div>
+<div class="boxless-content grid_6 omega">
+	<div class="margin-md">	
+		<h4>White Papers</h4>
+		<ul>
+			<% WhitePaper.all.each do |wp| %>
+				<li><%= link_to wp.title, wp %></li>
+			<% end -%>
+		</ul>
+	</div>
+</div>

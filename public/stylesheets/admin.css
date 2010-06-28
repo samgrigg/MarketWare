@@ -1,0 +1,71 @@
+form label {
+	font-size:1.5em;
+	display:block;
+}
+form textarea {
+	width:100%;
+	height:150px;
+}
+form .header-field {
+	margin-bottom:1em;
+}
+form .header-field input {
+	font-size:2em;
+	height:2;
+}
+form .button-bar {
+	border:1px outset #666;
+	background-color:#666;
+	margin-bottom:1em;
+	padding:5px 10px;
+	clear:both;
+}
+form .button-bar a:link,
+form .button-bar a:visited {
+	color:#fff;
+}
+
+.header-field {
+	clear:both;
+}
+
+.preview {
+	border:1px solid #ccc;
+	background-color:#eee;
+	padding:1em;
+	height:300px;
+	overflow:auto;
+	margin-bottom:2em;
+}
+.preview .header {
+	font-style:italic;
+	margin:0;
+	border-bottom:1px dashed #aaa;
+	color:#999;
+	padding-bottom:.25em;
+	margin-bottom:.25em;
+}
+
+.preview-bar {
+	background:#000;
+	color:#fff;
+	height:1.2em;
+	line-height:1.2em;
+	padding:7px 5px;
+}
+
+/*
+	(Markdown) Syntax cheetsheet
+*/
+#syntax-cheetsheet {
+	font-size:80%;
+	border-left:1px solid #999;
+	padding-left:10px;
+}
+#syntax-cheetsheet h3 {
+	font-size:1.3em;
+}
+#syntax-cheetsheet h4 {
+	font-size:1.2em;font-weight:normal;
+	margin-bottom:0;
+}

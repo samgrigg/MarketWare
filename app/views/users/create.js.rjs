@@ -1,0 +1,23 @@
+if @user.errors.empty?
+  # page[:flash_notice].show
+  page["fancybox-wrap"].hide
+  page["fancybox-overlay"].hide
+  
+  #Update links to reflect that we just collected the user's info
+  # page["demo-video-register-#{@product.id}"].hide
+  # page["demo-video-show-#{@product.id}"].show
+  # 
+  # page["try-it-free-btn-register-#{@product.id}"].hide
+  # page["try-it-free-btn-download-#{@product.id}"].show
+  
+  if params[:response_type] == "try_it_free"
+    page.call "startDownload"
+  else
+    page.call "showDemo"
+  end
+  
+else
+  page[:flash_error].replace_html flash[:error]
+  page[:flash_error].show
+  flash.discard(:error)
+end
