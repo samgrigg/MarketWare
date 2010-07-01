@@ -1,2 +1,129 @@
-<h1>PhysicianRecruiting#index</h1>
-<p>Find me in app/views/physician_recruiting/index.html.erb</p>
+<% content_for :header do %>
+	<%= stylesheet_link_tag "jquery.fancybox-1.3.1" %>
+	<%= stylesheet_link_tag "product" %>
+	
+	<%= javascript_include_tag "jquery.fancybox-1.3.1" %>
+	<%= javascript_include_tag 'jquery.media' %>
+	<%= javascript_include_tag 'product' %>
+	<%= javascript_include_tag "easySlider1.7"%>
+	<script type="text/javascript">
+		$(function() {
+			//Hook up the 'modal' type box for gathering user information and showing the product demo
+			$(".register_user, .demo").fancybox({
+				'scrolling'		: 'no',
+				'titleShow'		: false,
+				'overlayOpacity'	: 	.65,
+				'overlayColor'		: 	'#000',
+				'width'			:380,
+				'height'		:285,
+				'hideOnContentClick'	: false
+			});
+			
+			$("#demo-video").media({
+				width: 640,
+				height: 380
+			});
+			
+			//Make slideshow out of testimonials
+			if ($("#slideshow")) {
+				$("#slideshow").easySlider();
+			}
+			
+			$("#demo-video").click(function() {
+				$("#response_type").val("product_demo")
+			});
+			
+			$("#try-it-free-btn").click(function() {
+				$("#response_type").val("try_it_free")
+			});
+		})
+		
+		function startDownload() {
+			$("#try-it-free-btn-download").click()
+		}
+		
+		function showDemo() {
+			$("#demo-video").attr("href", "http://marketware.com.s3.amazonaws.com/Videos/physician_relations.flv");
+			
+			$("#demo-video").media({
+				width: 640,
+				height: 380
+			});
+			$("#demo-video").click();
+		}
+	</script>
+<% end -%>
+
+
+<div class="page-header">
+	<h2 class="grid_4 alpha">Physician Recruiting</h2>
+	
+	<div class="nav grid_8 omega">
+		<%= link_to "Product Demo",		{:controller => :physician_recruiting} %> |
+		<%= link_to "Customize It", 	{:controller => :physician_recruiting, :action => :customize} %> |
+		<%= link_to "Reporting",		{:controller => :physician_recruiting, :action => :reporting} %> |
+		<%= link_to "Technical Specs",	{:controller => :physician_recruiting, :action => :tech_specs} %>
+	</div>
+</div>
+
+<div style="display:none">
+<div id="user-form-box" class="margin-md fancybox-content">
+	<h5>Please enter your contact information:</h5>
+	<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_recruiting"} %>
+	<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
+</div>
+
+</div><div class="product-main content-box grid_12 alpha omega">
+	<div class='margin-md'>
+		<div id="demo" class="product-content">
+			<div class="product-demo grid_5 suffix_1 alpha">
+				<div id="demo-couplet">
+					<img src="http://marketware.com.s3.amazonaws.com/Pictures/holding-img.jpg" class="holding-img">
+					<a href="<%= @demo_url %>" class="demo" id="demo-video"><span>product demo</span></a>
+				</div>
+			</div>
+		
+			<div class="product-calls-to-action grid_5 omega">
+				<div id="slideshow" class="testimonials wide">
+					<ul>
+						<%= render :partial => 'shared/testimonials' %>
+					</ul>
+				</div>
+				<a href="more" class="more-testimonials">More Testimonials ...</a>
+				<div class="product-call-to-action-buttons">
+					<%= mail_to "request@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
+					
+					<%= link_to "<span>Try it Free</span>", @trial_url, :class => "btn-yellow register_user", :id => "try-it-free-btn" %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="small-content-box grid_6 alpha">
+	<div class="margin-md">	
+	  	<p>MarketWare is not an off the shelf generic CRM solution. MarketWare is a fully customized solution for physician relationship management.</p>
+		<ul>
+			<li>Maintain Physician Information</li>
+			<li>Track Interactions with Physicians</li>
+			<li>Identify Goals and Objectives</li>
+			<li>Manage the Resolution of Issues and Problems</li>
+			<li>Manage Marketing Campaigns</li>
+			<li>Identify What’s Working and What’s Not</li>
+		</ul>
+
+		<strong>MarketWare is being utilized in:</strong>
+		<ul>
+			<li>Hospitals</li>
+			<li>Medical Imaging Centers</li>
+			<li>Specialty Medical Groups</li>
+			<li>Labs</li>
+		</ul>
+	</div>
+</div>
+<div class="boxless-content grid_6 omega">
+	<div class="margin-md">	
+		<%= render :partial => 'shared/white_papers' %>
+
+	</div>
+</div>

@@ -197,7 +197,7 @@ width: 400px;
 }
 .testimonials cite {
 color: #ED1C24;
-font-size: 1.2em;
+
 }
 #slideshow {
 }
@@ -207,7 +207,7 @@ padding: 0;
 list-style: none;
 }
 #slideshow, #slideshow li {
-height: 11em;
+height: 12em;
 overflow: hidden;
 }
 span#prevBtn {

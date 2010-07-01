@@ -10,9 +10,13 @@
 		if ($("#slideshow")) {
 			$("#slideshow").easySlider();
 		}
-		$("#success-stories a").qtip(
-		{
-		   content: 'Some basic content for the tooltip' // Give it some content, in this case a simple string
+		$("#success-stories img.mary_dybdahl").qtip({
+			content: {url: '/success_stories/mary_dybdahl.html'},
+			position: {corner: {target: 'topRight',tooltip: 'middleLeft'}}
+		});
+		$("#success-stories img.rick_beal").qtip({
+			content: {url: '/success_stories/rick_beal.html'},
+			position: {corner: {target: 'topRight',tooltip: 'middleLeft'}}
 		});
 		
 		$(".register_user, .demo").fancybox({
@@ -130,10 +134,13 @@
 	</p>
 </div>
 
+<!-- =================== -->
+<!-- = Success Stories = -->
+<!-- =================== -->
 <div id="success-stories" class="grid_8 alpha">
 	
-	<a href="#" title="Company Name One"><img src="http://marketware.com.s3.amazonaws.com/Pictures/3po.jpg" /></a>
-	<img src="http://marketware.com.s3.amazonaws.com/Pictures/FFFFOUND____45_Vintage_%E2%80%98Space_Age%E2%80%99_Illustrations_--_WellMedicated_2.png" title="Company Name One" />
+	<img src="http://marketware.com.s3.amazonaws.com/Pictures/3po.jpg" class="mary_dybdahl" />
+	<img src="http://marketware.com.s3.amazonaws.com/Pictures/FFFFOUND____45_Vintage_%E2%80%98Space_Age%E2%80%99_Illustrations_--_WellMedicated_2.png" title="Company Name One" class="rick_beal" />
 	<img src="http://marketware.com.s3.amazonaws.com/Pictures/parabol.gif" title="Company Name One" />
 	
 	<div>
@@ -141,6 +148,9 @@
 	</div>
 </div>
 
+<!-- ================ -->
+<!-- = Testimonials = -->
+<!-- ================ -->
 <div id="home-testimonials" class="testimonials grid_4 omega">
 	<div id="slideshow">
 		<ul>
