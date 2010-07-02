@@ -1,14 +1,14 @@
 class MarketwareMailer < ActionMailer::Base
 
   def new_user_information(user, product)
-    recipients  "samgrigg@gmail.com"
+    recipients  "info@marketware.com"
     from        "info@marketware.com"
     subject     "New User Information from MarketWare.com"
     body        :user => user, :product => product
   end
   
   def contact_us(name, email, phone, message)
-    recipients  "samgrigg@gmail.com"
+    recipients  "info@marketware.com"
     from        "info@marketware.com"
     subject     "Contact from MarketWare.com"
     body        :name => name, :email => email, :message => message
@@ -22,7 +22,7 @@ class MarketwareMailer < ActionMailer::Base
   end
   
   def white_paper(white_paper, user)
-    recipients    "samgrigg@gmail.com"
+    recipients    "info@marketware.com"
     from          "info@marketware.com"
     subject       "MarketWare White Paper: #{white_paper.title}"
     content_type  "multipart/alternative"
