@@ -137,9 +137,12 @@ background-position: -78px right;
 }
 
 .content-box {
-height: 390px;
-background: url(../images/content-bg-main.png) no-repeat left top;
+background: url(../images/content-bg-main-top.png) no-repeat left top;
 }
+.content-box-inset {
+	background: url(../images/content-bg-main-bottom.png) no-repeat left bottom;
+}
+.content-box-inset:after {content:".";clear:both;display:block;height:0;visibility:hidden;}
 .small-content-box {
 height: 301px;
 background: url(../images/content-bg-small.png) no-repeat left top;

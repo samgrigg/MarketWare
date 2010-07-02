@@ -15,6 +15,7 @@
 	float:right;
 	margin-top:-1.5em;
 }
+.product-content:after {content:".";clear:both;display:block;height:0;visibility:hidden;}
 
 
 #user-form-box {

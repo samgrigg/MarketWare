@@ -73,27 +73,30 @@
 	<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
 </div>
 
-</div><div class="product-main content-box grid_12 alpha omega">
-	<div class='margin-md'>
-		<div id="demo" class="product-content">
-			<div class="product-demo grid_5 suffix_1 alpha">
-				<div id="demo-couplet">
-					<img src="http://marketware.com.s3.amazonaws.com/Pictures/holding-img.jpg" class="holding-img">
-					<a href="<%= @demo_url %>" class="demo" id="demo-video"><span>product demo</span></a>
+</div>
+<div class="product-main content-box grid_12 alpha omega">
+	<div class="content-box-inset">
+		<div class='margin-md'>
+			<div id="demo" class="product-content">
+				<div class="product-demo grid_5 suffix_1 alpha">
+					<div id="demo-couplet">
+						<img src="http://marketware.com.s3.amazonaws.com/Pictures/holding-img.jpg" class="holding-img">
+						<a href="<%= @demo_url %>" class="demo" id="demo-video"><span>product demo</span></a>
+					</div>
 				</div>
-			</div>
 		
-			<div class="product-calls-to-action grid_5 omega">
-				<div id="slideshow" class="testimonials wide">
-					<ul>
-						<%= render :partial => 'shared/testimonials' %>
-					</ul>
-				</div>
-				<a href="more" class="more-testimonials">More Testimonials ...</a>
-				<div class="product-call-to-action-buttons">
-					<%= mail_to "request@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
+				<div class="product-calls-to-action grid_5 omega">
+					<div id="slideshow" class="testimonials wide">
+						<ul>
+							<%= render :partial => 'shared/testimonials' %>
+						</ul>
+					</div>
+					<a href="more" class="more-testimonials">More Testimonials ...</a>
+					<div class="product-call-to-action-buttons">
+						<%= mail_to "request@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
-					<%= link_to "<span>Try it Free</span>", @trial_url, :class => "btn-yellow register_user", :id => "try-it-free-btn" %>
+						<%= link_to "<span>Try it Free</span>", @trial_url, :class => "btn-yellow register_user", :id => "try-it-free-btn" %>
+					</div>
 				</div>
 			</div>
 		</div>
