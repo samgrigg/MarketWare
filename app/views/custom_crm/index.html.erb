@@ -58,12 +58,8 @@
 <div class="page-header">
 	<h2 class="grid_4 alpha">Customized CRM</h2>
 	
-	<div class="nav grid_8 omega">
-		<%= link_to "Product Demo",		{:controller => :custom_crm} %> |
-		<%= link_to "Customize It", 	{:controller => :custom_crm, :action => :customize} %> |
-		<%= link_to "Reporting",		{:controller => :custom_crm, :action => :reporting} %> |
-		<%= link_to "Technical Specs",	{:controller => :custom_crm, :action => :tech_specs} %>
-	</div>
+	<%= render :partial => 'nav' %>
+
 </div>
 
 <div style="display:none">

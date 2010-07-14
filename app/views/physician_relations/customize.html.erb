@@ -22,12 +22,8 @@
 <div class="page-header">
 	<h2 class="grid_4 alpha">Physician Relations</h2>
 	
-	<div class="nav grid_8 omega">
-		<%= link_to "Product Demo",		{:controller => :physician_relations} %> |
-		<%= link_to "Customize It", 	{:controller => :physician_relations, :action => :customize} %> |
-		<%= link_to "Reporting",		{:controller => :physician_relations, :action => :reporting} %> |
-		<%= link_to "Technical Specs",	{:controller => :physician_relations, :action => :tech_specs} %>
-	</div>
+	<%= render :partial => 'nav' %>
+	
 </div>
 
 <div class="product-main content-box grid_12 alpha omega">
@@ -48,7 +44,7 @@
 			<p>You can take advantage of the work we have done with other clients by incorporating those custom changes to your own MarketWare database. <!-- <a href="?">See Examples Here</a> --></p>
 		</div>
 		<div class="grid_5 omega">
-			<%= image_tag "physician-recruiting-graph.gif" %>
+			<%= image_tag "pie-chart.png" %>
 		</div>
 	</div>
 	</div>

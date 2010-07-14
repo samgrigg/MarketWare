@@ -58,12 +58,8 @@
 <div class="page-header">
 	<h2 class="grid_4 alpha">Physician Recruiting</h2>
 	
-	<div class="nav grid_8 omega">
-		<%= link_to "Product Demo",		{:controller => :physician_recruiting} %> |
-		<%= link_to "Customize It", 	{:controller => :physician_recruiting, :action => :customize} %> |
-		<%= link_to "Reporting",		{:controller => :physician_recruiting, :action => :reporting} %> |
-		<%= link_to "Technical Specs",	{:controller => :physician_recruiting, :action => :tech_specs} %>
-	</div>
+	<%= render :partial => 'nav' %>
+
 </div>
 
 <div style="display:none">

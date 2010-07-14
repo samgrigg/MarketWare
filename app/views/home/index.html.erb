@@ -8,15 +8,32 @@
 	<script type="text/javascript">
 	$(function() {
 		if ($("#slideshow")) {
-			$("#slideshow").easySlider();
+			$("#slideshow").easySlider({
+				auto:true,
+				continuous:true,
+				speed:300,
+				pause:6000
+			});
 		}
 		$("#success-stories img.mary_dybdahl").qtip({
 			content: {url: '/success_stories/mary_dybdahl.html'},
-			position: {corner: {target: 'topRight',tooltip: 'middleLeft'}}
+			position: {corner: {target: 'topRight',tooltip: 'middleLeft'}},
+			style: {width:{min:200, max:550}}
 		});
 		$("#success-stories img.rick_beal").qtip({
 			content: {url: '/success_stories/rick_beal.html'},
-			position: {corner: {target: 'topRight',tooltip: 'middleLeft'}}
+			position: {corner: {target: 'topRight',tooltip: 'middleLeft'}},
+			style: {width:{min:200, max:550}}
+		});
+		$("#success-stories img.michael_padova").qtip({
+			content: {url: '/success_stories/michael_padova.html'},
+			position: {corner: {target: 'topRight',tooltip: 'middleLeft'}},
+			style: {width:{min:200, max:550}}
+		});
+		$("#success-stories img.michael_delgado").qtip({
+			content: {url: '/success_stories/michael_delgado.html'},
+			position: {corner: {target: 'topRight',tooltip: 'middleLeft'}},
+			style: {width:{min:200, max:550}}
 		});
 		
 		$(".register_user, .demo").fancybox({
@@ -139,9 +156,9 @@
 <!-- =================== -->
 <div id="success-stories" class="grid_8 alpha">
 	
-	<img src="http://marketware.com.s3.amazonaws.com/Pictures/3po.jpg" class="mary_dybdahl" />
-	<img src="http://marketware.com.s3.amazonaws.com/Pictures/FFFFOUND____45_Vintage_%E2%80%98Space_Age%E2%80%99_Illustrations_--_WellMedicated_2.png" title="Company Name One" class="rick_beal" />
-	<img src="http://marketware.com.s3.amazonaws.com/Pictures/parabol.gif" title="Company Name One" />
+	<%= image_tag "ss_elcamino.gif", :class => "mary_dybdahl" %>
+	<%= image_tag "ss_Hoag.png", :class => "michael_padova"  %>
+	<%= image_tag "ss_SoutheastMissouriHospital.jpg", :class => "michael_delgado"  %>
 	
 	<div>
 		<%= link_to "more success stories &hellip;", success_stories_path %>

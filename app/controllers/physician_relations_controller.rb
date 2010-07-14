@@ -1,10 +1,12 @@
 class PhysicianRelationsController < ApplicationController
   def index
+    @demo_url = {
+      :mp4 => "http://marketware.com.s3.amazonaws.com/Videos/mw-prm-demo.mp4",
+      :oog => "http://marketware.com.s3.amazonaws.com/Videos/mw-prm-demo.oog"
+    }
     if session["current_username"]
-      @demo_url = "http://marketware.com.s3.amazonaws.com/Videos/mw-prm-demo.mp4"
       @trial_url = "http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe"
     else
-      @demo_url = "#user-form-box"
       @trial_url = "#user-form-box"
     end
   end

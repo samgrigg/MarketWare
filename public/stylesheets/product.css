@@ -41,3 +41,41 @@
 #demo-couplet a.demo span {
 	position:absolute;top:-100em;left:-100em;
 }
+
+/* ================================= */
+/* = Video For Everyone Popupiness = */
+/* ================================= */
+
+#video-backdrop {
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;left:0;
+	display:none;
+	background-color:#000;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.pop-uppity video {
+	position:absolute;
+	display:block;
+	width:640px;
+	height:380px;
+	top:50%;
+	left:50%;
+	margin-top:-25%;
+	margin-left:-25%;
+	z-index:1;
+	background:#fff;
+}
+video {
+	display:none;
+}
+.pop-uppity #video-download {
+	display:none;
+}
+.pop-uppity #holding-img {
+	display:none;
+}
