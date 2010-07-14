@@ -7,6 +7,7 @@
 	<%= javascript_include_tag 'product' %>
 	<%= javascript_include_tag "easySlider1.7"%>
 	<script type="text/javascript">
+		var do_pop_demo = false
 		$(function() {
 			//Hook up the 'modal' type box for gathering user information and showing the product demo
 			$(".register_user, .demo").fancybox({
@@ -14,15 +15,21 @@
 				'titleShow'		: false,
 				'overlayOpacity'	: 	.65,
 				'overlayColor'		: 	'#000',
-				'width'			:380,
-				'height'		:285,
+				'width'			:640,
+				'height'		:380,
 				'hideOnContentClick'	: false
 			});
 			
-			$("#demo-video").media({
-				width: 640,
-				height: 380
-			});
+			$("#demo-link").click(function() {
+				if (do_pop_demo) {
+					togglePopup();
+					return false;
+				}
+			})
+			$("#video-backdrop").click(function() {
+				togglePopup();
+				return false;
+			})
 			
 			//Make slideshow out of testimonials
 			if ($("#slideshow")) {
@@ -43,20 +50,21 @@
 		}
 		
 		function showDemo() {
-			$("#demo-video").attr("href", "http://marketware.com.s3.amazonaws.com/Videos/physician_relations.flv");
-			
-			$("#demo-video").media({
-				width: 640,
-				height: 380
-			});
-			$("#demo-video").click();
+			togglePopup();
+			do_popup_demo = true;
+		}
+		
+		function togglePopup() {
+			$(body).toggleClass("pop-uppity");
+			$("#video-backdrop").toggle();
+			// $("#demo-video").pause();Hrmmm ... how to pause the video via JavaScript?
 		}
 	</script>
 <% end -%>
 
 
 <div class="page-header">
-	<h2 class="grid_4 alpha">Customized CRM</h2>
+	<h2 class="grid_4 alpha">Custom CRM</h2>
 	
 	<%= render :partial => 'nav' %>
 
@@ -69,56 +77,89 @@
 	<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
 </div>
 
-</div><div class="product-main content-box grid_12 alpha omega">
+</div>
+<div class="product-main content-box grid_12 alpha omega">
 	<div class="content-box-inset">
-	<div class='margin-md'>
-		<div id="demo" class="product-content">
-			<div class="product-demo grid_5 suffix_1 alpha">
-				<div id="demo-couplet">
-					<img src="http://marketware.com.s3.amazonaws.com/Videos/demo-first-frame.gif" class="holding-img">
-					<a href="<%= @demo_url %>" class="demo" id="demo-video"><span>product demo</span></a>
+		<div class='margin-md'>
+			<div id="demo" class="product-content">
+				<div class="product-demo grid_5 suffix_1 alpha">
+					<div id="demo-couplet">
+						<!-- <img src="http://marketware.com.s3.amazonaws.com/Pictures/holding-img.jpg" class="holding-img"> -->
+						<a id="demo-link" href="#user-form-box" class="demo">
+						<img id="holding-img" alt="Marketware Demonstration" src="/images/demo-first-frame.gif" />
+						</a>
+						<!-- "Video For Everybody" v0.4.1 by Kroc Camen of Camen Design <camendesign.com/code/video_for_everybody>
+						     =================================================================================================================== -->
+						<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise       -->
+						<!-- warning: playback does not work on iPad/iPhone if you include the poster attribute! fixed in iOS4                   -->
+						<video id="demo-video" controls>
+							<!-- MP4 must be first for iPad! -->
+							<source src="<%= @demo_url[:mp4] %>"  type="video/mp4"  /><!-- WebKit video    -->
+							<source src="<%= @demo_url[:oog] %>"  type="video/ogg"  /><!-- Firefox / Opera -->
+							<!-- fallback to Flash: -->
+							<object width="640" height="384" type="application/x-shockwave-flash" data="/mediaplayer.swf">
+								<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+								<param name="movie" value="/mediaplayer.swf" />
+								<param name="flashvars" value="autostart=false&amp;image=poster.jpg&amp;file=<%= @demo_url[:mp4] %>" />
+								<!-- fallback image -->
+								<img src="/images/demo-first-frame.gif" width="640" height="360" alt="MarketWare Physician Relationship Management"
+								     title="No video playback capabilities, please download the video below" />
+							</object>
+						</video>
+						<!-- you *must* offer a download link as they may be able to play the file locally. customise this bit all you want -->
+						<% if session["current_username"] %>
+						<p id="video-download">
+							<strong>Download Video:</strong>
+							Closed Format: <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">"MP4"</a>
+							Open Format: <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">"OGG"</a> /
+							            <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm">"WebM"</a>
+						</p>
+						<% end -%>
+					</div>
 				</div>
-			</div>
 		
-			<div class="product-calls-to-action grid_5 omega">
-				<div id="slideshow" class="testimonials wide">
-					<ul>
-						<%= render :partial => 'shared/testimonials' %>
-					</ul>
-				</div>
-				<a href="more" class="more-testimonials">More Testimonials ...</a>
-				<div class="product-call-to-action-buttons">
-					<%= mail_to "request@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
+				<div class="product-calls-to-action grid_5 omega">
+					<div id="slideshow" class="testimonials wide">
+						<ul>
+							<%= render :partial => 'shared/testimonials' %>
+						</ul>
+					</div>
+					<a href="more" class="more-testimonials">More Testimonials ...</a>
+					<div class="product-call-to-action-buttons">
+						<%= mail_to "request@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
-					<%= link_to "<span>Try it Free</span>", @trial_url, :class => "btn-yellow register_user", :id => "try-it-free-btn" %>
+						<%= link_to "<span>Try it Free</span>", @trial_url, :class => "btn-yellow register_user", :id => "try-it-free-btn" %>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
 </div>
 
 <div class="small-content-box grid_6 alpha">
-	<div class="margin-md">	
-	  	<p>MarketWare is not an off the shelf generic CRM solution. MarketWare is a fully customized solution for physician relationship management.</p>
-		<ul>
-			<li>Maintain Physician Information</li>
-			<li>Track Interactions with Physicians</li>
-			<li>Identify Goals and Objectives</li>
-			<li>Manage the Resolution of Issues and Problems</li>
-			<li>Manage Marketing Campaigns</li>
-			<li>Identify What’s Working and What’s Not</li>
-		</ul>
+	<div class="small-content-box-inset">
+		<div class="margin-md">	
+		  	<p>MarketWare is not an off the shelf generic CRM solution. MarketWare is a fully customized solution for physician relationship management.</p>
+			<ul>
+				<li>Maintain Physician Information</li>
+				<li>Track Interactions with Physicians</li>
+				<li>Identify Goals and Objectives</li>
+				<li>Manage the Resolution of Issues and Problems</li>
+				<li>Manage Marketing Campaigns</li>
+				<li>Identify What’s Working and What’s Not</li>
+			</ul>
 
-		<strong>MarketWare is being utilized in:</strong>
-		<ul>
-			<li>Hospitals</li>
-			<li>Medical Imaging Centers</li>
-			<li>Specialty Medical Groups</li>
-			<li>Labs</li>
-		</ul>
+			<strong>MarketWare is being utilized in:</strong>
+			<ul>
+				<li>Hospitals</li>
+				<li>Medical Imaging Centers</li>
+				<li>Specialty Medical Groups</li>
+				<li>Labs</li>
+			</ul>
+		</div>
 	</div>
 </div>
+
 <div class="boxless-content grid_6 omega">
 	<div class="margin-md">	
 		<%= render :partial => 'shared/white_papers' %>
