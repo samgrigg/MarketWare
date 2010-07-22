@@ -1,19 +1,10 @@
 if @user.errors.empty?
-  # page[:flash_notice].show
-  page["fancybox-wrap"].hide
-  page["fancybox-overlay"].hide
-  
-  #Update links to reflect that we just collected the user's info
-  # page["demo-video-register-#{@product.id}"].hide
-  # page["demo-video-show-#{@product.id}"].show
-  # 
-  # page["try-it-free-btn-register-#{@product.id}"].hide
-  # page["try-it-free-btn-download-#{@product.id}"].show
-  
+
+  page.call "make_current_user"
   if params[:response_type] == "try_it_free"
-    page.call "startDownload"
+    page.call "start_download"
   else
-    page.call "showDemo"
+    page.call "show_demo"
   end
   
 else

@@ -70,9 +70,9 @@
 	z-index:1;
 	background:#fff;
 }
-video {
+/*video {
 	display:none;
-}
+}*/
 .pop-uppity #video-download {
 	display:none;
 }
