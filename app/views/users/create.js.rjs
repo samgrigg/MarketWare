@@ -8,7 +8,7 @@ if @user.errors.empty?
   end
   
 else
-  page[:flash_error].replace_html flash[:error]
-  page[:flash_error].show
+  page[:user_error_messages].replace_html flash[:error]
+  # page[:flash_error].show
   flash.discard(:error)
 end

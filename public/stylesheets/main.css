@@ -175,6 +175,7 @@ margin: 30px;
 }
 
 .fancybox-content {
+	width:250px;
 /*	position:absolute;
 	left:-99em;
 	top:-99em;*/

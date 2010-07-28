@@ -1,24 +1,33 @@
 class HomeController < ApplicationController
   def index
+			@relations_demo_url = {
+		    :mp4 => "http://marketware.com.s3.amazonaws.com/videos/demo_relations.mp4",
+		    :oog => "http://marketware.com.s3.amazonaws.com/videos/demo_relations.ogg",
+				:img => "/images/demo-first-frame.gif"
+		  }
+			@recruiting_demo_url = {
+		    :mp4 => "http://marketware.com.s3.amazonaws.com/videos/demo_recruiting.mp4",
+		    :oog => "http://marketware.com.s3.amazonaws.com/videos/demo_recruiting.ogg",
+				:img => "/images/demo-first-frame.gif"
+		  }
+			@custom_demo_url = {
+		    :mp4 => "http://marketware.com.s3.amazonaws.com/videos/demo_custom.mp4",
+		    :oog => "http://marketware.com.s3.amazonaws.com/videos/demo_custom.ogg",
+				:img => "/images/demo-first-frame.gif"
+		  }
 			if session["current_username"]
-				@physician_relations_demo_url = "http://marketware.com.amazonaws.com/videos/physician_relations_demo.flv"
-				@physician_relations_trial_url = "http://marketware.com.amazonaws.com/files/marketware_setup.exe"
-				
-				@physician_recruiting_demo_url = "http://marketware.com.amazonaws.com/videos/physician_recruiting_demo.flv"
-				@physician_recruiting_trial_url = "http://marketware.com.amazonaws.com/files/marketware_setup.exe"
-				
-				@custom_crm_demo_url = "http://marketware.com.amazonaws.com/videos/custom_crm_demo_demo.flv"
-				@custom_crm_trial_url = "http://marketware.com.amazonaws.com/files/marketware_setup.exe"
+				@relations_demo_link_url = "#relations-video-demo"
+				@recruiting_demo_url = "#recruiting-video-demo"
+				@custom_demo_url = "#custom-video-demo"
 			else
-				@physician_relations_demo_url = "#user_form_box_physican_relations"
-				@physician_relations_trial_url = "#user_form_box_physican_relations"
-				
-				@physician_recruiting_demo_url = "#user_form_box_physican_recruiting"
-				@physician_recruiting_trial_url = "#user_form_box_physican_recruiting"
-				
-				@custom_crm_demo_url = "#user_form_box_custom_crm"
-				@custom_crm_trial_url = "#user_form_box_custom_crm"
+				@relations_demo_link_url = "#user_form_box_physican_relations"
+				@recruiting_demo_url = "#user_form_box_physican_recruiting"
+				@custom_demo_url = "#user_form_box_custom_crm"
 			end
+			
+			@physician_relations_trial_url = "#trial-register-form-physician-relations"
+			@physician_recruiting_trial_url = "#trial-register-form-physician-recruiting"
+			@custom_crm_trial_url = "#trial-register-form-custom-crm"
   end
 
 end

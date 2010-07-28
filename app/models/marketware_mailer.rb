@@ -1,10 +1,18 @@
 class MarketwareMailer < ActionMailer::Base
 
   def new_user_information(user, product)
-    recipients  "info@marketware.com"
-    # recipients  "samgrigg@gmail.com"
+    # recipients  "info@marketware.com"
+    recipients  "samgrigg@gmail.com"
     from        "info@marketware.com"
     subject     "New User Information from MarketWare.com"
+    body        :user => user, :product => product
+  end
+  
+  def demo_request_confirmation(user, product)
+    # recipients  "info@marketware.com"
+    recipients  "samgrigg@gmail.com"
+    from        "info@marketware.com"
+    subject     "Thank you for viewing the MarketWare demo"
     body        :user => user, :product => product
   end
   

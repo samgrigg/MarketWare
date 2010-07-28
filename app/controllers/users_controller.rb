@@ -43,14 +43,17 @@ class UsersController < ApplicationController
     # unless session["current_username"]#({:name => params[:user][:name]})
     logger.debug "Creating User"
       @user = User.new(params[:user])
+			
       # saved = @user.save
       
-      # if saved
+      if @user.valid?
       #   flash[:notice] = 'User was successfully created.'
       MarketwareMailer.deliver_new_user_information(@user, params[:related_product])
-      # else
-      #   flash[:error] = "Could not create user: #{@user.errors.first}"
-      # end
+      MarketwareMailer.deliver_demo_request_confirmation(@user, params[:related_product])
+      else
+        # flash[:error] = "Could not create user: #{@user.errors.first.msg}"
+				flash[:error] = @user.errors.on(:email)
+      end
     # else
     #   @user = User.find_by_name(params[:user][:name])
     #   flash[:notice] = "Welcome back #{@user.name}"
