@@ -1,8 +1,11 @@
+
 if @user.errors.empty?
 
   page.call "make_current_user"
   if params[:response_type] == "try_it_free"
     page.call "start_download"
+	elsif params[:response_type] == "white_paper"
+		page.call "start_download"
   else
     page.call "show_demo"
   end

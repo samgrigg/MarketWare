@@ -8,7 +8,7 @@ class PhysicianRelationsController < ApplicationController
     if session["current_username"].nil?
       @trial_url = "#trial-register-form"
     else
-      # @trial_url = "http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe"
+      @trial_url = "http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe"
 			# @trial_url = ""
     end
   end

@@ -15980,3 +15980,2068 @@ Rendered shared/_user_form (16.0ms)
 Rendered shared/_user_form (19.2ms)
 Rendered shared/_testimonials (0.1ms)
 Completed in 88ms (View: 87, DB: 0) | 200 OK [http://marketware.local/?selector=relations-video-demo]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-29 19:52:32) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (13.2ms)
+Rendered shared/_user_form (22.4ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (5.5ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (287.6ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (18.4ms)
+Completed in 729ms (View: 703, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-07-30 17:28:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (19.3ms)
+Rendered shared/_user_form (10.2ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (271.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (19.3ms)
+Completed in 538ms (View: 513, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-04 06:10:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (20.7ms)
+Rendered shared/_user_form (21.0ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (277.6ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (18.9ms)
+Completed in 560ms (View: 535, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-04 16:54:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (15.5ms)
+Rendered shared/_user_form (19.5ms)
+Rendered shared/_user_form (6.0ms)
+Rendered shared/_v4e_demo (0.3ms)
+Rendered shared/_user_form (10.4ms)
+Rendered shared/_user_form (5.4ms)
+Rendered shared/_v4e_demo (0.4ms)
+Rendered shared/_user_form (693.7ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (209.0ms)
+Completed in 1256ms (View: 1215, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-04 16:54:48) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (21.7ms)
+Rendered shared/_user_form (4.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_testimonials (0.0ms)
+Rendered shared/_white_papers (19.4ms)
+Completed in 138ms (View: 136, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 16:54:51) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Completed in 29ms (View: 28, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-04 16:57:52) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_testimonials (0.0ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 72ms (View: 70, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 16:58:09) [POST]
+  Parameters: {"response_type"=>"try_it_free", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "related_product"=>"physician_relations", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 16:58:09 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested to watch the demo for Physician Relations.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/04/10 at 16:58:09PM
+
+SocketError (getaddrinfo: nodename nor servname provided, or not known):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:551:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:551:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:551:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:62:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:551:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:525:in `start'
+  app/controllers/users_controller.rb:51:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 16:59:02) [POST]
+  Parameters: {"response_type"=>"try_it_free", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "related_product"=>"physician_relations", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 16:59:02 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested to watch the demo for Physician Relations.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/04/10 at 16:59:02PM
+
+SocketError (getaddrinfo: nodename nor servname provided, or not known):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:551:in `initialize'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:551:in `open'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:551:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:62:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:93:in `timeout'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:551:in `do_start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:525:in `start'
+  app/controllers/users_controller.rb:51:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:03:21) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:03:32) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 76ms (View: 75, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:04:25) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.7ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:04:27) [GET]
+  Parameters: {"selector"=>"user-info-box"}
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.9ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers?selector=user-info-box]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:04:36) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (5.0ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:04:49) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.9ms)
+Completed in 75ms (View: 74, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:04:50) [GET]
+  Parameters: {"selector"=>"user-form-box"}
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.8ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers?selector=user-form-box]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:04:53) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.9ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:05:30) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 17:05:52) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (61.5ms)
+Completed in 75ms (View: 73, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:10:32) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+ERROR: compiling _run_erb_app47views47white_papers47index46html46erb RAISED compile error
+/Users/sam/Rails/marketware/app/views/white_papers/index.html.erb:23: syntax error, unexpected ':', expecting ')'
+...epapers/achilles_heel.pdf')" :class=>"btn-yellow float-right...
+                              ^
+Function body:           def _run_erb_app47views47white_papers47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  content_for :header do ; @output_buffer.concat "\n\t"
+; @output_buffer.concat(( stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true ).to_s); @output_buffer.concat "\n\t\n\t"
+
+; @output_buffer.concat(( javascript_include_tag "jquery.fancybox-1.3.1" ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat(( javascript_include_tag 'product' ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat(( javascript_include_tag "easySlider1.7").to_s); @output_buffer.concat "\n\t<script type=\"text/javascript\">\n\t\tvar current_user = "
+
+; @output_buffer.concat(( !session["current_username"].nil? ).to_s); @output_buffer.concat ";\n\t</script>\n"
+
+;  end 
+@output_buffer.concat "\n<div class=\"grid_8 alpha omega prefix_2 suffix_2\">\n<h2>White Papers</h2>\n\n<ul class=\"mktwr_list\">\n\t<li>\n\t\t<strong class=\"title\"><a name=\"achilles_heel\">Physician Relations: The Achilles Heel of Hospital CEOs</a></strong>\n\t\t<p class=\"description\">Without good Physician Relations Hospital CEOs can come under serious pressure and even lose their jobs. Learn the CEO\342\200\231s worst case scenario and what to do about it.</p>\n\t\t<!-- <a href=\"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf\" class=\"btn-yellow float-right\"> -->\n\t\t<a href=\"#whitepaper-register-form\" class=\"btn-yellow float-right register_user\">\n\t\t\t<span>Download</span>\n\t\t</a>\n\t\t"
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to_function "<span>Download</span>", "download_btn_click('http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf')" :class=>"btn-yellow float-right" ).to_s); @output_buffer.concat "\n\t</li>\n\t<li>\n\t\t<strong class=\"title\"><a name=\"investing\">Are the Dollars I'm investing in Physician Relations really paying off?</a></strong>\n\t\t<p class=\"description\">\n\t\t\tNow is the time to invest in an effective Physician Relations. You cannot afford to miss opportunities with your physicians. Every referral from a physician counts.\n\t\t</p>\n\t\t<a href=\"http://marketware.com.s3.amazonaws.com/whitepapers/investing.pdf\" class=\"btn-yellow float-right\"><span>Download</span></a>\n\t</li>\n\t<li>\n\t\t<strong class=\"title\"><a name=\"10-principles\">10 Principles that will guarantee your success in relationship managemen</a></strong>\n\t\t<p class=\"description\">Learn what you can do today to guarantee your success in relationship management. Turn unproductive and stagnant relationships into quality effective physician relationships.</p>\n\t\t<a href=\"http://marketware.com.s3.amazonaws.com/whitepapers/10-principles.pdf\" class=\"btn-yellow float-right\"><span>Download</span></a>\n\t</li>\n\t<li>\n\t\t<strong class=\"title\"><a name=\"the-right-questions\">How to ask the right questions in an effective physician meeting</a></strong>\n\t\t<p class=\"description\">Learn how to strategically ask the right questions to get your physicians to move the relationship forward and increase physician referrals.  Understand which questions you should ask and at which time you should ask them.</p>\n\t\t<a href=\"http://marketware.com.s3.amazonaws.com/whitepapers/the-right-questions.pdf\" class=\"btn-yellow float-right\"><span>Download</span></a>\n\t</li>\n</ul>\n</div>\n<div style=\"display:none\">\n\t<div id=\"whitepaper-register-form\" class=\"margin-md fancybox-content\">\n\t\t<h5>Please enter your contact information.</h5>\n\t\t<p>We will then email you instructions to download your white paper.</p>\n\t\t"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "try_it_free"} ).to_s); @output_buffer.concat "\n\t</div>\n</div>\n\n<div style=\"display:none\">\n\t<div id=\"free_trial_thank_you\" class=\"margin-md\">\n\t\t<h5>Thank You</h5>\n\t\t<p>You should recieve an email containing instructions to download your tria.</p>\n\t</div>\n</div>"
+
+
+
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/sam/Rails/marketware/app/views/white_papers/index.html.erb:60:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/Users/sam/Rails/marketware/app/views/white_papers/index.html.erb:23: syntax error, unexpected ':', expecting ')'
+...epapers/achilles_heel.pdf')" :class=>"btn-yellow float-right...
+                              ^) on line #23 of app/views/white_papers/index.html.erb:
+20: 		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user">
+21: 			<span>Download</span>
+22: 		</a>
+23: 		<%= link_to_function "<span>Download</span>", "download_btn_click('http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf')" :class=>"btn-yellow float-right" %>
+24: 	</li>
+25: 	<li>
+26: 		<strong class="title"><a name="investing">Are the Dollars I'm investing in Physician Relations really paying off?</a></strong>
+
+    app/views/white_papers/index.html.erb:60:in `compile!'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (335.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:10:41) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (5.6ms)
+Completed in 42ms (View: 41, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:11:01) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.9ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:14:47) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.7ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-04 22:14:58) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (1.4ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_v4e_demo (0.9ms)
+Rendered shared/_testimonials (0.6ms)
+Rendered shared/_white_papers (0.5ms)
+Completed in 68ms (View: 66, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:14:59) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.7ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:15:01) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.7ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:16:23) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.7ms)
+Completed in 30ms (View: 29, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:16:43) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:19:21) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.7ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:19:38) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.9ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:19:48) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 22:22:47) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-04 23:39:00) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (7.9ms)
+Completed in 49ms (View: 48, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:39:19) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:39:19 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested to watch the demo for Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/04/10 at 23:39:19PM
+
+NoMethodError (undefined method `else' for MarketwareMailer:Class):
+  app/controllers/users_controller.rb:57:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (34.1ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:48:31) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+
+NameError (undefined local variable or method `response_type' for #<MarketwareMailer:0x103f99f58>):
+  app/models/marketware_mailer.rb:8:in `new_user_information'
+  app/controllers/users_controller.rb:51:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (96.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:49:13) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:49:13 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/04/10 at 23:49:13PM
+
+ArgumentError (wrong number of arguments (3 for 1)):
+  app/controllers/users_controller.rb:57:in `[]'
+  app/controllers/users_controller.rb:57:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (96.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:50:36) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:50:36 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/04/10 at 23:50:36PM
+
+ArgumentError (wrong number of arguments (3 for 1)):
+  app/controllers/users_controller.rb:57:in `[]'
+  app/controllers/users_controller.rb:57:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (31.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-08-04 23:51:21) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+
+SyntaxError (/Users/sam/Rails/marketware/app/controllers/users_controller.rb:57: syntax error, unexpected ')', expecting ']'):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (88.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:52:21) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:52:21 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/04/10 at 23:52:21PM
+
+NoMethodError (undefined method `white_paper_response' for #<MarketwareMailer:0x104182fb8>):
+  app/controllers/users_controller.rb:57:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (33.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:54:13) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:54:13 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/04/10 at 23:54:13PM
+
+ArgumentError (wrong number of arguments (0 for 3)):
+  app/models/marketware_mailer.rb:44:in `white_paper'
+  app/models/marketware_mailer.rb:44:in `white_paper_response'
+  app/controllers/users_controller.rb:57:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:54:44) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:54:44 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/04/10 at 23:54:44PM
+
+ActionView::MissingTemplate (Missing template marketware_mailer/white_paper_response.erb in view path app/views):
+  app/controllers/users_controller.rb:57:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:55:09) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:55:09 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/04/10 at 23:55:09PM
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:55:11 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+<!-- 
+	Send the user an email with the white paper as an attachment
+-->
+
+Thank you, TEST, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper, please click the link that follows: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 2950ms (View: 56, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-04 23:59:00) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:59:00 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/04/10 at 23:59:00PM
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 4 Aug 2010 23:59:02 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+#	Send the user an email with the white paper as an attachment
+
+Thank you, TEST, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 2849ms (View: 4, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:01:10) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"TEST", "name"=>"TEST", "phone"=>"TEST", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:01:10 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+TEST has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		TEST
+Company:	TEST
+Phone:		TEST
+Email:		samgrigg@gmail.com
+
+TEST's info was recorded on 08/05/10 at 00:01:10AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:01:11 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, TEST, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 2805ms (View: 3, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:03:06) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.3ms)
+Completed in 49ms (View: 47, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:03:21) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:03:21 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:03:21AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:03:22 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 2700ms (View: 1, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:04:46) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:04:46 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:04:46AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:04:47 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 2256ms (View: 1, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:05:19) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:05:19 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:05:19AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:05:20 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 2329ms (View: 1, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:07:39) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:07:39 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:07:39AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:07:40 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Got to the create RJS script
+Completed in 2801ms (View: 3, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:09:37) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:09:37 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:09:37AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:09:38 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 7669ms (View: 35, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:11:14) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:11:14 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:11:14AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:11:16 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+******Got to the create RJS script
+Completed in 2805ms (View: 56, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:11:51) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:11:51 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:11:51AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:11:56 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+########white_paper
+Completed in 6417ms (View: 3, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:12:03) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:12:03 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:12:03AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:12:05 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+########white_paper
+Completed in 3265ms (View: 1, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:12:49) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:12:49 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:12:49AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:12:51 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 2735ms (View: 4, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:13:20) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:13:20 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:13:20AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:13:22 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 3027ms (View: 3, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:16:20) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:16:20 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/05/10 at 00:16:21AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:16:22 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+************Hi There Gang
+Completed in 2994ms (View: 3, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:17:15) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.3ms)
+Completed in 47ms (View: 46, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:17:48) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:17:48 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 00:17:48AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:17:50 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, Dale Snitterman, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 3122ms (View: 3, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:19:48) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.7ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:19:50) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.1ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:20:05) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:20:05 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 00:20:05AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:20:07 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, Dale Snitterman, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 3449ms (View: 5, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-05 00:20:08) [GET]
+  Parameters: {"if(H){return K}L.push(K)}}return L}return(E.value||\"\").replace(/\\r/g,\"\")}return g}if(typeof K"=>"==\"number\"){K =\"\"}return this.each(function(){if(this.nodeType!=1){return}if(o.isArray(K)", "/radio|checkbox/.test(this.type)){this.checked"=>"(o.inArray(this.value,K)>=0||o.inArray(this.name,K)>=0)}else{if(o.nodeName(this,\"select\")){var N=o.makeArray(K)", "F  ){var G"=>"M[F]", "if(G.selected){K"=>"o(G).val()", "if(!N.length){this.selectedIndex"=>"-1}}else{this.value=K}}})", "}"=>nil, "E.value:E.text}if(o.nodeName(E,\"select\")){var I"=>"E.selectedIndex,L=[],M=E.options,H=E.type==\"select-one\"", "if(I<0){return null}for(var F"=>"H?I:0,J=H?I 1:M.length", "F<J"=>nil, "o(\"option\",this).each(function(){this.selected"=>"(o.inArray(this.value,N)>=0||o.inArray(this.text,N)>=0)})"}
+
+ActionController::RoutingError (No route matches "/function (K) {if(K===g){var E=this[0];if(E){if(o.nodeName(E,\"option\")){return(E.attributes.value||{}).specified" with {:method=>:get}):
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:20:19) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.8ms)
+Completed in 72ms (View: 71, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:20:24) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:20:24 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 00:20:24AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:20:25 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, Dale Snitterman, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 2852ms (View: 1, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:20:53) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.2ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:56:43) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (9.7ms)
+Completed in 131ms (View: 125, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:57:33) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:58:49) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.6ms)
+Completed in 92ms (View: 91, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 00:59:11) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.3ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 00:59:45) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/investing_in_physician_relations.pdf", "related_product"=>"Are the Dollars I'm investing in Physician Relations really paying off?", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:59:45 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested Are The Dollars I'm Investing In Physician Relations Really Paying Off?.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 00:59:45AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 00:59:47 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Are the Dollars I'm investing in Physician Relations really paying off?
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, Dale Snitterman, for requesting the white paper: Are the Dollars I'm investing in Physician Relations really paying off?.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/investing_in_physician_relations.pdf
+Rendering users/create
+Completed in 2932ms (View: 10, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 01:00:22) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (5.1ms)
+Completed in 69ms (View: 67, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 01:00:24) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.1ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 01:00:40) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/Investing_in_physician_relations.pdf", "related_product"=>"Are the Dollars I'm investing in Physician Relations really paying off?", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 01:00:40 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested Are The Dollars I'm Investing In Physician Relations Really Paying Off?.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 01:00:40AM
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 01:01:00) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/Investing_in_physician_relations.pdf", "related_product"=>"Are the Dollars I'm investing in Physician Relations really paying off?", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 01:01:00 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested Are The Dollars I'm Investing In Physician Relations Really Paying Off?.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 01:01:00AM
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 01:01:37) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (8.6ms)
+Completed in 80ms (View: 78, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+Timeout::Error (execution expired):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:911:in `recv_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:897:in `getok'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:921:in `critical'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:895:in `getok'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:842:in `rcptto'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:834:in `rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:833:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:833:in `rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:654:in `sendmail'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:526:in `start'
+  app/controllers/users_controller.rb:51:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (45.2ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+Timeout::Error (execution expired):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:60:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:911:in `recv_response'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:897:in `getok'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:921:in `critical'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:895:in `getok'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:842:in `rcptto'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:834:in `rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:833:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:833:in `rcptto_list'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:654:in `sendmail'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/smtp.rb:526:in `start'
+  app/controllers/users_controller.rb:51:in `create'
+  passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (361.4ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 01:02:19) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/Investing_in_physician_relations.pdf", "related_product"=>"Are the Dollars I'm investing in Physician Relations really paying off?", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 01:02:19 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested Are The Dollars I'm Investing In Physician Relations Really Paying Off?.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 01:02:19AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 01:02:28 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Are the Dollars I'm investing in Physician Relations really paying off?
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, Dale Snitterman, for requesting the white paper: Are the Dollars I'm investing in Physician Relations really paying off?.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/Investing_in_physician_relations.pdf
+Rendering users/create
+Completed in 9946ms (View: 77, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 01:02:51) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (5.3ms)
+Completed in 169ms (View: 168, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 01:02:57) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/10%20Principles.pdf", "related_product"=>"10 Principles that will guarantee your success in relationship managemen", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 01:02:57 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested 10 Principles That Will Guarantee Your Success In Relationship Managemen.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 01:02:57AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 01:02:58 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: 10 Principles that will guarantee your success in relationship managemen
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, Dale Snitterman, for requesting the white paper: 10 Principles that will guarantee your success in relationship managemen.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/10%20Principles.pdf
+Rendering users/create
+Completed in 2213ms (View: 1, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 01:03:03) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-05 01:03:07) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"NzK0hmYY2v8STb2mtauF8l6Ew36FijG+jPz6gPnSbsI=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/right%20questions.pdf", "related_product"=>"How to ask the right questions in an effective physician meeting", "user"=>{"company"=>"NBC", "name"=>"Dale Snitterman", "phone"=>"8885551212", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 01:03:07 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Dale Snitterman has just requested How To Ask The Right Questions In An Effective Physician Meeting.
+
+Here are the details:
+---------------------
+Name:		Dale Snitterman
+Company:	NBC
+Phone:		8885551212
+Email:		samgrigg@gmail.com
+
+Dale Snitterman's info was recorded on 08/05/10 at 01:03:07AM
+******downloading
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 5 Aug 2010 01:03:08 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: How to ask the right questions in an effective physician meeting
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, Dale Snitterman, for requesting the white paper: How to ask the right questions in an effective physician meeting.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/right%20questions.pdf
+Rendering users/create
+Completed in 2252ms (View: 1, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-05 01:03:12) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.0ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-05 01:03:15) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (1.3ms)
+Rendered shared/_user_form (4.9ms)
+Rendered shared/_user_form (4.2ms)
+Rendered shared/_v4e_demo (0.9ms)
+Rendered shared/_testimonials (0.6ms)
+Rendered shared/_white_papers (0.4ms)
+Completed in 120ms (View: 118, DB: 0) | 200 OK [http://marketware.local/physician_relations]

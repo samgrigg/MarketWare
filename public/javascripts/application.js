@@ -4,13 +4,22 @@ $(function() {
 	$("#flash_error, #flash_notice").hide();
 })
 
-
+function download_btn_click(title, url, response_type) {
+	$("#response_type").val(response_type);
+	$("#related_product").val(title);
+	$("#download_url").val(url);
+	// return false
+}
 
 function start_download() {
 	// alert("start download")
 	fancybox_close();
 	// $("#try-it-free-btn").click()
 	// window.location = "http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe"
+	
+	if ($("#download_url").val().length > 0) {
+		window.location = $("#download_url").val()
+	}
 }
 
 function show_demo() {

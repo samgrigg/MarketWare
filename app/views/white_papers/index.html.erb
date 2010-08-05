@@ -1,3 +1,29 @@
+<% content_for :header do %>
+	<%= stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true %>
+	
+	<%= javascript_include_tag "jquery.fancybox-1.3.1" %>
+	<%= javascript_include_tag 'product' %>
+	<%= javascript_include_tag "easySlider1.7"%>
+	<script type="text/javascript">
+		var current_user = <%= !session["current_username"].nil? %>;
+		
+		$(function() {
+			$("#achilles_heel_link").click(function() {
+				download_btn_click("Physician Relations: The Achilles Heel of Hospital CEOs", "http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "white_paper")
+			});
+			$("#investment_dollars_link").click(function() {
+				download_btn_click("Are the Dollars I'm investing in Physician Relations really paying off?", "http://marketware.com.s3.amazonaws.com/whitepapers/Investing_in_physician_relations.pdf", "white_paper")
+			});
+			$("#relationship_management_link").click(function() {
+				download_btn_click("10 Principles that will guarantee your success in relationship managemen", "http://marketware.com.s3.amazonaws.com/whitepapers/10%20Principles.pdf", "white_paper")
+			});
+			$("#right_questions_link").click(function() {
+				download_btn_click("How to ask the right questions in an effective physician meeting", "http://marketware.com.s3.amazonaws.com/whitepapers/right%20questions.pdf", "white_paper")
+			});
+		})
+	</script>
+<% end -%>
+
 <div class="grid_8 alpha omega prefix_2 suffix_2">
 <h2>White Papers</h2>
 
@@ -5,24 +31,47 @@
 	<li>
 		<strong class="title"><a name="achilles_heel">Physician Relations: The Achilles Heel of Hospital CEOs</a></strong>
 		<p class="description">Without good Physician Relations Hospital CEOs can come under serious pressure and even lose their jobs. Learn the CEO’s worst case scenario and what to do about it.</p>
-		<a href="http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf" class="btn-yellow float-right"><span>Download</span></a>
+		<!-- <a href="http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf" class="btn-yellow float-right"> -->
+		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user" id="achilles_heel_link">
+			<span>Download</span>
+		</a>
 	</li>
 	<li>
 		<strong class="title"><a name="investing">Are the Dollars I'm investing in Physician Relations really paying off?</a></strong>
 		<p class="description">
 			Now is the time to invest in an effective Physician Relations. You cannot afford to miss opportunities with your physicians. Every referral from a physician counts.
 		</p>
-		<a href="http://marketware.com.s3.amazonaws.com/whitepapers/investing.pdf" class="btn-yellow float-right"><span>Download</span></a>
+		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user" id="investment_dollars_link">
+			<span>Download</span>
+		</a>
 	</li>
 	<li>
 		<strong class="title"><a name="10-principles">10 Principles that will guarantee your success in relationship managemen</a></strong>
 		<p class="description">Learn what you can do today to guarantee your success in relationship management. Turn unproductive and stagnant relationships into quality effective physician relationships.</p>
-		<a href="http://marketware.com.s3.amazonaws.com/whitepapers/10-principles.pdf" class="btn-yellow float-right"><span>Download</span></a>
+		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user" id="relationship_management_link">
+			<span>Download</span>
+		</a>
 	</li>
 	<li>
 		<strong class="title"><a name="the-right-questions">How to ask the right questions in an effective physician meeting</a></strong>
 		<p class="description">Learn how to strategically ask the right questions to get your physicians to move the relationship forward and increase physician referrals.  Understand which questions you should ask and at which time you should ask them.</p>
-		<a href="http://marketware.com.s3.amazonaws.com/whitepapers/the-right-questions.pdf" class="btn-yellow float-right"><span>Download</span></a>
+		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user" id="right_questions_link">
+			<span>Download</span>
+		</a>
 	</li>
 </ul>
+</div>
+<div style="display:none">
+	<div id="whitepaper-register-form" class="margin-md fancybox-content">
+		<h5>Please enter your contact information.</h5>
+		<p>We will then email you instructions to download your white paper.</p>
+		<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "try_it_free"} %>
+	</div>
+</div>
+
+<div style="display:none">
+	<div id="free_trial_thank_you" class="margin-md">
+		<h5>Thank You</h5>
+		<p>You should recieve an email containing instructions to download your tria.</p>
+	</div>
 </div>

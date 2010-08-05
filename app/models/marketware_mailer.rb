@@ -1,11 +1,11 @@
 class MarketwareMailer < ActionMailer::Base
 
-  def new_user_information(user, product)
+  def new_user_information(user, product, response_type)
     # recipients  "info@marketware.com"
     recipients  "samgrigg@gmail.com"
     from        "info@marketware.com"
     subject     "New User Information from MarketWare.com"
-    body        :user => user, :product => product
+    body        :user => user, :product => product, :response_type => response_type
   end
   
   def demo_request_confirmation(user, product)
@@ -30,23 +30,19 @@ class MarketwareMailer < ActionMailer::Base
     body        :name => name
   end
   
-  def white_paper(white_paper, user)
-    recipients    "info@marketware.com"
+  def white_paper(user, title, url)
+    # recipients    "info@marketware.com"
+		recipients		"samgrigg@gmail.com"
     from          "info@marketware.com"
-    subject       "MarketWare White Paper: #{white_paper.title}"
-    content_type  "multipart/alternative"
-    
-    part "text/plain" do |p|
-      p.body = "Here is the white paper you requested. Thank you for your interest in MarketWare."
-    end
-    
-    attachment :content_type => "image/jpeg",
-       :body => retrieve_s3_file(white_paper.download_url).value
-
+    subject       "MarketWare White Paper: #{title}"
+    body					:title => title, :user => user
   end
   
-  def whitepaper_request_notification(white_paper, user)
-    
+  def white_paper_response(user, title, url, response_type)
+    recipients    user.email
+    from          "info@marketware.com"
+    subject       "MarketWare White Paper: #{title}"
+    body					:title => title, :url => url, :user => user, :response_type => response_type
   end
   
   private
