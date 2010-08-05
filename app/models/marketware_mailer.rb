@@ -31,8 +31,8 @@ class MarketwareMailer < ActionMailer::Base
   end
   
   def white_paper(user, title, url)
-    # recipients    "info@marketware.com"
-		recipients		"samgrigg@gmail.com"
+    recipients    "info@marketware.com"
+		# recipients		"samgrigg@gmail.com"
     from          "info@marketware.com"
     subject       "MarketWare White Paper: #{title}"
     body					:title => title, :user => user
