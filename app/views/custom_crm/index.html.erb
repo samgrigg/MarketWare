@@ -1,15 +1,12 @@
 <% content_for :header do %>
 	<%= stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true %>
 	
-	<%= javascript_include_tag "jquery.fancybox-1.3.1" %>
-	<%#= javascript_include_tag 'jquery.media' %>
-	<%= javascript_include_tag 'product' %>
-	<%= javascript_include_tag "easySlider1.7"%>
+	<%= javascript_include_tag "jquery.fancybox-1.3.1", 'product', "easySlider1.7" %>
+	
 	<script type="text/javascript">
 		var current_user = <%= !session["current_username"].nil? %>;
 	</script>
 <% end -%>
-
 
 <div class="page-header">
 	<h2 class="grid_4 alpha">Custom CRM</h2>
@@ -19,13 +16,28 @@
 </div>
 
 <div style="display:none">
-<div id="user-form-box" class="margin-md fancybox-content">
-	<h5>Please enter your contact information:</h5>
-	<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations"} %>
-	<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
+	<div id="demo-register-form" class="margin-md fancybox-content">
+		<h5>Please enter your contact information:</h5>
+		<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "custom_crm", :response_type => "product_demo"} %>
+		<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
+	</div>
 </div>
 
+<div style="display:none">
+	<div id="trial-register-form" class="margin-md fancybox-content">
+		<h5>Please enter your contact information.</h5>
+		<p>We will then email you instructions to download your trial of MarketWare.</p>
+		<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "custom_crm", :response_type => "try_it_free"} %>
+	</div>
 </div>
+
+<div style="display:none">
+	<div id="free_trial_thank_you" class="margin-md">
+		<h5>Thank You</h5>
+		<p>You should recieve an email containing instructions to download your trial.</p>
+	</div>
+</div>
+
 <div class="product-main content-box grid_12 alpha omega">
 	<div class="content-box-inset">
 		<div class='margin-md'>
@@ -35,39 +47,12 @@
 						<!-- <img src="http://marketware.com.s3.amazonaws.com/Pictures/holding-img.jpg" class="holding-img"> -->
 
 						<a id="demo-link" href="#user-form-box" class="demo">
-							<img id="holding-img" alt="Marketware Demonstration" src="/images/demo-first-frame.gif" />
+							<img id="holding-img" alt="Marketware Demonstration" src="/images/demo-custom_crm-first-frame.gif" />
 						</a>
 						
-						<!-- "Video For Everybody" v0.4.1 by Kroc Camen of Camen Design <camendesign.com/code/video_for_everybody>
-						     =================================================================================================================== -->
-						<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise       -->
-						<!-- warning: playback does not work on iPad/iPhone if you include the poster attribute! fixed in iOS4                   -->
-						<div style="display:none">
-						<video id="demo-video" controls>
-							<!-- MP4 must be first for iPad! -->
-							<source src="<%= @demo_url[:mp4] %>"  type="video/mp4"  /><!-- WebKit video    -->
-							<source src="<%= @demo_url[:oog] %>"  type="video/ogg"  /><!-- Firefox / Opera -->
-							<!-- fallback to Flash: -->
-							<object width="640" height="384" type="application/x-shockwave-flash" data="/mediaplayer.swf">
-								<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
-								<param name="movie" value="/mediaplayer.swf" />
-								<param name="flashvars" value="autostart=false&amp;image=poster.jpg&amp;file=<%= @demo_url[:mp4] %>" />
-								<!-- fallback image -->
-								<img src="/images/demo-first-frame.gif" width="640" height="360" alt="MarketWare Physician Relationship Management"
-								     title="No video playback capabilities, please download the video below" />
-							</object>
-						</video>
-						</div>
-						<!-- you *must* offer a download link as they may be able to play the file locally. customise this bit all you want -->
-						<% unless session["current_username"].nil? %>
-						<p id="video-download">
-							<strong>Download Video:</strong>
-							Closed Format: <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">"MP4"</a>
-							Open Format: <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">"OGG"</a> /
-							            <a href="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm">"WebM"</a>
-						</p>
-						<% end -%>
+						<%= render :partial => 'shared/v4e_demo', :locals => {:elem_id => "demo-video", :demo_url => @demo_url} %>
 					</div>
+
 				</div>
 		
 				<div class="product-calls-to-action grid_5 omega">

@@ -18045,3 +18045,1514 @@ Rendered shared/_v4e_demo (0.9ms)
 Rendered shared/_testimonials (0.6ms)
 Rendered shared/_white_papers (0.4ms)
 Completed in 120ms (View: 118, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 15:18:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (639.6ms)
+Rendered shared/_user_form (36.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (5.3ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (290.4ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (36.5ms)
+Completed in 1625ms (View: 1505, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 18:11:54) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (1.1ms)
+Rendered shared/_user_form (7.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (303.7ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_testimonials (0.8ms)
+Completed in 450ms (View: 440, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 20:26:48) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Completed in 171ms (View: 168, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing TestimonialsController#index (for 127.0.0.1 at 2010-08-05 20:29:05) [GET]
+Rendering template within layouts/application
+Rendering testimonials/index
+Completed in 114ms (View: 113, DB: 0) | 200 OK [http://marketware.local/testimonials/]
+
+
+Processing TestimonialsController#index (for 127.0.0.1 at 2010-08-05 20:42:57) [GET]
+Rendering template within layouts/application
+Rendering testimonials/index
+ERROR: compiling _run_erb_app47views47testimonials47index46html46erb RAISED compile error
+/Users/sam/Rails/marketware/app/views/testimonials/index.html.erb:5: syntax error, unexpected tASSOC, expecting ')'
+...tput_buffer.concat(( render => :partial => "testimonials" )....
+                              ^
+Function body:           def _run_erb_app47views47testimonials47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"grid_8 alpha omega prefix_2 suffix_2\">\n<h2>Testimonials</h2>\n\n<ul class=\"testimonials mktwr_list\">\n\t"
+
+
+
+; @output_buffer.concat(( render => :partial => "testimonials" ).to_s); @output_buffer.concat "\n</ul>\n</div>"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/sam/Rails/marketware/app/views/testimonials/index.html.erb:10:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/Users/sam/Rails/marketware/app/views/testimonials/index.html.erb:5: syntax error, unexpected tASSOC, expecting ')'
+...tput_buffer.concat(( render => :partial => "testimonials" )....
+                              ^) on line #5 of app/views/testimonials/index.html.erb:
+2: <h2>Testimonials</h2>
+3: 
+4: <ul class="testimonials mktwr_list">
+5: 	<%= render => :partial => "testimonials" %>
+6: </ul>
+7: </div>
+
+    app/views/testimonials/index.html.erb:10:in `compile!'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (334.1ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestimonialsController#index (for 127.0.0.1 at 2010-08-05 20:43:13) [GET]
+Rendering template within layouts/application
+Rendering testimonials/index
+
+ActionView::TemplateError (Missing template testimonials/_testimonials.erb in view path app/views) on line #5 of app/views/testimonials/index.html.erb:
+2: <h2>Testimonials</h2>
+3: 
+4: <ul class="testimonials mktwr_list">
+5: 	<%= render :partial => "testimonials" %>
+6: </ul>
+7: </div>
+
+    app/views/testimonials/index.html.erb:5
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (44.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing TestimonialsController#index (for 127.0.0.1 at 2010-08-05 20:43:30) [GET]
+Rendering template within layouts/application
+Rendering testimonials/index
+Rendered shared/_testimonials (0.9ms)
+Completed in 260ms (View: 259, DB: 0) | 200 OK [http://marketware.local/testimonials/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 20:59:13) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Completed in 66ms (View: 64, DB: 0) | 200 OK [http://marketware.local/success_stories/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:02:50) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+
+ActionView::TemplateError (Missing template success_stories/_el_camino_hospital.erb in view path app/views) on line #6 of app/views/success_stories/index.html.erb:
+3: 
+4: 	<ul class="success_stories mktwr_list">
+5: 		<li>
+6: 		    <%= render :partial => "el_camino_hospital" %>
+7: 		</li>
+8: 		<li>
+9: 		    <%= render :partial => "hoag_hospital" %>
+
+    app/views/success_stories/index.html.erb:6
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (57.9ms)
+Rendered rescues/_request_and_response (3.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:03:57) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+
+ActionView::TemplateError (Missing template success_stories/_el_camino_hospital.erb in view path app/views) on line #6 of app/views/success_stories/index.html.erb:
+3: 
+4: 	<ul class="success_stories mktwr_list">
+5: 		<li>
+6: 		    <%= render :partial => "el_camino_hospital" %>
+7: 		</li>
+8: 		<li>
+9: 		    <%= render :partial => "hoag_hospital" %>
+
+    app/views/success_stories/index.html.erb:6
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (102.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:04:39) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+
+ActionView::TemplateError (Missing template success_stories/_el_camino_hospital.erb in view path app/views) on line #6 of app/views/success_stories/index.html.erb:
+3: 
+4: 	<ul class="success_stories mktwr_list">
+5: 		<li>
+6: 		    <%= render :partial => "el_camino_hospital" %>
+7: 		</li>
+8: 		<li>
+9: 		    <%= render :partial => "hoag_hospital" %>
+
+    app/views/success_stories/index.html.erb:6
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (100.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:05:24) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.5ms)
+Rendered shared/_hoag_hospital (0.7ms)
+Rendered shared/_karmanos_cancer_institute (0.3ms)
+Rendered shared/_southeast_missouri_hospital (0.8ms)
+Completed in 95ms (View: 94, DB: 0) | 200 OK [http://marketware.local/success_stories/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:09:02) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.7ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.8ms)
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://marketware.local/success_stories/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:09:20) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.1ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.9ms)
+Completed in 65ms (View: 63, DB: 0) | 200 OK [http://marketware.local/success_stories/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:09:45) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.4ms)
+Rendered shared/_hoag_hospital (0.6ms)
+Rendered shared/_karmanos_cancer_institute (0.4ms)
+Rendered shared/_southeast_missouri_hospital (0.0ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://marketware.local/success_stories/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:13:54) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.1ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.0ms)
+Completed in 33ms (View: 32, DB: 0) | 200 OK [http://marketware.local/success_stories/]
+
+
+Processing TestimonialsController#index (for 127.0.0.1 at 2010-08-05 21:14:09) [GET]
+Rendering template within layouts/application
+Rendering testimonials/index
+Rendered shared/_testimonials (0.5ms)
+Completed in 64ms (View: 63, DB: 0) | 200 OK [http://marketware.local/testimonials/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 21:17:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.8ms)
+Rendered shared/_user_form (5.2ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 56ms (View: 55, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing TestimonialsController#index (for 127.0.0.1 at 2010-08-05 21:18:03) [GET]
+Rendering template within layouts/application
+Rendering testimonials/index
+Rendered shared/_testimonials (0.1ms)
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://marketware.local/testimonials/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 21:18:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.0ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-05 21:18:06) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.0ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.0ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 21:18:12) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 21:18:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-05 23:03:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (1.1ms)
+Rendered shared/_user_form (10.8ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (5.9ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (373.4ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (0.7ms)
+Completed in 765ms (View: 731, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-07 16:29:09) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (17.8ms)
+Rendered shared/_user_form (14.5ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (295.8ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (19.6ms)
+Completed in 567ms (View: 532, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-07 16:37:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (5.0ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 100ms (View: 99, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 21:14:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (1.1ms)
+Rendered shared/_user_form (9.5ms)
+Rendered shared/_user_form (4.3ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (290.5ms)
+Rendered shared/_testimonials (0.6ms)
+Completed in 393ms (View: 391, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:17:45) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (38.6ms)
+Rendered shared/_hoag_hospital (11.4ms)
+Rendered shared/_karmanos_cancer_institute (2.0ms)
+Rendered shared/_southeast_missouri_hospital (29.9ms)
+Completed in 250ms (View: 249, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:24:18) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.0ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.1ms)
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:43:36) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+ERROR: compiling _run_erb_app47views47success_stories47index46html46erb RAISED compile error
+/Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:27: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47success_stories47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( content_for :header ).to_s); @output_buffer.concat "\n\t<style>\n\t\t#success_stories {\n\t\t\tlist-style-type:none;\n\t\t}\n\t</style>\n"
+
+
+
+
+
+;  end 
+@output_buffer.concat "\n<div class=\"grid_8 alpha omega prefix_2 suffix_2\">\n\t<h2>Success Stories</h2>\n\n\t<ul class=\"success_stories\">\n\t\t<!-- <li>\n\t\t    "
+
+
+
+
+
+; @output_buffer.concat(( render :partial => "shared/el_camino_hospital" ).to_s); @output_buffer.concat "\n\t\t</li> -->\n\t\t<li>\n\t\t    "
+
+
+; @output_buffer.concat(( render :partial => "shared/hoag_hospital" ).to_s); @output_buffer.concat "\n\t\t</li>\n\t\t<!-- <li>\n\t\t    "
+
+
+; @output_buffer.concat(( render :partial => "shared/karmanos_cancer_institute" ).to_s); @output_buffer.concat "\n\t\t</li> -->\n\t\t<li>\n\t\t    "
+
+
+; @output_buffer.concat(( render :partial => "shared/southeast_missouri_hospital" ).to_s); @output_buffer.concat "\n\t\t</li>\n\t</ul>\n</div>"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:27:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:27: syntax error, unexpected kENSURE, expecting $end) on line #27 of app/views/success_stories/index.html.erb:
+24: 		</li>
+25: 	</ul>
+26: </div>
+
+    app/views/success_stories/index.html.erb:27:in `compile!'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (489.3ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:46:28) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+ERROR: compiling _run_erb_app47views47success_stories47index46html46erb RAISED compile error
+/Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:1: syntax error, unexpected ')'
+...cat(( content_for :header do ).to_s); @output_buffer.concat ...
+                              ^
+/Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:27: syntax error, unexpected kENSURE, expecting ')'
+/Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:29: syntax error, unexpected kEND, expecting ')'
+Function body:           def _run_erb_app47views47success_stories47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( content_for :header do ).to_s); @output_buffer.concat "\n\t<style>\n\t\t#success_stories {\n\t\t\tlist-style-type:none;\n\t\t}\n\t</style>\n"
+
+
+
+
+
+;  end 
+@output_buffer.concat "\n<div class=\"grid_8 alpha omega prefix_2 suffix_2\">\n\t<h2>Success Stories</h2>\n\n\t<ul class=\"success_stories\">\n\t\t<!-- <li>\n\t\t    "
+
+
+
+
+
+; @output_buffer.concat(( render :partial => "shared/el_camino_hospital" ).to_s); @output_buffer.concat "\n\t\t</li> -->\n\t\t<li>\n\t\t    "
+
+
+; @output_buffer.concat(( render :partial => "shared/hoag_hospital" ).to_s); @output_buffer.concat "\n\t\t</li>\n\t\t<!-- <li>\n\t\t    "
+
+
+; @output_buffer.concat(( render :partial => "shared/karmanos_cancer_institute" ).to_s); @output_buffer.concat "\n\t\t</li> -->\n\t\t<li>\n\t\t    "
+
+
+; @output_buffer.concat(( render :partial => "shared/southeast_missouri_hospital" ).to_s); @output_buffer.concat "\n\t\t</li>\n\t</ul>\n</div>"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:29:in `compile!'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+/Library/Ruby/Gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+ActionView::TemplateError (compile error
+/Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:1: syntax error, unexpected ')'
+...cat(( content_for :header do ).to_s); @output_buffer.concat ...
+                              ^
+/Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:27: syntax error, unexpected kENSURE, expecting ')'
+/Users/sam/Rails/marketware/app/views/success_stories/index.html.erb:29: syntax error, unexpected kEND, expecting ')') on line #1 of app/views/success_stories/index.html.erb:
+1: <%= content_for :header do %>
+2: 	<style>
+3: 		#success_stories {
+4: 			list-style-type:none;
+
+    app/views/success_stories/index.html.erb:29:in `compile!'
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:46:35) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.8ms)
+Rendered shared/_hoag_hospital (0.9ms)
+Rendered shared/_karmanos_cancer_institute (0.7ms)
+Rendered shared/_southeast_missouri_hospital (0.9ms)
+Completed in 92ms (View: 90, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:49:06) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.0ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.0ms)
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:49:53) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.1ms)
+Rendered shared/_karmanos_cancer_institute (0.1ms)
+Rendered shared/_southeast_missouri_hospital (0.1ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:50:06) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.0ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.0ms)
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:50:11) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.1ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.1ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:50:27) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.0ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.1ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:51:20) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.3ms)
+Rendered shared/_hoag_hospital (0.1ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.0ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 21:53:24) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.0ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.0ms)
+Completed in 100ms (View: 99, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 22:12:44) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.9ms)
+Rendered shared/_hoag_hospital (0.8ms)
+Rendered shared/_karmanos_cancer_institute (0.5ms)
+Rendered shared/_southeast_missouri_hospital (1.0ms)
+Completed in 82ms (View: 81, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 22:13:20) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.8ms)
+Rendered shared/_hoag_hospital (0.9ms)
+Rendered shared/_karmanos_cancer_institute (0.1ms)
+Rendered shared/_southeast_missouri_hospital (1.3ms)
+Completed in 29ms (View: 27, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 22:15:02) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.0ms)
+Rendered shared/_karmanos_cancer_institute (0.1ms)
+Rendered shared/_southeast_missouri_hospital (0.0ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 22:15:22) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.1ms)
+Rendered shared/_karmanos_cancer_institute (0.1ms)
+Rendered shared/_southeast_missouri_hospital (0.1ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 22:15:30) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.1ms)
+Rendered shared/_karmanos_cancer_institute (0.1ms)
+Rendered shared/_southeast_missouri_hospital (0.1ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:17:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (1.0ms)
+Rendered shared/_user_form (6.9ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (9.3ms)
+Rendered shared/_user_form (7.8ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_user_form (4.7ms)
+Rendered shared/_testimonials (0.7ms)
+Completed in 146ms (View: 144, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:17:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.7ms)
+Rendered shared/_user_form (8.8ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.6ms)
+Rendered shared/_user_form (5.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (7.6ms)
+Rendered shared/_user_form (6.8ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 74ms (View: 70, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing SuccessStoriesController#index (for 127.0.0.1 at 2010-08-08 22:18:29) [GET]
+Rendering template within layouts/application
+Rendering success_stories/index
+Rendered shared/_el_camino_hospital (0.1ms)
+Rendered shared/_hoag_hospital (0.1ms)
+Rendered shared/_karmanos_cancer_institute (0.0ms)
+Rendered shared/_southeast_missouri_hospital (0.1ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://marketware.local/success_stories]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:18:31) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.8ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_v4e_demo (0.2ms)
+Rendered shared/_user_form (5.0ms)
+Rendered shared/_user_form (6.3ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 41ms (View: 40, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:34:07) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (3.0ms)
+Rendered shared/_user_form (10.6ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_testimonials (0.8ms)
+Completed in 675ms (View: 672, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:34:33) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (4.7ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 45ms (View: 44, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:34:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.7ms)
+Rendered shared/_user_form (4.6ms)
+Rendered shared/_user_form (4.8ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 174ms (View: 172, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:35:05) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (7.3ms)
+Rendered shared/_user_form (8.8ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_v4e_demo (1.0ms)
+Rendered shared/_user_form (9.1ms)
+Rendered shared/_user_form (8.8ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 70ms (View: 68, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:37:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (13.2ms)
+Rendered shared/_user_form (4.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (5.2ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (12.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 70ms (View: 69, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:40:21) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.0ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 90ms (View: 31, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:40:34) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.0ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 39ms (View: 37, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:43:49) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (60.6ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 95ms (View: 94, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:44:50) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.0ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 36ms (View: 35, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:45:59) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.0ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:46:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 39ms (View: 38, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:46:29) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 37ms (View: 36, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:49:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (62.2ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 155ms (View: 153, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:49:55) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (17.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_user_form (4.4ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 62ms (View: 60, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:54:29) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (5.8ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (7.8ms)
+Rendered shared/_user_form (4.4ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 140ms (View: 138, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-08 22:56:19) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (14.2ms)
+Rendered shared/_user_form (4.3ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_testimonials (0.0ms)
+Rendered shared/_white_papers (13.0ms)
+Completed in 132ms (View: 130, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-08 22:56:22) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (4.9ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (7.6ms)
+Rendered shared/_user_form (5.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 44ms (View: 43, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-08 22:57:27) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_user_form (4.2ms)
+Rendered shared/_user_form (81.4ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.1ms)
+Completed in 99ms (View: 98, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-09 00:17:40) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (17.8ms)
+Rendered shared/_user_form (12.9ms)
+Rendered shared/_user_form (4.6ms)
+Rendered shared/_v4e_demo (1.2ms)
+Rendered shared/_testimonials (0.9ms)
+Rendered shared/_white_papers (31.8ms)
+Completed in 747ms (View: 738, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing PhysicianRecruitingController#index (for 127.0.0.1 at 2010-08-09 00:19:29) [GET]
+Rendering template within layouts/application
+Rendering physician_recruiting/index
+Rendered physician_recruiting/_nav (21.3ms)
+
+ActionView::TemplateError (undefined local variable or method `response_type' for #<ActionView::Base:0x104194420>) on line #4 of app/views/shared/_user_form.erb:
+1: <% remote_form_for(user_form, :url => {:action => :create, :controller => :users}) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4: <%= hidden_field_tag "response_type", response_type %>
+5: 
+6: <%= hidden_field_tag "related_product", product %>
+7: 
+
+    app/views/shared/_user_form.erb:4
+    app/views/shared/_user_form.erb:1
+    app/views/physician_recruiting/index.html.erb:24
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (251.2ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-09 00:19:33) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (1.0ms)
+Rendered shared/_user_form (4.7ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_testimonials (0.0ms)
+Rendered shared/_white_papers (0.1ms)
+Completed in 54ms (View: 50, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-09 00:21:05) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_user_form (9.7ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.1ms)
+Completed in 82ms (View: 80, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-09 00:21:08) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_user_form (5.3ms)
+Rendered shared/_user_form (81.2ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_testimonials (0.0ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 108ms (View: 106, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing PhysicianRecruitingController#index (for 127.0.0.1 at 2010-08-09 00:21:22) [GET]
+Rendering template within layouts/application
+Rendering physician_recruiting/index
+Rendered physician_recruiting/_nav (1.0ms)
+
+ActionView::TemplateError (undefined local variable or method `response_type' for #<ActionView::Base:0x1041aaa40>) on line #4 of app/views/shared/_user_form.erb:
+1: <% remote_form_for(user_form, :url => {:action => :create, :controller => :users}) do |f| %>
+2:   <%= f.error_messages %>
+3: 
+4: <%= hidden_field_tag "response_type", response_type %>
+5: 
+6: <%= hidden_field_tag "related_product", product %>
+7: 
+
+    app/views/shared/_user_form.erb:4
+    app/views/shared/_user_form.erb:1
+    app/views/physician_recruiting/index.html.erb:24
+    passenger (2.2.11) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.11) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.11) lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.11) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendered rescues/_trace (57.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhysicianRecruitingController#index (for 127.0.0.1 at 2010-08-09 00:43:42) [GET]
+Rendering template within layouts/application
+Rendering physician_recruiting/index
+Rendered physician_recruiting/_nav (26.5ms)
+Rendered shared/_user_form (7.2ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_v4e_demo (1.0ms)
+Rendered shared/_testimonials (16.4ms)
+Rendered shared/_white_papers (23.1ms)
+Completed in 611ms (View: 608, DB: 0) | 200 OK [http://marketware.local/physician_recruiting]
+
+
+Processing PhysicianRecruitingController#index (for 127.0.0.1 at 2010-08-09 00:43:43) [GET]
+Rendering template within layouts/application
+Rendering physician_recruiting/index
+Rendered physician_recruiting/_nav (3.4ms)
+Rendered shared/_user_form (5.1ms)
+Rendered shared/_user_form (5.7ms)
+Rendered shared/_v4e_demo (0.1ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.1ms)
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://marketware.local/physician_recruiting]
