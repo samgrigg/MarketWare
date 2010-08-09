@@ -1,7 +1,7 @@
 
 $(function() {
 	(current_user == false) ? $("#demo-link").attr("href", "#demo-register-form") : $("#demo-link").attr("href", "#demo-video");
-	(current_user == false) ? $("#try-it-free-btn").attr("href", "#trial-register-form") : $("#try-it-free-btn").attr("href", "#free_trial_thank_you");
+	// (current_user == false) ? $("#try-it-free-btn").attr("href", "#trial-register-form") : $("#try-it-free-btn").attr("href", "#free_trial_thank_you");
 	
 	//Hook up the 'modal' type box for gathering user information and showing the product demo
 	$(".register_user, .demo").fancybox({
