@@ -49,7 +49,7 @@ class MarketwareMailer < ActionMailer::Base
     recipients    user.email
     from          "info@marketware.com"
     subject       "MarketWare White Paper: #{title}"
-    body					:title => title, :url => url, :user => user, :response_type => response_type
+    body					:title => title, :url => "http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe", :user => user, :response_type => response_type
   end
   
   private
