@@ -5,6 +5,15 @@
 	
 	<script type="text/javascript">
 		var current_user = <%= !session["current_username"].nil? %>;
+		
+		$(function() {
+			$("#try-it-free-btn").click(function() {
+				download_btn_click(
+					"Marketware Free Trial", 
+					"http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe", 
+					"free_trial")
+			});
+		})
 	</script>
 <% end -%>
 
@@ -46,11 +55,11 @@
 					<div id="demo-couplet">
 						<!-- <img src="http://marketware.com.s3.amazonaws.com/Pictures/holding-img.jpg" class="holding-img"> -->
 
-						<a id="demo-link" href="#user-form-box" class="demo">
+						<a id="physician_recruiting_demo" href="#demo-register-form" class="demo">
 							<img id="holding-img" alt="Marketware Demonstration" src="/images/demo-physician-recruiting-first-frame.gif" />
 						</a>
 						
-						<%= render :partial => 'shared/v4e_demo', :locals => {:elem_id => "demo-video", :demo_url => @demo_url} %>
+						<%= render :partial => 'shared/v4e_demo', :locals => {:elem_id => "recruiting-demo-video", :demo_url => @demo_url} %>
 					</div>
 
 				</div>
@@ -61,7 +70,7 @@
 							<%= render :partial => 'shared/testimonials' %>
 						</ul>
 					</div>
-					<a href="more" class="more-testimonials">More Testimonials ...</a>
+
 					<div class="product-call-to-action-buttons">
 						<%= mail_to "request@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
@@ -76,14 +85,15 @@
 <div class="small-content-box grid_6 alpha">
 	<div class="small-content-box-inset">
 		<div class="margin-md">	
-		  	<p>MarketWare is not an off the shelf generic CRM solution. MarketWare is a fully customized solution for physician relationship management.</p>
+		  	<p>MarketWare’s Recruiting manages each phase in the physician recruiting process. Easily move a potential recruit through recruiting into physician relationship management.</p>
+			<strong>MarketWare’s Recruiting:</strong>
 			<ul>
-				<li>Maintain Physician Information</li>
-				<li>Track Interactions with Physicians</li>
-				<li>Identify Goals and Objectives</li>
-				<li>Manage the Resolution of Issues and Problems</li>
-				<li>Manage Marketing Campaigns</li>
-				<li>Identify What’s Working and What’s Not</li>
+				<li>Maintains physician information</li>
+				<li>Tracks every physician interaction</li>
+				<li>Manages site visit preparation</li>
+				<li>Supervises potential recruit issues</li>
+				<li>Manages marketing campaigns</li>
+				<li>Handles on-boarding and retention</li>
 			</ul>
 
 			<strong>MarketWare is being utilized in:</strong>

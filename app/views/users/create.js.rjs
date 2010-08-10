@@ -3,11 +3,11 @@ if @user.errors.empty?
 
   page.call "make_current_user"
   if params[:response_type] == "try_it_free"
-    page.call "start_download"
+    # page.call "start_download" #Not doing the auto-download anymore
 	elsif params[:response_type] == "white_paper"
 		page.call "start_download"
   else
-    page.call "show_demo"
+    page.call "show_demo", params[:related_product]
   end
   
 else

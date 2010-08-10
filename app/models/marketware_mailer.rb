@@ -44,6 +44,13 @@ class MarketwareMailer < ActionMailer::Base
     subject       "MarketWare White Paper: #{title}"
     body					:title => title, :url => url, :user => user, :response_type => response_type
   end
+
+	def free_trial_response(user, title, url, response_type)
+    recipients    user.email
+    from          "info@marketware.com"
+    subject       "MarketWare White Paper: #{title}"
+    body					:title => title, :url => url, :user => user, :response_type => response_type
+  end
   
   private
   

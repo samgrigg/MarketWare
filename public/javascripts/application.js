@@ -22,18 +22,37 @@ function start_download() {
 	}
 }
 
-function show_demo() {
-	// alert("show demo")
+function show_demo(relatedProduct) {
+	// alert(relatedProduct)
 	// fancybox_close();
 	
-	$("#demo-link").click()
+	//Enable all the demo buttons (if they exist). They'll all exist on the home page, but only one at a time will exist on the product details page
+	if ($("#physician_relations_demo")) {
+		$("#physician_relations_demo").attr("href", "#relations-demo-video");
+	}
+	if ($("#physician_recruiting_demo")) {
+		$("#physician_recruiting_demo").attr("href", "#recruiting-demo-video");
+	}
+	if ($("#custom_crm_demo")) {
+		$("#custom_crm_demo").attr("href", "#custom-demo-video");
+	}
+	
+	if (relatedProduct == "physician_relations") {
+		$("#physician_relations_demo").click()
+	}
+	else if (relatedProduct == "physician_recruiting") {
+		$("#physician_recruiting_demo").click()
+	}
+	else if (relatedProduct == "custom_crm") {
+		$("#custom_crm_demo").click()
+	}	
+	// $("#try-it-free-btn").attr("href", "#free_trial_thank_you");
+	// $("#demo-link").click()
 }
 
 function make_current_user() {
 	// alert("make current user")
 	current_user = true;
-	$("#demo-link").attr("href", "#demo-video");
-	$("#try-it-free-btn").attr("href", "#free_trial_thank_you");
 	// $("#try-it-free-btn").removeClass("register_user");
 	// alert("'bout to unbind")
 	// $("#try-it-free-btn").unbind("click.fb");
@@ -41,6 +60,7 @@ function make_current_user() {
 
 function fancybox_close(){
 	// alert("closing fancybox")
+	$('#fancybox-wrap').hide();
     $('#fancybox-outer').hide();
     $('#fancybox-overlay').hide();
     $('#fancybox-title').hide();

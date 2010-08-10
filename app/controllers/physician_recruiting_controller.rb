@@ -7,7 +7,7 @@ class PhysicianRecruitingController < ApplicationController
     if session["current_username"]
       @trial_url = "http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe"
     else
-      @trial_url = "#user-form-box"
+      @trial_url = "#demo-register-form"
     end
   end
   

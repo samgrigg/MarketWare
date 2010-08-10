@@ -53,6 +53,8 @@ class UsersController < ApplicationController
 				when "try_it_free"
 					#They're downloading a trial of the software
 					logger.debug "******try_it_free"
+					logger.debug "******#{params[:download_url]}"
+					MarketwareMailer.deliver_free_trial_response(@user, params[:related_product], params[:download_url], params[:response_type])
 				when "white_paper"
 					logger.debug "******downloading"
 					# They're downloading a white paper
@@ -66,11 +68,6 @@ class UsersController < ApplicationController
         # flash[:error] = "Could not create user: #{@user.errors.first.msg}"
 				flash[:error] = @user.errors.on(:email)
       end
-    # else
-    #   @user = User.find_by_name(params[:user][:name])
-    #   flash[:notice] = "Welcome back #{@user.name}"
-    #   saved = true
-    # end
     
     session["current_username"] = @user.name
 

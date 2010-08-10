@@ -1,7 +1,19 @@
 
 $(function() {
-	(current_user == false) ? $("#demo-link").attr("href", "#demo-register-form") : $("#demo-link").attr("href", "#demo-video");
+	// (current_user == false) ? $("#demo-link").attr("href", "#demo-register-form") : $("#demo-link").attr("href", "#demo-video");
 	// (current_user == false) ? $("#try-it-free-btn").attr("href", "#trial-register-form") : $("#try-it-free-btn").attr("href", "#free_trial_thank_you");
+	
+	if (current_user == true) {
+		if ($("#physician_relations_demo")) {
+			$("#physician_relations_demo").attr("href", "#relations-demo-video");
+		}
+		if ($("#physician_recruiting_demo")) {
+			$("#physician_recruiting_demo").attr("href", "#recruiting-demo-video");
+		}
+		if ($("#custom_crm_demo")) {
+			$("#custom_crm_demo").attr("href", "#custom-demo-video");
+		}
+	}
 	
 	//Hook up the 'modal' type box for gathering user information and showing the product demo
 	$(".register_user, .demo").fancybox({

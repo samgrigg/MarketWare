@@ -16,13 +16,13 @@ class HomeController < ApplicationController
 				:img => "/images/demo-first-frame.gif"
 		  }
 			if session["current_username"]
-				@relations_demo_link_url = "#relations-video-demo"
-				@recruiting_demo_url = "#recruiting-video-demo"
-				@custom_demo_url = "#custom-video-demo"
+				@relations_demo_link_url = "#relations-demo-video"
+				@recruiting_demo_link_url = "#recruiting-demo-video"
+				@custom_demo_link_url = "#custom-demo-video"
 			else
 				@relations_demo_link_url = "#user_form_box_physican_relations"
-				@recruiting_demo_url = "#user_form_box_physican_recruiting"
-				@custom_demo_url = "#user_form_box_custom_crm"
+				@recruiting_demo_link_url = "#user_form_box_physican_recruiting"
+				@custom_demo_link_url = "#user_form_box_custom_crm"
 			end
 			
 			@physician_relations_trial_url = "#trial-register-form-physician-relations"

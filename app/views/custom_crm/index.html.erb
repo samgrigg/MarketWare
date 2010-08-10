@@ -5,6 +5,15 @@
 	
 	<script type="text/javascript">
 		var current_user = <%= !session["current_username"].nil? %>;
+		
+		$(function() {
+			$("#try-it-free-btn").click(function() {
+				download_btn_click(
+					"Marketware Free Trial", 
+					"http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe", 
+					"free_trial")
+			});
+		})
 	</script>
 <% end -%>
 
@@ -46,11 +55,11 @@
 					<div id="demo-couplet">
 						<!-- <img src="http://marketware.com.s3.amazonaws.com/Pictures/holding-img.jpg" class="holding-img"> -->
 
-						<a id="demo-link" href="#user-form-box" class="demo">
-							<img id="holding-img" alt="Marketware Demonstration" src="/images/demo-custom_crm-first-frame.gif" />
+						<a id="custom_crm_demo" href="#demo-register-form" class="demo">
+							<img id="holding-img" alt="Marketware Demonstration" src="/images/demo-custom-crm-first-frame.gif" />
 						</a>
 						
-						<%= render :partial => 'shared/v4e_demo', :locals => {:elem_id => "demo-video", :demo_url => @demo_url} %>
+						<%= render :partial => 'shared/v4e_demo', :locals => {:elem_id => "custom-demo-video", :demo_url => @demo_url} %>
 					</div>
 
 				</div>
@@ -61,7 +70,7 @@
 							<%= render :partial => 'shared/testimonials' %>
 						</ul>
 					</div>
-					<a href="more" class="more-testimonials">More Testimonials ...</a>
+
 					<div class="product-call-to-action-buttons">
 						<%= mail_to "request@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
@@ -76,22 +85,25 @@
 <div class="small-content-box grid_6 alpha">
 	<div class="small-content-box-inset">
 		<div class="margin-md">	
-		  	<p>MarketWare is not an off the shelf generic CRM solution. MarketWare is a fully customized solution for physician relationship management.</p>
+		  	<p>MarketWare’s Customized CRM is a CRM customizable to any company or industry. Manage your relationships exactly how you need to in the way you what. MarketWare will tailor a CRM especially to you.</p>
+			<strong>MarketWare Customized CRM:</strong>
 			<ul>
-				<li>Maintain Physician Information</li>
-				<li>Track Interactions with Physicians</li>
-				<li>Identify Goals and Objectives</li>
-				<li>Manage the Resolution of Issues and Problems</li>
-				<li>Manage Marketing Campaigns</li>
-				<li>Identify What’s Working and What’s Not</li>
+				<li>Maintains contact information</li>
+				<li>Indentifies specific goals and opportunities</li>
+				<li>Manages customer concerns</li>
+				<li>Tracks sales cycle</li>
+				<li>Creates quotes/proposals</li>
+				<li>Creates invoices</li>
+				<li>Maintains project management</li>
 			</ul>
 
 			<strong>MarketWare is being utilized in:</strong>
 			<ul>
-				<li>Hospitals</li>
-				<li>Medical Imaging Centers</li>
-				<li>Specialty Medical Groups</li>
-				<li>Labs</li>
+				<li>Healthcare</li>
+				<li>Transportation</li>
+				<li>Food Service</li>
+				<li>Financial</li>
+				<li>Strategic Selling Organizations </li>
 			</ul>
 		</div>
 	</div>
