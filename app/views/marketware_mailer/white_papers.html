@@ -1,9 +1,0 @@
-<!-- 
-	Send the user an email with the white paper as an attachment
-
-	Send MarketWare an email notifying them of the request for the white paper
--->
-
-<%= @user.name %> has just requested the white paper: <%= @white_paper.title %>.
-
-Request was made on <%= <%= DateTime.now.created_at.strftime("%x") %> at <%= DateTime.now.strftime("%X%p") %>
