@@ -2,9 +2,8 @@
 	<%= stylesheet_link_tag "home" %>
 	<%= stylesheet_link_tag "jquery.fancybox-1.3.1" %>
 	
-	<%= javascript_include_tag "jquery.fancybox-1.3.1" %>
-	<%= javascript_include_tag "easySlider1.7"%>
-	<%= javascript_include_tag "jquery.qtip-1.0.0-rc3.min" %>
+	<%= javascript_include_tag "jquery.fancybox-1.3.1", "flowplayer-3.2.2.min", "easySlider1.7", "jquery.qtip-1.0.0-rc3.min" %>
+
 	<script type="text/javascript">
 	$(function() {
 		if ($("#slideshow")) {
@@ -73,7 +72,20 @@
 			<a href="<%= @relations_demo_link_url %>" class="btn-yellow demo" id="physician_relations_demo"><span>View Demo</span></a>
 		</div>
 		
-		<%= render :partial => 'shared/v4e_demo', :locals => {:elem_id => "relations-demo-video", :demo_url => @relations_demo_url} %>
+		<div style="display:none">
+			<div id="relations-demo-video">
+			<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
+			<a  
+				 href="http://marketware.com.s3.amazonaws.com/videos/demo_relations.mp4"  
+				 style="display:block;width:800px;height:600px"
+				 id="player1"> 
+			</a>
+			</div>
+		</div>
+		<!-- this will install flowplayer inside previous A- tag. -->
+		<script>
+			flowplayer("player1", "/flowplayer-3.2.2.swf");
+		</script>
 			
 		<a href="<%= @physician_relations_trial_url %>" id="try_it_physician_relations" class="btn-gray trial"><span>Free Trial</span></a>
 		
@@ -106,7 +118,20 @@
 			<a href="<%= @recruiting_demo_link_url %>" class="btn-yellow demo" id="physician_recruiting_demo"><span>View Demo</span></a>
 		</div>
 		
-		<%= render :partial => 'shared/v4e_demo', :locals => {:elem_id => "recruiting-demo-video", :demo_url => @recruiting_demo_url} %>
+		<div style="display:none">
+			<div id="recruiting-demo-video">
+			<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
+			<a  
+				 href="http://marketware.com.s3.amazonaws.com/videos/demo_recruiting.mp4"  
+				 style="display:block;width:800px;height:600px"
+				 id="player2"> 
+			</a>
+			</div>
+		</div>
+		<!-- this will install flowplayer inside previous A- tag. -->
+		<script>
+			flowplayer("player2", "/flowplayer-3.2.2.swf");
+		</script>
 		
 		<a href="<%= @physician_recruiting_trial_url %>" id="try_it_physician_recruiting" class="btn-gray trial"><span>Free Trial</span></a>
 		
@@ -140,7 +165,20 @@
 			<a href="<%= @custom_demo_link_url %>" class="btn-yellow demo" id="custom_crm_demo"><span>View Demo</span></a>
 		</div>
 		
-		<%= render :partial => 'shared/v4e_demo', :locals => {:elem_id => "custom-demo-video", :demo_url => @custom_demo_url} %>
+		<div style="display:none">
+			<div id="custom-demo-video">
+			<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
+			<a  
+				 href="http://marketware.com.s3.amazonaws.com/videos/demo_custom.mp4"  
+				 style="display:block;width:800px;height:600px"
+				 id="player3"> 
+			</a>
+			</div>
+		</div>
+		<!-- this will install flowplayer inside previous A- tag. -->
+		<script>
+			flowplayer("player3", "/flowplayer-3.2.2.swf");
+		</script>
 			
 		<a href="<%= @custom_crm_trial_url %>" id="try_it_custom_crm" class="btn-gray trial"><span>Free Trial</span></a>
 		
