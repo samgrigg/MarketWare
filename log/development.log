@@ -23152,3 +23152,42 @@ Rendered shared/_user_form (3.1ms)
 Rendered shared/_user_form (3.0ms)
 Rendered shared/_testimonials (0.1ms)
 Completed in 157ms (View: 156, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-11 06:48:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (151.0ms)
+Rendered shared/_user_form (5.3ms)
+Rendered shared/_user_form (4.9ms)
+Rendered shared/_user_form (8.9ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (24.1ms)
+Rendered shared/_testimonials (731.6ms)
+Completed in 2083ms (View: 2045, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-11 16:22:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (38.8ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (4.6ms)
+Rendered shared/_user_form (6.6ms)
+Rendered shared/_testimonials (374.0ms)
+Completed in 2599ms (View: 2511, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-12 09:40:09) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (22.2ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_testimonials (646.6ms)
+Completed in 3551ms (View: 3505, DB: 0) | 200 OK [http://marketware.local/]
