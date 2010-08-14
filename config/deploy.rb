@@ -8,7 +8,7 @@ role :web, "marketwarecrm.com"                          # Your HTTP server, Apac
 role :app, "marketwarecrm.com"                          # This may be the same as your `Web` server
 # role :db,  "marketwarecrm.com", :primary => true # This is where Rails migrations will run
 set :deploy_to, "/home/mktware/marketwarecrm.com/apps/#{application}"
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 set :spinner, "false"
 
 set :use_sudo, false
