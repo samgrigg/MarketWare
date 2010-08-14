@@ -9,6 +9,7 @@ role :app, "marketwarecrm.com"                          # This may be the same a
 # role :db,  "marketwarecrm.com", :primary => true # This is where Rails migrations will run
 set :deploy_to, "/home/mktware/marketwarecrm.com/apps/#{application}"
 set :deploy_via, :copy
+set :spinner, "false"
 
 set :use_sudo, false
 
