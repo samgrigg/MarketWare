@@ -7,7 +7,7 @@ set :scm, :git
 role :web, "marketwarecrm.com"                          # Your HTTP server, Apache/etc
 role :app, "marketwarecrm.com"                          # This may be the same as your `Web` server
 # role :db,  "marketwarecrm.com", :primary => true # This is where Rails migrations will run
-set :deploy_to, "/home/#{application}/marketwarecrm.com/apps/current/public"
+set :deploy_to, "/home/mktware/marketwarecrm.com/apps/current/public"
 set :deploy_via, :copy
 set :spinner, "false"
 
