@@ -1,6 +1,6 @@
 set :application, "marketware"
 set :repository,  "git@heroku.com:electric-mist-29.git"
-set :use_sudo, false
+# set :use_sudo, false
 set :user, "mktware"
 
 set :scm, :git
