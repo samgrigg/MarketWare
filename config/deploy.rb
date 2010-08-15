@@ -1,5 +1,7 @@
 set :application, "marketware"
 set :repository,  "git@heroku.com:electric-mist-29.git"
+set :use_sudo, false
+set :user, "mktware"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
@@ -7,13 +9,9 @@ set :scm, :git
 role :web, "marketwarecrm.com"                          # Your HTTP server, Apache/etc
 role :app, "marketwarecrm.com"                          # This may be the same as your `Web` server
 # role :db,  "marketwarecrm.com", :primary => true # This is where Rails migrations will run
-set :deploy_to, "/home/mktware/marketwarecrm.com/apps/current/public"
+set :deploy_to, "/home/#{user}/marketwarecrm.com/apps/#{application}"
 set :deploy_via, :copy
-set :spinner, "false"
-
-set :use_sudo, false
-
-set :user, "mktware"
+# set :spinner, "false"
 
 # If you are using Passenger mod_rails uncomment this:
 # if you're still using the script/reapear helper you will need
