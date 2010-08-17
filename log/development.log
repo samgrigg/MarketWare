@@ -23243,3 +23243,172 @@ Rendered shared/_user_form (3.6ms)
 Rendered shared/_user_form (16.0ms)
 Rendered shared/_testimonials (0.8ms)
 Completed in 568ms (View: 529, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-15 03:16:17) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (20.2ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (4.6ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (18.8ms)
+Completed in 177ms (View: 141, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-16 06:51:15) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (20.1ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_testimonials (61.7ms)
+Completed in 632ms (View: 599, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-16 09:02:38) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (6.2ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_testimonials (40.5ms)
+Completed in 539ms (View: 484, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-16 21:49:09) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (7.5ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (5.1ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_testimonials (0.8ms)
+Completed in 233ms (View: 199, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-16 22:05:29) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 123ms (View: 121, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2010-08-16 22:07:30) [POST]
+  Parameters: {"name"=>"test", "commit"=>"Send", "authenticity_token"=>"STQKXEZzy3VpKOhzKjREnQAaU5ZXw01sLZRcsK0Qu0Q=", "phone"=>"", "message"=>"This is a message. And it's a good message too.", "email"=>"samgrigg@gmail.com"}
+Sent mail to samgrigg@gmail.com
+
+Date: Mon, 16 Aug 2010 22:07:30 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: Contact from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just send a message from Marketware.com.
+
+Here are the details:
+---------------------
+Name:		test
+Phone:		
+Email:		samgrigg@gmail.com
+Message:
+This is a message. And it's a good message too.
+
+Message was sent on 08/16/10 at 22:07:30PM
+Sent mail to samgrigg@gmail.com
+
+Date: Mon, 16 Aug 2010 22:07:32 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: MarketWare Contact Confirmation
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Test;
+Thank you for contacting MarketWare. We appreciate that you have taken the time to send us a message. We will respond as soon as possible.
+
+Thank You,
+MarketWare
+Redirected to http://marketware.local/contact_us/thank_you
+Completed in 3401ms (DB: 0) | 302 Found [http://marketware.local/contact]
+
+
+Processing ContactsController#thank_you (for 127.0.0.1 at 2010-08-16 22:07:34) [GET]
+Rendering template within layouts/application
+Rendering contacts/thank_you
+Completed in 77ms (View: 76, DB: 0) | 200 OK [http://marketware.local/contact_us/thank_you]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-16 22:08:23) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (16.9ms)
+Rendered shared/_user_form (7.0ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_testimonials (0.7ms)
+Rendered shared/_white_papers (16.0ms)
+Completed in 186ms (View: 185, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-16 22:08:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (4.3ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_user_form (4.2ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_user_form (69.8ms)
+Rendered shared/_testimonials (0.1ms)
+Completed in 146ms (View: 144, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-16 22:08:34) [POST]
+  Parameters: {"response_type"=>"product_demo", "authenticity_token"=>"STQKXEZzy3VpKOhzKjREnQAaU5ZXw01sLZRcsK0Qu0Q=", "download_url"=>"", "related_product"=>"physician_relations", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Creating User
+Sent mail to samgrigg@gmail.com
+
+Date: Mon, 16 Aug 2010 22:08:34 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/16/10 at 22:08:34PM
+******view demo
+Sent mail to samgrigg@gmail.com
+
+Date: Mon, 16 Aug 2010 22:08:35 -0600
+From: info@marketware.com
+To: samgrigg@gmail.com
+Subject: Thank you for viewing the MarketWare demo
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test;
+Thank you for your interest in MarketWare's Physician Relations software. We hope you found the video helpful and informative. We will be contacting you shortly to answer any further questions you may have.
+
+Thank You,
+MarketWare
+Rendering users/create
+Completed in 2290ms (View: 22, DB: 0) | 200 OK [http://marketware.local/users]
