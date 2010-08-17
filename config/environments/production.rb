@@ -37,9 +37,9 @@ config.action_mailer.delivery_method = :smtp
 config.action_mailer.smtp_settings = {
   # :address          => "smtp-relay.marketware.com",
 	:address						=> "mail.marketwarecrm.com"
-  # :port             => 25,
+  :port             => 25,
   :domain           => "www.marketwarecrm.com",
-  # :authentication   => :login,
-  # :user_name        => "info@marketware.com",
-  # :password         => "bbartel"
+  :authentication   => :login,
+  :user_name        => "marketware_admin@marketwarecrm.com",
+  :password         => "Pas-word0"
 }
