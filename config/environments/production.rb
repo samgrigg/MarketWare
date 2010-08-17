@@ -40,6 +40,6 @@ config.action_mailer.smtp_settings = {
   :port             => 587,
   :domain           => "www.marketwarecrm.com",
   :authentication   => :password,
-  :user_name        => "info@marketwarecrm.com",
+  :user_name        => "marketware_admin@marketwarecrm.com",
   :password         => "Pas-word0"
 }
