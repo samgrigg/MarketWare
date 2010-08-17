@@ -1,7 +1,7 @@
 set :application, "marketware"
 set :repository,  "git@heroku.com:electric-mist-29.git"
 set :use_sudo, false
-set :user, "samgrigg"
+set :user, "marketware_admin"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
@@ -9,7 +9,7 @@ set :scm, :git
 role :web, "marketwarecrm.com"                          # Your HTTP server, Apache/etc
 role :app, "marketwarecrm.com"                          # This may be the same as your `Web` server
 # role :db,  "marketwarecrm.com", :primary => true # This is where Rails migrations will run
-set :deploy_to, "/home/mktware/marketwarecrm.com/apps/#{application}"
+set :deploy_to, "/home/#{user}/marketwarecrm.com/apps/#{application}"
 set :deploy_via, :copy
 # set :spinner, "false"
 
