@@ -1,7 +1,7 @@
 set :application, "marketware"
 set :repository,  "git@heroku.com:electric-mist-29.git"
 set :use_sudo, false
-set :user, "mktware"
+set :user, "samgrigg"
 
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
