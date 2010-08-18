@@ -6,7 +6,7 @@ set :application, "marketware"
 
 set :repository,  "git@heroku.com:electric-mist-29.git"
 set :deploy_to, "/home/#{user}/#{domain}/"
-set :deploy_via, :remote_cache
+set :deploy_via, :copy
 set :scm, :git
 set :branch, "master"
 set :scm_verbose, true
