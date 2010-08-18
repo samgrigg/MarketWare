@@ -27,19 +27,19 @@ config.action_view.cache_template_loading            = true
 # Enable threaded mode
 # config.threadsafe!
 
-# Do care if the mailer can't send
-config.action_mailer.raise_delivery_errors = true
-
-# Set delivery method to :smtp, :sendmail or :test
-config.action_mailer.delivery_method = :smtp
-
-# These options are only needed if you choose smtp delivery
-config.action_mailer.smtp_settings = {
-  # :address          => "smtp-relay.marketware.com",
-	:address						=> "mail.marketwarecrm.com",
-  :port             => 25,
-  :domain           => "www.marketwarecrm.com",
-  :authentication   => :login,
-  :user_name        => "marketware_admin@marketwarecrm.com",
-  :password         => "Pas-word0"
-}
+# # Do care if the mailer can't send
+# config.action_mailer.raise_delivery_errors = true
+# 
+# # Set delivery method to :smtp, :sendmail or :test
+# config.action_mailer.delivery_method = :smtp
+# 
+# # These options are only needed if you choose smtp delivery
+# config.action_mailer.smtp_settings = {
+#   # :address          => "smtp-relay.marketware.com",
+# 	:address						=> "mail.marketwarecrm.com",
+#   :port             => 25,
+#   :domain           => "www.marketwarecrm.com",
+#   :authentication   => :login,
+#   :user_name        => "marketware_admin@marketwarecrm.com",
+#   :password         => "Pas-word0"
+# }
