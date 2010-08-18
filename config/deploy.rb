@@ -1,16 +1,23 @@
-set :application, "marketware"
-set :repository,  "git@heroku.com:electric-mist-29.git"
-set :use_sudo, false
+default_run_options[:pty] = true
+
 set :user, "marketware_admin"
+set :domain, "marketwarecrm.com"
+set :application, "marketware"
 
+set :repository,  "git@heroku.com:electric-mist-29.git"
+set :deploy_to, "/home/#{user}/#{domain}/"
+set :deploy_via, :remote_cache
 set :scm, :git
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :branch, "master"
+set :scm_verbose, true
+set :use_sudo, false
 
-role :web, "marketwarecrm.com"                          # Your HTTP server, Apache/etc
-role :app, "marketwarecrm.com"                          # This may be the same as your `Web` server
+server domain, :app, :web
+role :db, domain, :primary => true
+
+# role :web, "marketwarecrm.com"                          # Your HTTP server, Apache/etc
+# role :app, "marketwarecrm.com"                          # This may be the same as your `Web` server
 # role :db,  "marketwarecrm.com", :primary => true # This is where Rails migrations will run
-set :deploy_to, "/home/#{user}/marketwarecrm.com/apps/#{application}"
-set :deploy_via, :copy
 # set :spinner, "false"
 
 # If you are using Passenger mod_rails uncomment this:
@@ -18,9 +25,7 @@ set :deploy_via, :copy
 # these http://github.com/rails/irs_process_scripts
 
 namespace :deploy do
-  task :start do ; end
-  task :stop do ; end
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  task :restart do
+    run "touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 end
