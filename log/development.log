@@ -23671,3 +23671,147 @@ Processing AboutController#us (for 127.0.0.1 at 2010-08-18 03:13:31) [GET]
 Rendering template within layouts/application
 Rendering about/us
 Completed in 9ms (View: 8, DB: 0) | 200 OK [http://marketware.local/about/us]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-18 20:51:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (29.5ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (17.2ms)
+Completed in 402ms (View: 368, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-18 22:06:45) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (18.4ms)
+Rendered shared/_user_form (6.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (0.6ms)
+Rendered shared/_white_papers (22.7ms)
+Completed in 220ms (View: 186, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing PhysicianRelationsController#customize (for 127.0.0.1 at 2010-08-18 22:08:22) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/customize
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.1ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://marketware.local/physician_relations/customize]
+
+
+Processing PhysicianRelationsController#customize (for 127.0.0.1 at 2010-08-18 22:10:26) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/customize
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.1ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/physician_relations/customize]
+
+
+Processing PhysicianRelationsController#customize (for 127.0.0.1 at 2010-08-18 22:10:40) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/customize
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://marketware.local/physician_relations/customize]
+
+
+Processing PhysicianRecruitingController#index (for 127.0.0.1 at 2010-08-18 22:11:29) [GET]
+Rendering template within layouts/application
+Rendering physician_recruiting/index
+Rendered physician_recruiting/_nav (1.2ms)
+Rendered shared/_user_form (5.5ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 29ms (View: 27, DB: 0) | 200 OK [http://marketware.local/physician_recruiting]
+
+
+Processing PhysicianRecruitingController#customize (for 127.0.0.1 at 2010-08-18 22:11:31) [GET]
+Rendering template within layouts/application
+Rendering physician_recruiting/customize
+Rendered physician_recruiting/_nav (0.8ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/physician_recruiting/customize]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-18 22:11:42) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.1ms)
+Completed in 72ms (View: 71, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing PhysicianRelationsController#customize (for 127.0.0.1 at 2010-08-18 22:11:50) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/customize
+Rendered physician_relations/_nav (0.8ms)
+Rendered shared/_testimonials (0.0ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://marketware.local/physician_relations/customize]
+
+
+Processing CustomCrmController#index (for 127.0.0.1 at 2010-08-18 22:12:04) [GET]
+Rendering template within layouts/application
+Rendering custom_crm/index
+Rendered custom_crm/_nav (1.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 26ms (View: 25, DB: 0) | 200 OK [http://marketware.local/custom_crm]
+
+
+Processing CustomCrmController#customize (for 127.0.0.1 at 2010-08-18 22:12:20) [GET]
+Rendering template within layouts/application
+Rendering custom_crm/customize
+Rendered custom_crm/_nav (0.7ms)
+Rendered shared/_testimonials (0.0ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://marketware.local/custom_crm/customize]
+
+
+Processing CustomCrmController#customize (for 127.0.0.1 at 2010-08-18 22:13:08) [GET]
+Rendering template within layouts/application
+Rendering custom_crm/customize
+Rendered custom_crm/_nav (0.7ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://marketware.local/custom_crm/customize]
+
+
+Processing CustomCrmController#customize (for 127.0.0.1 at 2010-08-18 22:19:53) [GET]
+Rendering template within layouts/application
+Rendering custom_crm/customize
+Rendered custom_crm/_nav (1.7ms)
+Rendered shared/_testimonials (0.5ms)
+Rendered shared/_white_papers (0.4ms)
+Completed in 115ms (View: 113, DB: 0) | 200 OK [http://marketware.local/custom_crm/customize]
+
+
+Processing CustomCrmController#customize (for 127.0.0.1 at 2010-08-18 22:20:06) [GET]
+Rendering template within layouts/application
+Rendering custom_crm/customize
+Rendered custom_crm/_nav (0.7ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://marketware.local/custom_crm/customize]
+
+
+Processing AboutController#us (for 127.0.0.1 at 2010-08-18 22:25:38) [GET]
+Rendering template within layouts/application
+Rendering about/us
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://marketware.local/about/us]

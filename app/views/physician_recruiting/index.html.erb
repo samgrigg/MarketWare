@@ -86,7 +86,7 @@
 					</div>
 
 					<div class="product-call-to-action-buttons">
-						<%= mail_to "request@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
+						<%= mail_to "sales@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
 						<%= link_to "<span>Try it Free</span>", @trial_url, :class => "btn-yellow #{"register_user" unless session["current_username"]}", :id => "try-it-free-btn" %>
 					</div>
@@ -100,7 +100,6 @@
 	<div class="small-content-box-inset">
 		<div class="margin-md">	
 		  	<p>MarketWare’s Recruiting manages each phase in the physician recruiting process. Easily move a potential recruit through recruiting into physician relationship management.</p>
-			<strong>MarketWare’s Recruiting:</strong>
 			<ul>
 				<li>Maintains physician information</li>
 				<li>Tracks every physician interaction</li>

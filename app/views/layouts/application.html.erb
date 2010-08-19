@@ -28,7 +28,7 @@
 			</div>
 			<div class="sub-nav grid_6 omega right-align">
 				<%= link_to "Join a Meeting", "http://joingotomeeting.com" %> |
-				<%= mail_to "sales@marketware.com", "Speak to a Consultant", {:subject => "I'd like to speak to a MarketWare Consultant"} %> | <!-- mailto link to info@marketware.com subject: request for information -->
+				<%= mail_to "info@marketware.com", "Speak to a Consultant", {:subject => "I'd like to speak to a MarketWare Consultant"} %> | <!-- mailto link to info@marketware.com subject: request for information -->
 				<%= mail_to "sales@marketware.com", "Request a Quote", {:subject => "I'd like a quote on MarketWare's services"} %> |<!-- mailto link to info@marketware.com subject: Quote Request -->
 				<%= link_to "Clients", clients_path %> |
 			</div>
@@ -61,16 +61,16 @@
 		
 		<section id="super-footer" class="prefix_1 suffix_1 grid_10 alpha omega">
 		
-			<div class="grid_5 alpha">
+			<div class="grid_10 alpha omega">
 				<p>MarketWare’s Healthcare CRM (PRM) includes the software, methods, and reporting to manage each physician relationship. 
 				<p>By using MarketWare, hospitals and clinics are able to manage physician liaison’s visits, statistical trends, retention, marketing activities, and much more.</p> 
 				
 				<p>It connects everyone in the organization including-physician relations, marketing, administration, business development, service line directors and marketers, recruiting, and credentialing.</p>
 			</div>
 		
-			<div id="footer-logo" class="grid_5 omega">
+			<!-- <div id="footer-logo" class="grid_5 omega">
 				<%= link_to "marketware", root_path %>
-			</div>
+			</div> -->
 		
 			<div id="footer-nav" class="grid_10 alpha omega">
 				<nav class="grid_3 alpha">
