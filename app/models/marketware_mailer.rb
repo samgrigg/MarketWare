@@ -20,7 +20,7 @@ class MarketwareMailer < ActionMailer::Base
     recipients  "info@marketwarecrm.com"
     from        "info@marketwarecrm.com"
     subject     "Contact from MarketWare.com"
-    body        :name => name, :email => email, :phone, :consultant_name, :message => message
+    body        :name => name, :email => email, :phone => phone, :consultant_name => consultant_name, :message => message
   end
   
   def contact_confirmation(name, email)
