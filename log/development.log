@@ -24070,3 +24070,28 @@ Processing ContactsController#show (for 127.0.0.1 at 2010-08-19 23:53:58) [GET]
 Rendering template within layouts/application
 Rendering contacts/show
 Completed in 35ms (View: 33, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-20 00:17:01) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (2.2ms)
+Rendered shared/_user_form (5.8ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (0.6ms)
+Rendered shared/_white_papers (0.5ms)
+Completed in 132ms (View: 129, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-20 00:17:11) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.5ms)
+Completed in 392ms (View: 391, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-20 00:42:25) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (6.0ms)
+Completed in 118ms (View: 116, DB: 0) | 200 OK [http://marketware.local/white_papers]
