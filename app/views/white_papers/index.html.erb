@@ -36,7 +36,7 @@
 		<p class="description">Without good Physician Relations Hospital CEOs can come under serious pressure and even lose their jobs. Learn the CEO’s worst case scenario and what to do about it.</p>
 		<!-- <a href="http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf" class="btn-yellow float-right"> -->
 		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user" id="achilles_heel_link">
-			<span>Download</span>
+			<span>Request</span>
 		</a>
 	</li>
 	<li>
@@ -45,21 +45,21 @@
 			Now is the time to invest in an effective Physician Relations. You cannot afford to miss opportunities with your physicians. Every referral from a physician counts.
 		</p>
 		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user" id="investment_dollars_link">
-			<span>Download</span>
+			<span>Request</span>
 		</a>
 	</li>
 	<li>
 		<strong class="title"><a name="10-principles">10 Principles that will guarantee your success in relationship management</a></strong>
 		<p class="description">Learn what you can do today to guarantee your success in relationship management. Turn unproductive and stagnant relationships into quality effective physician relationships.</p>
 		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user" id="relationship_management_link">
-			<span>Download</span>
+			<span>Request</span>
 		</a>
 	</li>
 	<li>
 		<strong class="title"><a name="the-right-questions">How to ask the right questions in an effective physician meeting</a></strong>
 		<p class="description">Learn how to strategically ask the right questions to get your physicians to move the relationship forward and increase physician referrals.  Understand which questions you should ask and at which time you should ask them.</p>
 		<a href="#whitepaper-register-form" class="btn-yellow float-right register_user" id="right_questions_link">
-			<span>Download</span>
+			<span>Request</span>
 		</a>
 	</li>
 </ul>
@@ -69,5 +69,11 @@
 		<h5>Please enter your contact information.</h5>
 		<p>We will then email you instructions to download your white paper.</p>
 		<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "white_paper", :response_type => "white_paper"} %>
+	</div>
+</div>
+<div style="display:none">
+	<div id="registration_thankyou" class="margin-md fancybox-content">
+		<h5>Thank you.</h5>
+		<p>Thank you for requesting one of our white papers. You will receive an email with instructions to download your white paper.</p>
 	</div>
 </div>

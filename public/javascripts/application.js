@@ -22,6 +22,7 @@ function start_download() {
 	}
 }
 
+
 function show_demo(relatedProduct) {
 	// alert(relatedProduct)
 	// fancybox_close();

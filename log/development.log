@@ -23815,3 +23815,258 @@ Processing AboutController#us (for 127.0.0.1 at 2010-08-18 22:25:38) [GET]
 Rendering template within layouts/application
 Rendering about/us
 Completed in 12ms (View: 11, DB: 0) | 200 OK [http://marketware.local/about/us]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-19 20:52:06) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (6.0ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (0.7ms)
+Completed in 184ms (View: 168, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-19 20:53:56) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (1.4ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.5ms)
+Completed in 103ms (View: 102, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-19 20:53:58) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (3.7ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-19 20:55:29) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"Wz9bZkWWPOBs1i62xSLYlaBrl/m0jL2u1LbnfxQ7mS0=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test company", "name"=>"test", "phone"=>"", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 19 Aug 2010 20:55:29 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test company
+Phone:		
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/19/10 at 20:55:29PM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 19 Aug 2010 20:55:30 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 256ms (View: 5, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-19 21:01:10) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.5ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-19 21:18:16) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"Wz9bZkWWPOBs1i62xSLYlaBrl/m0jL2u1LbnfxQ7mS0=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test company", "name"=>"test", "phone"=>"", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 19 Aug 2010 21:18:16 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test company
+Phone:		
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/19/10 at 21:18:16PM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 19 Aug 2010 21:18:16 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 227ms (View: 7, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-19 21:18:29) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (5.9ms)
+Completed in 44ms (View: 43, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-19 21:18:40) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"Wz9bZkWWPOBs1i62xSLYlaBrl/m0jL2u1LbnfxQ7mS0=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 19 Aug 2010 21:18:40 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 08/19/10 at 21:18:40PM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 19 Aug 2010 21:18:41 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 363ms (View: 1, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-08-19 21:39:04) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (6.1ms)
+Completed in 121ms (View: 118, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-08-19 21:39:14) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"Wz9bZkWWPOBs1i62xSLYlaBrl/m0jL2u1LbnfxQ7mS0=", "download_url"=>"http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf", "related_product"=>"Physician Relations: The Achilles Heel of Hospital CEOs", "user"=>{"company"=>"test", "name"=>"sam", "phone"=>"", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 19 Aug 2010 21:39:14 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+sam has just requested Physician Relations: The Achilles Heel Of Hospital Ce Os.
+
+Here are the details:
+---------------------
+Name:		sam
+Company:	test
+Phone:		
+Email:		samgrigg@gmail.com
+
+sam's info was recorded on 08/19/10 at 21:39:14PM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 19 Aug 2010 21:39:14 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: Physician Relations: The Achilles Heel of Hospital CEOs
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, sam, for requesting the white paper: Physician Relations: The Achilles Heel of Hospital CEOs.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketware.com.s3.amazonaws.com/whitepapers/achilles_heel.pdf
+Rendering users/create
+Completed in 84ms (View: 9, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-19 22:58:10) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-19 23:00:39) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-19 23:00:52) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-19 23:00:59) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-19 23:01:12) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-19 23:01:53) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-19 23:53:41) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (5.6ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_user_form (3.8ms)
+Rendered shared/_testimonials (0.6ms)
+Completed in 188ms (View: 186, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-19 23:53:58) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 35ms (View: 33, DB: 0) | 200 OK [http://marketware.local/contact]

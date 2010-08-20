@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
       flash[:error] = "You are missing required fields. Please make sure all required fields have been filled out"
       render :show
     else
-      MarketwareMailer.deliver_contact_us(params[:name], params[:email], params[:phone] || "", params[:message])
+      MarketwareMailer.deliver_contact_us(params[:name], params[:email], params[:phone] || "", params[:consultant_name] || "", params[:message])
 
       #deliver mail to the contactor thanking them for taking the time to contact MarketWare
       MarketwareMailer.deliver_contact_confirmation(params[:name], params[:email])

@@ -21,10 +21,11 @@ config.action_controller.perform_caching             = false
 
 # These options are only needed if you choose smtp delivery
 # config.action_mailer.smtp_settings = {
-#   :address					=> "mail.marketwarecrm.com",
+#   :address          => "smtp.google.com",
+# 	# :address						=> "mail.marketwarecrm.com",
 #   :port             => 25,
-#   :domain           => "www.marketwarecrm.com"
+#   # :domain           => "www.marketwarecrm.com",
 #   :authentication   => :login,
-#   :user_name        => "marketware_admin@marketwarecrm.com",
-#   :password         => "Pas-word0"
+#   :user_name        => "samgrigg@gmail.com",
+#   :password         => ""
 # }

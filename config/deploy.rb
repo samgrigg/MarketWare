@@ -1,6 +1,6 @@
 default_run_options[:pty] = true
 
-set :user, "mktware"
+set :user, "marketware_admin"
 set :domain, "marketwarecrm.com"
 set :application, "marketware"
 

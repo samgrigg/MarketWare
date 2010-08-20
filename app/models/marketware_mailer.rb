@@ -1,8 +1,8 @@
 class MarketwareMailer < ActionMailer::Base
 
   def new_user_information(user, product, response_type)
-    recipients  "info@marketware.com"
-    # recipients  "samgrigg@gmail.com"
+    # recipients  "info@marketware.com"
+    recipients  "samgrigg@gmail.com"
     from        "info@marketwarecrm.com"
     subject     "New User Information from MarketWare.com"
     body        :user => user, :product => product, :response_type => response_type
@@ -16,11 +16,11 @@ class MarketwareMailer < ActionMailer::Base
     body        :user => user, :product => product
   end
   
-  def contact_us(name, email, phone, message)
+  def contact_us(name, email, phone, consultant_name, message)
     recipients  "info@marketwarecrm.com"
     from        "info@marketwarecrm.com"
     subject     "Contact from MarketWare.com"
-    body        :name => name, :email => email, :message => message
+    body        :name => name, :email => email, :phone, :consultant_name, :message => message
   end
   
   def contact_confirmation(name, email)
@@ -31,8 +31,8 @@ class MarketwareMailer < ActionMailer::Base
   end
   
   def white_paper(user, title, url)
-    recipients    "info@marketware.com"
-		# recipients		"samgrigg@gmail.com"
+    # recipients    "info@marketware.com"
+		recipients		"samgrigg@gmail.com"
     from          "info@marketwarecrm.com"
     subject       "MarketWare White Paper: #{title}"
     body					:title => title, :user => user
