@@ -87,7 +87,7 @@
 					<div class="product-call-to-action-buttons">
 						<%= mail_to "sales@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
-						<%= link_to "<span>Try it Free</span>", "#trial-register-form", :class => "btn-yellow #{"register_user" unless session["current_username"]}", :id => "try-it-free-btn" %>
+						<%= link_to "<span>Try it Free</span>", @trial_url, :class => "btn-yellow register_user", :id => "try-it-free-btn" %>
 					</div>
 				</div>
 			</div>

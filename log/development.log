@@ -24095,3 +24095,36 @@ Rendering template within layouts/application
 Rendering white_papers/index
 Rendered shared/_user_form (6.0ms)
 Completed in 118ms (View: 116, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-08-20 01:11:28) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (2.3ms)
+Rendered shared/_user_form (5.6ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (0.7ms)
+Rendered shared/_white_papers (0.5ms)
+Completed in 132ms (View: 129, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing PhysicianRecruitingController#index (for 127.0.0.1 at 2010-08-20 01:11:31) [GET]
+Rendering template within layouts/application
+Rendering physician_recruiting/index
+Rendered physician_recruiting/_nav (1.3ms)
+Rendered shared/_user_form (3.9ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.0ms)
+Completed in 30ms (View: 28, DB: 0) | 200 OK [http://marketware.local/physician_recruiting]
+
+
+Processing CustomCrmController#index (for 127.0.0.1 at 2010-08-20 01:11:35) [GET]
+Rendering template within layouts/application
+Rendering custom_crm/index
+Rendered custom_crm/_nav (1.1ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (4.1ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (0.1ms)
+Completed in 80ms (View: 26, DB: 0) | 200 OK [http://marketware.local/custom_crm]
