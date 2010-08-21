@@ -28,4 +28,11 @@ namespace :deploy do
   task :restart do
     run "touch #{File.join(current_path,'tmp','restart.txt')}"
   end
+
+	task :symlink_marketware do
+		run "ln -nfs #{shared_path}/system/radiohead.jpg #{release_path}/radiohead.jpg"
+		# run "ln -nfs #{shared_path}/udpate log.txt #{release_path}/update_log.txt"
+	end
 end
+
+after 'deploy:update_code', 'deploy:symlink_marketware'

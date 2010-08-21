@@ -5,4 +5,8 @@ class AboutController < ApplicationController
   def privacy
   end
 
+	def download
+		
+	end
+
 end
