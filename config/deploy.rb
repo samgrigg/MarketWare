@@ -30,8 +30,8 @@ namespace :deploy do
   end
 
 	task :symlink_marketware do
-		run "ln -nfs #{shared_path}/system/radiohead.jpg #{release_path}/public/radiohead.jpg"
-		# run "ln -nfs #{shared_path}/udpate log.txt #{release_path}/update_log.txt"
+		run "ln -nfs #{shared_path}/system/marketware10_setup.exe #{release_path}/public/marketware10_setup.exe"
+		run "ln -nfs #{shared_path}/udpate log.txt #{release_path}/update_log.txt"
 	end
 end
 
