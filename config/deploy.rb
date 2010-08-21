@@ -30,8 +30,11 @@ namespace :deploy do
   end
 
 	task :symlink_marketware do
+		run "unlink #{release_path}/public/marketware10_setup.exe"
+		run "unlink #{release_path}/public/update log.txt"
+		
 		run "ln -nfs #{shared_path}/system/marketware10_setup.exe #{release_path}/public/marketware10_setup.exe"
-		run "ln -nfs #{shared_path}/udpate log.txt #{release_path}/update_log.txt"
+		run "ln -nfs #{shared_path}/update log.txt #{release_path}/update log.txt"
 	end
 end
 
