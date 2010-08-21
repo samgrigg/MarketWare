@@ -30,9 +30,10 @@ namespace :deploy do
   end
 
 	task :symlink_marketware do
-		run "ln -nfs #{shared_path}/system/files/marketware10_setup.exe #{release_path}/public/marketware10_setup.exe"
-		run "ln -nfs #{shared_path}/system/files/last_update.txt #{release_path}/last_update.txt"
-		run "ln -nfs #{shared_path}/system/files/issueresolution.wmv #{release_path}/issueresolution.wmv"
+		# run "ln -nfs #{shared_path}/system/files/marketware10_setup.exe #{release_path}/public/marketware10_setup.exe"
+		# run "ln -nfs #{shared_path}/system/files/last_update.txt #{release_path}/last_update.txt"
+		# run "ln -nfs #{shared_path}/system/files/issueresolution.wmv #{release_path}/issueresolution.wmv"
+		run "ln -nfs #{shared_path}/system/files #{current_path}/public/files"
 	end
 end
 
