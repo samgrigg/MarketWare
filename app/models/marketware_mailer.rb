@@ -48,7 +48,7 @@ class MarketwareMailer < ActionMailer::Base
 	def free_trial_response(user, title, url, response_type)
     recipients    user.email
     from          "info@marketwarecrm.com"
-    subject       "MarketWare White Paper: #{title}"
+    subject       "MarketWare Trial"
     body					:title => title, :url => "http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe", :user => user, :response_type => response_type
   end
   

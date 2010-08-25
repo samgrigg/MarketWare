@@ -28,7 +28,7 @@
 <div style="display:none">
 	<div id="demo-register-form" class="margin-md fancybox-content">
 		<h5>Please enter your contact information:</h5>
-		<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_recruiting", :response_type => "product_demo"} %>
+		<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "product_demo"} %>
 		<p>To view the demo video, we ask that you provide your contact information so we can contact you to answer further questions.</p>
 	</div>
 </div>
@@ -36,15 +36,16 @@
 <div style="display:none">
 	<div id="trial-register-form" class="margin-md fancybox-content">
 		<h5>Please enter your contact information.</h5>
-		<p>We will then email you instructions to download your trial of MarketWare.</p>
-		<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_recruiting", :response_type => "try_it_free"} %>
+		<p>We will contact you with instructions to download your trial of MarketWare.</p>
+		<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "try_it_free"} %>
 	</div>
 </div>
 
+<a id="thank_you_link" href="#thank_you" class="fancybox" style="display:none">&nbsp;</a>
 <div style="display:none">
-	<div id="free_trial_thank_you" class="margin-md">
-		<h5>Thank You</h5>
-		<p>You should recieve an email containing instructions to download your trial.</p>
+	<div id="thank_you" class="margin-md fancybox-content">
+		<h5>Thank you.</h5>
+		<p>One of our consultants will contact you to answer any questions you may have.</p>
 	</div>
 </div>
 
@@ -52,43 +53,19 @@
 	<div class="content-box-inset">
 		<div class='margin-md'>
 			<div id="demo" class="product-content">
-				<div class="product-demo grid_5 suffix_1 alpha">
-					<div id="demo-couplet">
-						<!-- <img src="http://marketware.com.s3.amazonaws.com/Pictures/holding-img.jpg" class="holding-img"> -->
-
-						<a id="physician_recruiting_demo" href="#demo-register-form" class="demo">
-							<img id="holding-img" alt="Marketware Demonstration" src="/images/demo-physician-recruiting-first-frame.gif" />
-						</a>
-						
-						<div style="display:none">
-							<div id="recruiting-demo-video">
-							<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
-							<a  
-								 href="http://marketware.com.s3.amazonaws.com/videos/demo_recruiting.mp4"  
-								 style="display:block;width:800px;height:600px"
-								 id="player"> 
-							</a>
-							</div>
-						</div>
-						<!-- this will install flowplayer inside previous A- tag. -->
-						<script>
-							flowplayer("player", "/flowplayer-3.2.2.swf");
-						</script>
-					</div>
-
-				</div>
-		
-				<div class="product-calls-to-action grid_5 omega">
-					<div id="slideshow" class="testimonials wide">
-						<ul>
-							<%= render :partial => 'shared/testimonials' %>
-						</ul>
-					</div>
-
+				<div class="product-demo grid_6 suffix_1 alpha">
+					<object width="512px" height="288px" id="qgiaDriveS3Player"><param name="wmode" value="transparent"></param><param name="movie" value="http://qgiadrive.us.s3.amazonaws.com/player/player020.swf"></param><param name="quality" value="high"></param><param name="bgcolor" value="#FF6600"></param><param name="allowscriptaccess" value="always"></param><param name="swliveconnect" value="true"></param><param name="allowfullscreen" value="false"></param><param name="flashvars" value="id=qgiaDriveS3Player&lzproxied=false&enableGeoIP=false&rid=qgia&cid=MarketWare&pid=Marketware Homepage&affiliateId="></param><embed id="qgiaDriveS3Player" width="512px" height="288px" flashvars="id=qgiaDriveS3Player&lzproxied=false&enableGeoIP=false&rid=qgia&cid=MarketWare&pid=Marketware Homepage&affiliateId=" allowfullscreen="false" allowscriptaccess="always" wmode="transparent" name="qgiaDriveS3Player" swliveconnect="true" quality="high" bgcolor="#FF6600" style="" src="http://qgiadrive.us.s3.amazonaws.com/player/player020.swf" type="application/x-shockwave-flash"></embed></object>
 					<div class="product-call-to-action-buttons">
 						<%= mail_to "sales@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
 						<%= link_to "<span>Try it Free</span>", "#trial-register-form", :class => "btn-yellow register_user", :id => "try-it-free-btn" %>
+					</div>
+				</div>
+		
+				<div class="product-calls-to-action grid_4 omega">
+					<div id="demo-register-form" class="">
+						<h5>Contact Information:</h5>
+						<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "product_demo"} %>
 					</div>
 				</div>
 			</div>
@@ -99,17 +76,17 @@
 <div class="small-content-box grid_6 alpha">
 	<div class="small-content-box-inset">
 		<div class="margin-md">	
-		  	<p>MarketWare’s Recruiting manages each phase in the physician recruiting process. Easily move a potential recruit through recruiting into physician relationship management.</p>
+		  	<p>MarketWare’s Healthcare CRM is the complete physician relationship management (PRM) database.</p>
 			<ul>
 				<li>Maintains physician information</li>
 				<li>Tracks every physician interaction</li>
-				<li>Manages site visit preparation</li>
-				<li>Supervises potential recruit issues</li>
-				<li>Manages marketing campaigns</li>
-				<li>Handles on-boarding and retention</li>
+				<li>Tracks physician statistics</li>
+				<li>Manages physician’s issues - retention</li>
+				<li>Manages strategic marketing campaigns</li>
+				<li>Identifies what’s working and what’s not</li>
 			</ul>
 
-			<strong>MarketWare is being utilized in:</strong>
+			<strong>MarketWare is being used in:</strong>
 			<ul>
 				<li>Hospitals</li>
 				<li>Medical Imaging Centers</li>
@@ -121,6 +98,13 @@
 </div>
 
 <div class="boxless-content grid_6 omega">
+	<div class="margin-md">
+	<div id="slideshow" class="testimonials wide">
+		<ul>
+			<%= render :partial => 'shared/testimonials' %>
+		</ul>
+	</div>
+	</div>
 	<div class="margin-md">	
 		<%= render :partial => 'shared/white_papers' %>
 

@@ -15,15 +15,15 @@ class HomeController < ApplicationController
 		    :oog => "http://marketware.com.s3.amazonaws.com/videos/demo_custom.ogg",
 				:img => "/images/demo-first-frame.gif"
 		  }
-			if session["current_username"]
-				@relations_demo_link_url = "#relations-demo-video"
-				@recruiting_demo_link_url = "#recruiting-demo-video"
-				@custom_demo_link_url = "#custom-demo-video"
-			else
+			# if session["current_username"]
+			# 	@relations_demo_link_url = "#relations-demo-video"
+			# 	@recruiting_demo_link_url = "#recruiting-demo-video"
+			# 	@custom_demo_link_url = "#custom-demo-video"
+			# else
 				@relations_demo_link_url = "#user_form_box_physican_relations"
 				@recruiting_demo_link_url = "#user_form_box_physican_recruiting"
 				@custom_demo_link_url = "#user_form_box_custom_crm"
-			end
+			# end
 			
 			@physician_relations_trial_url = "#trial-register-form-physician-relations"
 			@physician_recruiting_trial_url = "#trial-register-form-physician-recruiting"

@@ -58,6 +58,7 @@ color: #444;
 font-size: 80%;
 }
 .float-right {float:right!important;}
+.float-left {float:left!important;}
 
 .mktwr_list {
 	margin:0;padding:0;
@@ -183,6 +184,16 @@ margin: 30px;
 #fancybox-inner .fancybox-content {
 /*	display:block;
 	position:static;*/
+}
+
+#loading-spinner {
+/*	display:none;*/
+	border:2px solid #000;
+	height:20px;
+	width:20px;
+	padding:10px;
+	display:block;
+	background-color:#fff;
 }
 
 /*

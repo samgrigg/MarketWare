@@ -16,7 +16,7 @@ $(function() {
 	}
 	
 	//Hook up the 'modal' type box for gathering user information and showing the product demo
-	$(".register_user, .demo").fancybox({
+	$(".register_user, .demo, .fancybox").fancybox({
 		'scrolling'		: 'no',
 		'titleShow'		: false,
 		'overlayOpacity'	: 	.65,

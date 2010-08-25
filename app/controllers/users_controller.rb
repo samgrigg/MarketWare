@@ -52,15 +52,11 @@ class UsersController < ApplicationController
 			case params[:response_type]
 				when "try_it_free"
 					#They're downloading a trial of the software
-					# logger.debug "******try_it_free"
-					# logger.debug "******#{params[:download_url]}"
 					MarketwareMailer.deliver_free_trial_response(@user, params[:related_product], params[:download_url], params[:response_type])
 				when "white_paper"
-					# logger.debug "******downloading"
 					# They're downloading a white paper
 					MarketwareMailer.deliver_white_paper_response(@user, params[:related_product], params[:download_url], params[:response_type])
 				else
-					# logger.debug "******view demo"
 					#They must be requesting a demo movie (default option)
 					MarketwareMailer.deliver_demo_request_confirmation(@user, params[:related_product])
 			end

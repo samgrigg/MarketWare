@@ -22,6 +22,9 @@ function start_download() {
 	}
 }
 
+function say_thank_you() {
+	$("#thank_you_link").click();
+}
 
 function show_demo(relatedProduct) {
 	// alert(relatedProduct)
@@ -61,10 +64,11 @@ function make_current_user() {
 
 function fancybox_close(){
 	// alert("closing fancybox")
-	$('#fancybox-wrap').hide();
-    $('#fancybox-outer').hide();
-    $('#fancybox-overlay').hide();
-    $('#fancybox-title').hide();
-    $('#fancybox-loading').hide();
-    // $('#fancy_ajax').remove();
+	$.fancybox.close()
+	// $('#fancybox-wrap').hide();
+	//     $('#fancybox-outer').hide();
+	//     $('#fancybox-overlay').hide();
+	//     $('#fancybox-title').hide();
+	//     $('#fancybox-loading').hide();
+	//     // $('#fancy_ajax').remove();
 }

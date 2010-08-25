@@ -4,13 +4,14 @@ if @user.errors.empty?
   page.call "make_current_user"
   if params[:response_type] == "try_it_free"
     # page.call "start_download" #Not auto-downloading the free trial anymore
-		# page.call "say_thankyou"
+		page.call "say_thank_you"
 		page.call "fancybox_close"
 	elsif params[:response_type] == "white_paper"
-		# page.call "say_thankyou"
+		page.call "say_thank_you"
 		page.call "fancybox_close"
   else
-    page.call "show_demo", params[:related_product]
+		page.call "say_thank_you"
+    # page.call "show_demo", params[:related_product]
   end
   
 else
