@@ -25659,3 +25659,33 @@ Rendered shared/_user_form (2.9ms)
 Rendered shared/_user_form (2.9ms)
 Rendered shared/_testimonials (0.1ms)
 Completed in 31ms (View: 30, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-25 22:37:06) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 83ms (View: 82, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-25 22:45:09) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 98ms (View: 97, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-25 22:48:24) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-25 22:49:12) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing ContactsController#show (for 127.0.0.1 at 2010-08-25 22:52:26) [GET]
+Rendering template within layouts/application
+Rendering contacts/show
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://marketware.local/contact]
