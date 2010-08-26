@@ -25689,3 +25689,16 @@ Processing ContactsController#show (for 127.0.0.1 at 2010-08-25 22:52:26) [GET]
 Rendering template within layouts/application
 Rendering contacts/show
 Completed in 12ms (View: 11, DB: 0) | 200 OK [http://marketware.local/contact]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-26 06:59:16) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (80.3ms)
+Rendered shared/_user_form (8.0ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (4.6ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_testimonials (30.2ms)
+Completed in 407ms (View: 405, DB: 0) | 200 OK [http://marketware.local/]
