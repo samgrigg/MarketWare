@@ -48,7 +48,11 @@ class UsersController < ApplicationController
       
       if @user.valid?
       #   flash[:notice] = 'User was successfully created.'
-      MarketwareMailer.deliver_new_user_information(@user, params[:related_product], params[:response_type])
+			if params[:response_type] == "try_it_free"
+				MarketwareMailer.deliver_new_user_information(@user, "A free trial of " + params[:related_product], params[:response_type])
+			else
+				MarketwareMailer.deliver_new_user_information(@user, params[:related_product], params[:response_type])
+			end
 			case params[:response_type]
 				when "try_it_free"
 					#They're downloading a trial of the software
