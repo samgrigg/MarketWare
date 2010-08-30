@@ -44,32 +44,26 @@ class UsersController < ApplicationController
     # logger.debug "Creating User"
       @user = User.new(params[:user])
 			
-      # saved = @user.save
-      
       if @user.valid?
-      #   flash[:notice] = 'User was successfully created.'
-			if params[:response_type] == "try_it_free"
-				MarketwareMailer.deliver_new_user_information(@user, "A free trial of " + params[:related_product], params[:response_type])
-			else
-				MarketwareMailer.deliver_new_user_information(@user, params[:related_product], params[:response_type])
-			end
-			case params[:response_type]
-				when "try_it_free"
-					#They're downloading a trial of the software
-					MarketwareMailer.deliver_free_trial_response(@user, params[:related_product], params[:download_url], params[:response_type])
-				when "white_paper"
-					# They're downloading a white paper
-					MarketwareMailer.deliver_white_paper_response(@user, params[:related_product], params[:download_url], params[:response_type])
+		    session["current_username"] = @user.name
+		
+				if params[:response_type] == "try_it_free"
+					MarketwareMailer.deliver_new_user_information(@user, "A free trial of " + params[:related_product], params[:response_type])
 				else
-					#They must be requesting a demo movie (default option)
-					MarketwareMailer.deliver_demo_request_confirmation(@user, params[:related_product])
-			end
-      else
-        # flash[:error] = "Could not create user: #{@user.errors.first.msg}"
-				flash[:error] = @user.errors.on(:email)
+					MarketwareMailer.deliver_new_user_information(@user, params[:related_product], params[:response_type])
+				end
+				case params[:response_type]
+					when "try_it_free"
+						#They're downloading a trial of the software
+						MarketwareMailer.deliver_free_trial_response(@user, params[:related_product], params[:download_url], params[:response_type])
+					when "white_paper"
+						# They're downloading a white paper
+						MarketwareMailer.deliver_white_paper_response(@user, params[:related_product], params[:download_url], params[:response_type])
+					else
+						#They must be requesting a demo movie (default option)
+						MarketwareMailer.deliver_demo_request_confirmation(@user, params[:related_product])
+				end
       end
-    
-    session["current_username"] = @user.name
 
     respond_to do |wants|
       wants.js

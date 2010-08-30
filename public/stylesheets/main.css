@@ -54,6 +54,22 @@ font-style: italic;
 color: #444;
 }
 
+.clear:after {
+	content:".";
+	height:0;
+	visibility:hidden;
+	display:block;
+	clear:both;
+}
+
+#user_error_wrapper {
+	display:none;
+}
+
+.errors h6 {
+	color:#B32D0E;
+}
+
 .small {
 font-size: 80%;
 }

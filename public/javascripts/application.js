@@ -4,6 +4,14 @@ $(function() {
 	$("#flash_error, #flash_notice").hide();
 })
 
+function show_errors(msg) {
+	// alert($("#user_error_wrapper").html("anything at all").html())
+	alert("Could not complete your request for the following reasons:\n\n" + msg)
+	// $("#user_error_wrapper").show();
+	// $("#error_messages").html(msg);
+}
+
+
 function download_btn_click(title, url, response_type) {
 	$("#response_type").val(response_type);
 	$("#related_product").val(title);

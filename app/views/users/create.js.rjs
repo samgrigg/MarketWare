@@ -15,7 +15,5 @@ if @user.errors.empty?
   end
   
 else
-  page[:user_error_messages].replace_html flash[:error]
-  # page[:flash_error].show
-  flash.discard(:error)
+	page.call "show_errors", @user.errors.full_messages.to_sentence
 end
