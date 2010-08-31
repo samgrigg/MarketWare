@@ -27880,3 +27880,40 @@ Rendered shared/_user_form (3.3ms)
 Rendered shared/_user_form (3.3ms)
 Rendered shared/_testimonials (0.1ms)
 Completed in 35ms (View: 34, DB: 0) | 200 OK [http://10.211.55.4/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-08-30 23:30:23) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (32.6ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (25.4ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_testimonials (19.0ms)
+Completed in 419ms (View: 417, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-08-30 23:30:26) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 92ms (View: 26, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-08-30 23:32:56) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-08-30 23:33:04) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-08-30 23:33:15) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://marketware.local/clients]
