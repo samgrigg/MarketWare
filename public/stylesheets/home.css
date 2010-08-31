@@ -30,9 +30,10 @@
 	float:left;
 }
 #home-banner .description {height:0;overflow:hidden;position:absolute;}
-#home-banner #physician_relations {top:40px;}
-#home-banner #physician_recruiting {top:53px;}
-#home-banner #custom_crm {top:68px;}
+#home-banner .product {border:1px solid transparent;height:130px;}/*For some reason, ommiting the transparent border causes the buttons on CustomCRM to drop 20px (or so) below their desired location*/
+#home-banner #physician_relations {top:35px;}
+#home-banner #physician_recruiting {top:60px;}
+#home-banner #custom_crm {top:100px;}
 
 #home-banner .btn-yellow, #home-banner .btn-gray {float:left;margin-left:12px;margin-top:73px;}
 #home-banner .txt-link {float:left;margin-left:12px;margin-top:73px;height:37px;line-height:37px;display:block;}
