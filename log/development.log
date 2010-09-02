@@ -27917,3 +27917,73 @@ Processing ClientsController#index (for 127.0.0.1 at 2010-08-30 23:33:15) [GET]
 Rendering template within layouts/application
 Rendering clients/index
 Completed in 9ms (View: 7, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-01 19:36:04) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (58.9ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (11.7ms)
+Completed in 230ms (View: 228, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-01 19:36:08) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-09-01 19:36:25) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (4.7ms)
+Completed in 79ms (View: 78, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing WhitePapersController#index (for 127.0.0.1 at 2010-09-01 19:45:25) [GET]
+Rendering template within layouts/application
+Rendering white_papers/index
+Rendered shared/_user_form (5.6ms)
+Completed in 81ms (View: 80, DB: 0) | 200 OK [http://marketware.local/white_papers]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-01 19:45:44) [POST]
+  Parameters: {"response_type"=>"white_paper", "authenticity_token"=>"bfGgvr0PdSUVEsBfqaHEtBT2k2qNDuwv7Zil1Uqnzns=", "download_url"=>"http://marketwarecrm.com/files/TheSPLITFactor.pdf", "related_product"=>"The SPLIT Factor", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to info@marketware.com
+
+Date: Wed, 1 Sep 2010 19:45:44 -0600
+From: info@marketwarecrm.com
+To: info@marketware.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested The Split Factor.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/01/10 at 19:45:44PM
+Sent mail to samgrigg@gmail.com
+
+Date: Wed, 1 Sep 2010 19:45:45 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare White Paper: The SPLIT Factor
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Thank you, test, for requesting the white paper: The SPLIT Factor.
+
+To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketwarecrm.com/files/TheSPLITFactor.pdf
+Rendering users/create
+Completed in 1838ms (View: 39, DB: 0) | 200 OK [http://marketware.local/users]
