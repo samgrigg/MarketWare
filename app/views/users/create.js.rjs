@@ -11,7 +11,7 @@ if @user.errors.empty?
 		page.call "fancybox_close"
   else
 		page.call "say_thank_you"
-    # page.call "show_demo", params[:related_product]
+		page.call "fancybox_close"
   end
   
 else

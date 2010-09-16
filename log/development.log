@@ -28197,3 +28197,304 @@ Thank you,
 MarketWare
 Rendering users/create
 Completed in 445ms (View: 20, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-16 01:32:05) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (6.0ms)
+Completed in 43ms (View: 42, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 01:32:15) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test company", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:32:15 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test company
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 01:32:15AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:32:15 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 70ms (View: 6, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 01:33:18) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test company", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:33:18 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test company
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 01:33:18AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:33:18 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 68ms (View: 9, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 01:34:19) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test company", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:34:20 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test company
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 01:34:20AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:34:20 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 61ms (View: 3, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 01:34:38) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test company", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:34:38 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test company
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 01:34:38AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:34:38 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 61ms (View: 5, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 01:34:52) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test company", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:34:52 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test company
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 01:34:52AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:34:52 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 59ms (View: 4, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-16 01:35:53) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (3.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 01:36:05) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:36:05 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 01:36:05AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:36:05 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 58ms (View: 2, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-16 01:36:50) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (4.6ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 01:36:58) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:36:58 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 01:36:58AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:36:58 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 58ms (View: 5, DB: 0) | 200 OK [http://marketware.local/users]
