@@ -59,6 +59,9 @@ class UsersController < ApplicationController
 					when "white_paper"
 						# They're downloading a white paper
 						MarketwareMailer.deliver_white_paper_response(@user, params[:related_product], params[:download_url], params[:response_type])
+					when "marketware_download"
+						# They're downloading marketware
+						MarketwareMailer.deliver_download_response(@user, params[:related_product], params[:download_url], params[:response_type])
 					else
 						#They must be requesting a demo movie (default option)
 						MarketwareMailer.deliver_demo_request_confirmation(@user, params[:related_product])

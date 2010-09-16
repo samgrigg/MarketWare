@@ -1,8 +1,8 @@
 class MarketwareMailer < ActionMailer::Base
 
   def new_user_information(user, product, response_type)
-    recipients  "info@marketware.com"
-    # recipients  "samgrigg@gmail.com"
+    # recipients  "info@marketware.com"
+    recipients  "samgrigg@gmail.com"
     from        "info@marketwarecrm.com"
     subject     "New User Information from MarketWare.com"
     body        :user => user, :product => product, :response_type => response_type
@@ -51,6 +51,13 @@ class MarketwareMailer < ActionMailer::Base
     subject       "MarketWare Trial"
     body					:title => title, :url => "http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe", :user => user, :response_type => response_type
   end
+
+	def download_response(user, title, url, response_type)
+		recipients    user.email
+    from          "info@marketwarecrm.com"
+    subject       "MarketWare Trial"
+    body					:user => user
+	end
   
   private
   

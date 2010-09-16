@@ -27987,3 +27987,213 @@ Thank you, test, for requesting the white paper: The SPLIT Factor.
 To download your white paper. You can either follow the link or copy it and paste it into your browser's address bar: http://marketwarecrm.com/files/TheSPLITFactor.pdf
 Rendering users/create
 Completed in 1838ms (View: 39, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-03 16:21:10) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (52.5ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (17.1ms)
+Completed in 298ms (View: 296, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-05 23:34:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (44.5ms)
+Rendered shared/_user_form (3.5ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_testimonials (0.6ms)
+Completed in 488ms (View: 487, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-13 08:11:53) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (50.6ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (17.5ms)
+Completed in 333ms (View: 331, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-15 23:15:35) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (66.0ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (19.0ms)
+Completed in 310ms (View: 308, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-15 23:18:06) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 29ms (View: 28, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-15 23:27:34) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Completed in 161ms (View: 159, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-15 23:33:26) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (6.9ms)
+Completed in 50ms (View: 49, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-15 23:33:36) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (4.0ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-09-15 23:35:19) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (29.5ms)
+Rendered shared/_user_form (4.8ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (6.5ms)
+Rendered shared/_white_papers (17.0ms)
+Completed in 87ms (View: 86, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-15 23:42:01) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (5.7ms)
+Completed in 60ms (View: 58, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-09-15 23:43:21) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (1.2ms)
+Rendered shared/_user_form (4.1ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (0.6ms)
+Rendered shared/_white_papers (0.4ms)
+Completed in 94ms (View: 92, DB: 0) | 200 OK [http://marketware.local/physician_relations]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-15 23:46:54) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (3.9ms)
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-16 00:01:24) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (5.8ms)
+Completed in 40ms (View: 39, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-16 00:04:51) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (3.9ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 00:58:56) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 00:58:56 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 00:58:56AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 00:58:56 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 312ms (View: 23, DB: 0) | 200 OK [http://marketware.local/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-09-16 01:14:10) [POST]
+  Parameters: {"response_type"=>"marketware_download", "authenticity_token"=>"NxW/ltmk0z7l9TtOuXGQX73HtSVfRS/pbCXKdohKs+Q=", "download_url"=>"http://marketwarecrm.com/files/marketware10_setup.exe", "related_product"=>"MarketWare 10 Download", "user"=>{"company"=>"test", "name"=>"test", "phone"=>"test", "email"=>"samgrigg@gmail.com"}}
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:14:10 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: New User Information from MarketWare.com
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test has just requested Market Ware 10 Download.
+
+Here are the details:
+---------------------
+Name:		test
+Company:	test
+Phone:		test
+Email:		samgrigg@gmail.com
+
+test's info was recorded on 09/16/10 at 01:14:10AM
+Sent mail to samgrigg@gmail.com
+
+Date: Thu, 16 Sep 2010 01:14:10 -0600
+From: info@marketwarecrm.com
+To: samgrigg@gmail.com
+Subject: MarketWare Trial
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+test,
+
+Thank you for requesting MarketWare 10. One of our consultants will contact you shortly with information on how to download and install MarketWare.
+
+Thank you,
+MarketWare
+Rendering users/create
+Completed in 445ms (View: 20, DB: 0) | 200 OK [http://marketware.local/users]

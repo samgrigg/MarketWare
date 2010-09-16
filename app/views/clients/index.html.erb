@@ -1,3 +1,22 @@
+<% content_for :header do %>
+	<%= stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true %>
+
+	<%= javascript_include_tag "flowplayer-3.2.2.min", :cache => true %>
+	<%= javascript_include_tag "jquery.fancybox-1.3.1", 'product', "easySlider1.7" %>
+	
+	<script type="text/javascript">
+		var current_user = <%= !session["current_username"].nil? %>;
+	
+		$(function() {
+			$("#marketware_10_download").click(function() {
+				download_btn_click(
+					"MarketWare 10 Download", 
+					"http://marketwarecrm.com/files/marketware10_setup.exe", 
+					"marketware_download")
+			});
+		})
+</script>
+<% end -%>
 <h1 class="grid_7 alpha">MarketWare Client Support</h1>
 <div class="grid_4 omega">
 <p>Not finding what you're looking for?<br />
@@ -12,8 +31,14 @@
 	<ul>
 		<li><a href="http://marketware.com.s3.amazonaws.com/files/marketware_setup.exe">MarketWare Version 9</a></li>
 		<li><a href="http://marketware.com.s3.amazonaws.com/files/mwupdate9.exe">MarketWare Version 9 Update</a></li>
-		<li>MarketWare Version 10 <em>(Coming Soon)</em></li>
+		<li><a href="#download-register-form" id="marketware_10_download" class="register_user">MarketWare Version 10</a></li>
 	</ul>
+	<div style="display:none">
+		<div id="download-register-form" class="margin-md fancybox-content">
+			<h5>Contact Information:</h5>
+			<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "product_demo"} %>
+		</div>
+	</div>
 	
 	<h6>Other Downloads</h6>
 	<ul>
