@@ -28518,3 +28518,17 @@ Rendering template within layouts/application
 Rendering clients/index
 Rendered shared/_user_form (4.0ms)
 Completed in 18ms (View: 16, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-23 07:07:09) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (25.3ms)
+Completed in 189ms (View: 187, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-09-23 07:07:26) [GET]
+Rendering template within layouts/application
+Rendering clients/index
+Rendered shared/_user_form (4.3ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://marketware.local/clients]
