@@ -28539,3 +28539,41 @@ Rendering template within layouts/application
 Rendering clients/index
 Rendered shared/_user_form (28.2ms)
 Completed in 159ms (View: 157, DB: 0) | 200 OK [http://marketware.local/clients]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-27 19:51:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (45.1ms)
+Rendered shared/_user_form (3.2ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (2.9ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_user_form (3.0ms)
+Rendered shared/_testimonials (15.3ms)
+Completed in 910ms (View: 907, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-09-28 12:45:39) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_user_form (56.5ms)
+Rendered shared/_user_form (3.7ms)
+Rendered shared/_user_form (3.6ms)
+Rendered shared/_user_form (6.4ms)
+Rendered shared/_user_form (3.4ms)
+Rendered shared/_user_form (3.3ms)
+Rendered shared/_testimonials (0.7ms)
+Completed in 252ms (View: 250, DB: 0) | 200 OK [http://marketware.local/]
+
+
+Processing PhysicianRelationsController#index (for 127.0.0.1 at 2010-09-28 12:45:48) [GET]
+Rendering template within layouts/application
+Rendering physician_relations/index
+Rendered physician_relations/_nav (17.2ms)
+Rendered shared/_user_form (4.2ms)
+Rendered shared/_user_form (4.9ms)
+Rendered shared/_user_form (3.1ms)
+Rendered shared/_testimonials (0.1ms)
+Rendered shared/_white_papers (14.9ms)
+Completed in 122ms (View: 120, DB: 0) | 200 OK [http://marketware.local/physician_relations]
