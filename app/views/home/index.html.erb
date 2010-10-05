@@ -68,11 +68,25 @@
 	<!-- ==================================================================== -->
 	<div id="physician_relations" class="product">
 		<h2><%= link_to "Physician Relations", physician_relations_path, :class => "overview-link" %></h2>
-		<div id="physician_relations_wrapper" class="demo-video">
-			<!-- <a href="<%= @relations_demo_link_url %>" class="btn-yellow demo" id="physician_relations_demo"><span>View Demo</span></a> -->
-			<%= link_to "<span>View Demo</span>", physician_relations_path, :class => "btn-yellow" %>
-		</div>
+
+		<div class="about-product">
+			<p class="description">Complete Physician Relations CRM use in Hospitals, Medical Groups, Labs, etc.  </p>
+
+			<div id="physician_relations_wrapper" class="demo-video">
+				<!-- <a href="<%= @relations_demo_link_url %>" class="btn-yellow demo" id="physician_relations_demo"><span>View Demo</span></a> -->
+				<%= link_to "<span>View Demo</span>", physician_relations_path, :class => "btn-yellow" %>
+			</div>
 		
+			<!-- this will install flowplayer inside previous A- tag. -->
+			<script>
+				flowplayer("player1", "/flowplayer-3.2.2.swf");
+			</script>
+			
+			<a href="<%= @physician_relations_trial_url %>" id="try_it_physician_relations" class="btn-gray trial"><span>Free Trial</span></a>
+		
+			<%= link_to "Learn More", physician_relations_path, :class => "txt-link" %>
+		
+		</div>
 		<div style="display:none">
 			<div id="relations-demo-video">
 			<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
@@ -83,14 +97,6 @@
 			</a>
 			</div>
 		</div>
-		<!-- this will install flowplayer inside previous A- tag. -->
-		<script>
-			flowplayer("player1", "/flowplayer-3.2.2.swf");
-		</script>
-			
-		<a href="<%= @physician_relations_trial_url %>" id="try_it_physician_relations" class="btn-gray trial"><span>Free Trial</span></a>
-		
-		<%= link_to "Learn More", physician_relations_path, :class => "txt-link" %>
 		
 		<!-- User Registration Form for the Physician Relations product -->
 		<div style="display:none">
@@ -115,11 +121,17 @@
 	<!-- ===================================================================== -->
 	<div id="physician_recruiting" class="product">
 		<h2><%= link_to "Physician Recruiting", physician_recruiting_path, :class => "overview-link" %></h2>
+		<div class="about-product">
+			<p class="description">Sourcing, Site Visit Preparation, On-boarding and Retention – Integrate with Physician Relationship Management</p>
 		<div id="physician_recruiting_wrapper" class="demo-video">
 			<!-- <a href="<%= @recruiting_demo_link_url %>" class="btn-yellow demo" id="physician_recruiting_demo"><span>View Demo</span></a> -->
 			<%= link_to "<span>View Demo</span>", physician_recruiting_path, :class => "btn-yellow" %>
 		</div>
 		
+		<a href="<%= @physician_recruiting_trial_url %>" id="try_it_physician_recruiting" class="btn-gray trial"><span>Free Trial</span></a>
+		
+		<%= link_to "Learn More", physician_recruiting_path, :class => "txt-link" %>
+		</div>
 		<div style="display:none">
 			<div id="recruiting-demo-video">
 			<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
@@ -134,11 +146,7 @@
 		<script>
 			flowplayer("player2", "/flowplayer-3.2.2.swf");
 		</script>
-		
-		<a href="<%= @physician_recruiting_trial_url %>" id="try_it_physician_recruiting" class="btn-gray trial"><span>Free Trial</span></a>
-		
-		<%= link_to "Learn More", physician_recruiting_path, :class => "txt-link" %>
-		
+
 		<!-- User Registration Form for the Physician Recruiting product -->
 		<div style="display:none">
 			<div id="user_form_box_physican_recruiting" class="margin-md fancybox-content">
@@ -162,12 +170,18 @@
 	<!-- = Custom CRM: links to demo, trial, and product info page = -->
 	<!-- =========================================================== -->
 	<div id="custom_crm" class="product">
-		<h2><%= link_to "Custom CRM", custom_crm_path, :class => "overview-link" %></h2>
-		<div id="custom_crm_wrapper" class="demo-video">
-			<!-- <a href="<%= @custom_demo_link_url %>" class="btn-yellow demo" id="custom_crm_demo"><span>View Demo</span></a> -->
-			<%= link_to "<span>View Demo</span>", custom_crm_path, :class => "btn-yellow" %>
-		</div>
+		<h2><%= link_to "Completely Custom CRM", custom_crm_path, :class => "overview-link" %></h2>
+		<div class="about-product">
+			<p class="description">Customzie your CRM for every type of industry.</p>
+			<div id="custom_crm_wrapper" class="demo-video">
+				<!-- <a href="<%= @custom_demo_link_url %>" class="btn-yellow demo" id="custom_crm_demo"><span>View Demo</span></a> -->
+				<%= link_to "<span>View Demo</span>", custom_crm_path, :class => "btn-yellow" %>
+			</div>
 		
+			<a href="<%= @custom_crm_trial_url %>" id="try_it_custom_crm" class="btn-gray trial"><span>Free Trial</span></a>
+		
+			<%= link_to "Learn More", custom_crm_path, :class => "txt-link" %>
+		</div>
 		<div style="display:none">
 			<div id="custom-demo-video">
 			<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
@@ -182,10 +196,6 @@
 		<script>
 			flowplayer("player3", "/flowplayer-3.2.2.swf");
 		</script>
-			
-		<a href="<%= @custom_crm_trial_url %>" id="try_it_custom_crm" class="btn-gray trial"><span>Free Trial</span></a>
-		
-		<%= link_to "Learn More", custom_crm_path, :class => "txt-link" %>
 		
 		<!-- User Registration Form for the Custom CRM product -->
 		<div style="display:none">

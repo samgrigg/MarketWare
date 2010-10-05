@@ -1,0 +1,21 @@
+#unsupported-browsers {
+	display:block;
+	border-bottom:2px solid #B32D0E;
+	clear:both;
+	padding:10px;
+	width:920px;
+	margin:1.25em 0;
+}
+
+#unsupported-browsers h4 {
+	color:#B32D0E;
+}
+
+#unsupported-browsers ul {
+	list-style-type:none;
+}
+#unsupported-browsers ul li {
+	margin:0;padding:0;
+	float:left;
+	margin-right:2.5em;
+}

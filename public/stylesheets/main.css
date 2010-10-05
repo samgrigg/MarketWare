@@ -24,6 +24,9 @@
 */
 body {
 }
+#unsupported-browsers {
+	display:none;
+}
 
 .right-align {
 text-align: right;

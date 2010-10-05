@@ -20,7 +20,9 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
-	
+	<!--[if lte IE 6]>
+	<%= stylesheet_link_tag "ie" %>
+	<![endif]-->
 </head>
 <body>
 	<div class="container_12 clearfix">
@@ -42,9 +44,20 @@
 				<%= link_to "Physician Recruiting", physician_recruiting_path %>
 				<%= link_to "Custom CRM", custom_crm_path %>
 				<%= link_to "About Us", about_us_path %>
+				<%= link_to "White Papers", white_papers_path %>
 				<span class="phone-number">1-800-777-6368</span>
 			</nav>
 		</header>
+		
+		<div id="unsupported-browsers">
+			<h4>Technical Glitches</h4>
+			<p>The browser you are using may experience technical glitches on this site. For a better browsing experience<br />
+			we recommend using any of the following browsers: 
+				<a href="http://www.microsoft.com/windows/internet-explorer/worldwide-sites.aspx">Internet Explorer 8</a>, 
+				<a href="http://www.getfirefox.net/">Firefox</a>, 
+				<a href="http://www.apple.com/safari/download/">Safari</a>
+			</p>
+		</div>
 		
 		<div id="flash_notice" class="flash-notice grid_12 alpha omega">
 			<% if flash[:notice] %>

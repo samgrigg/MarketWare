@@ -5,13 +5,18 @@
 	position:relative;
 }
 #home-banner .tagline {
-	height:0;
-	overflow:hidden;
+	color:#2222A8;
+	text-shadow: 2px 2px 0 #fff;
 	position:absolute;
+	right:0;bottom:20px;
+	font-size:30px;
+	width:12em;
 }
 
+#home-banner .product h2 {float:left;}
 #home-banner .product {
 	position:relative;
+	height:130px;overflow:hidden;
 }
 #home-banner .product:after {
 	content:".";
@@ -21,22 +26,28 @@
 	clear:both;
 }
 #home-banner .product a.overview-link {
+	font-size:21px;
+	color:#333;
+	text-shadow: 0px 0px 7px #fff;
 	height:0px;
-	height:130px;
-	text-indent:-999em;
+	height:120px;
+	padding-top:10px;
 	display:block;
-	width:170px;
+	width:160px;
+	padding-right:10px;
 	margin-left:30px;
 	float:left;
+	text-align:right;
 }
-#home-banner .description {height:0;overflow:hidden;position:absolute;}
-#home-banner .product {border:1px solid transparent;height:130px;}/*For some reason, ommiting the transparent border causes the buttons on CustomCRM to drop 20px (or so) below their desired location*/
+
+#home-banner .about-product {float:left;margin-left:12px;width:300px;height:;}
+.about-product p {}
 #home-banner #physician_relations {top:35px;}
 #home-banner #physician_recruiting {top:60px;}
 #home-banner #custom_crm {top:100px;}
 
-#home-banner .btn-yellow, #home-banner .btn-gray {float:left;margin-left:12px;margin-top:73px;}
-#home-banner .txt-link {float:left;margin-left:12px;margin-top:73px;height:37px;line-height:37px;display:block;}
+#home-banner .btn-yellow, #home-banner .btn-gray {float:left;margin-right:12px;}
+#home-banner .txt-link {float:left;margin-left:12px;height:37px;line-height:37px;display:block;}
 
 #home-testimonials {
 
