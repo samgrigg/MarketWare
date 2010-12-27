@@ -1,4 +1,4 @@
-<% content_for :header do %>
+﻿<% content_for :header do %>
 	<%= stylesheet_link_tag "home" %>
 	<%= stylesheet_link_tag "jquery.fancybox-1.3.1" %>
 	
@@ -61,7 +61,7 @@
 	</script>
 <% end %>
 <div id="home-banner">
-	<div class="tagline">Better understanding brings better results.</div>
+	<div class="tagline">Referral Growth. Recruit. Retain.</div>
 
 	<!-- ==================================================================== -->
 	<!-- = Physician Relations: links to demo, trial, and product info page = -->
@@ -70,7 +70,7 @@
 		<h2><%= link_to "Physician Relations", physician_relations_path, :class => "overview-link" %></h2>
 
 		<div class="about-product">
-			<p class="description">Complete Physician Relations CRM use in Hospitals, Medical Groups, Labs, etc.  </p>
+			<p class="description">Complete Physician Relations CRM: Physician Referral Growth, Retention, Physician Liaison visits, Healthcare marketing and more.  </p>
 
 			<div id="physician_relations_wrapper" class="demo-video">
 				<!-- <a href="<%= @relations_demo_link_url %>" class="btn-yellow demo" id="physician_relations_demo"><span>View Demo</span></a> -->
@@ -122,7 +122,7 @@
 	<div id="physician_recruiting" class="product">
 		<h2><%= link_to "Physician Recruiting", physician_recruiting_path, :class => "overview-link" %></h2>
 		<div class="about-product">
-			<p class="description">Sourcing, Site Visit Preparation, On-boarding and Retention – Integrate with Physician Relationship Management</p>
+			<p class="description">Physician Recruiting: Sourcing, Site Visit Preparation, On-boarding and Retention – Integrate with Physician Relations CRM.</p>
 		<div id="physician_recruiting_wrapper" class="demo-video">
 			<!-- <a href="<%= @recruiting_demo_link_url %>" class="btn-yellow demo" id="physician_recruiting_demo"><span>View Demo</span></a> -->
 			<%= link_to "<span>View Demo</span>", physician_recruiting_path, :class => "btn-yellow" %>
@@ -172,7 +172,7 @@
 	<div id="custom_crm" class="product">
 		<h2><%= link_to "Completely Custom CRM", custom_crm_path, :class => "overview-link" %></h2>
 		<div class="about-product">
-			<p class="description">Customzie your CRM for every type of industry.</p>
+			<p class="description">Customize your CRM around your Physician Relations process - Physician Referral Call Center, Event/CME Management, etc.</p>
 			<div id="custom_crm_wrapper" class="demo-video">
 				<!-- <a href="<%= @custom_demo_link_url %>" class="btn-yellow demo" id="custom_crm_demo"><span>View Demo</span></a> -->
 				<%= link_to "<span>View Demo</span>", custom_crm_path, :class => "btn-yellow" %>
@@ -220,7 +220,7 @@
 
 <div class="info grid_16 alpha omega">
 	<p>
-		Each MarketWare solution can be integrated with each other to create a Complete Database Solution for your Organization.
+		Each Healthcare CRM solution can be integrated with each other to create a Complete Physician Database for your healthcare Organization.
 	</p>
 </div>
 
@@ -248,3 +248,9 @@
 		</ul>
 	</div>
 </div>
+<H5>
+<div class="sub-nav grid_6 omega left-align">
+Click Here to Sign Up >>
+<p>
+<%= mail_to "info@marketware.com", "Physician Relations Newsletter", {:subject => "Please sign me up for the Physician Relations Newsletter"} %> <!-- mailto link to info@marketware.com subject: request for information -->
+</H5></div>

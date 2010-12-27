@@ -3,9 +3,11 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>MarketWare: Physician Relationship Management</title>
+	<title>Healthcare CRM: MarketWare</title>
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<!--[if IE]>
+	<meta name="Description" content="Healthcare CRM: CRM for Physician Relations, Physician Recruiting, Physician Relationship Management, Physician Liaisons, and Referral Call Center" /> 
+	<meta name="Keywords" content="Healthcare CRM, Physician Relationship Management, Physician Relations, Marketing to Doctors, Physician Liaison, and physician referrals" /> 
 	<meta http-equiv="x-ua-compatible" content="IE=8">
 	<![endif]-->
 	<%= stylesheet_link_tag "reset", "text", "960", "main", :cash => true %>
@@ -31,21 +33,22 @@
 			<div class="grid_6 alpha">
 				<h1><%= link_to "MarketWare", root_path %></h1>
 			</div>
-			<div class="sub-nav grid_6 omega right-align">
-				<%= link_to "Join a Meeting", "http://joingotomeeting.com" %> |
-				<%= mail_to "info@marketware.com", "Speak to a Consultant", {:subject => "I'd like to speak to a MarketWare Consultant"} %> | <!-- mailto link to info@marketware.com subject: request for information -->
+			<div class="sub-nav grid_6 omega center-align">
+				<%= mail_to "info@marketware.com", "Newsletter", {:subject => "I'd like to sign up for the Physician Relations Newsletter"} %> | <!-- mailto link to info@marketware.com subject: request for information -->
+				<%= link_to "Join a Web Meeting", "http://joingotomeeting.com" %> |
+				<%= mail_to "info@marketware.com", "Support", {:subject => "I'd need help with Support"} %> | <!-- mailto link to info@marketware.com subject: request for information -->
 				<%= mail_to "sales@marketware.com", "Request a Quote", {:subject => "I'd like a quote on MarketWare's services"} %> |<!-- mailto link to info@marketware.com subject: Quote Request -->
-				<%= link_to "Clients", clients_path %> |
+				<%= link_to "Clients", clients_path %>
 			</div>
 		
 			<nav id="site-nav" class="grid_12 alpha omega">
 				<%= link_to "Home", root_path %>
 				<%= link_to "Physician Relations CRM", physician_relations_path %>
 				<%= link_to "Physician Recruiting", physician_recruiting_path %>
-				<%= link_to "Custom CRM", custom_crm_path %>
-				<%= link_to "About Us", about_us_path %>
+				<%= link_to "Custom Healthcare CRM", custom_crm_path %>
 				<%= link_to "White Papers", white_papers_path %>
-				<span class="phone-number">1-800-777-6368</span>
+				<%= link_to "About Us", about_us_path %>
+				<b><h6><span class="phone-number"> MarketWare has 24 years of Relationship Management Experience! Contact Us: 1-800-777-6368</b></span></h6>
 			</nav>
 		</header>
 		
@@ -76,12 +79,13 @@
 		</div>
 		
 		<section id="super-footer" class="prefix_1 suffix_1 grid_10 alpha omega">
-		
 			<div class="grid_10 alpha omega">
-				<p>MarketWare’s Healthcare CRM (PRM) includes the software, methods, and reporting to manage each physician relationship. 
-				<p>By using MarketWare, hospitals and clinics are able to manage physician liaison’s visits, statistical trends, retention, marketing activities, and much more.</p> 
+				<p><h2>MarketWare's Healthcare CRM- Used in Hundreds of Healthcare Organizations</h2></p>
+				<p>MarketWare’s Healthcare CRM is the complete database for managing relationships with referring physicians. MarketWare includes customized <font color="#D94827"><b><%= link_to "Physician Relations CRM", physician_relations_path %></font></b> and <font color="#D94827"><b> <%= link_to "Physician Recruiting", physician_recruiting_path %></font></b> software, proven <font color="#D94827"><b><%= link_to "Healthcare Marketing Strategies", "http://www.physicianrelationships.com" %></font></b>, and <b><%= link_to "Automatic Reporting", {:controller => :physician_relations, :action => :reporting} %> </b>and <font color="#D94827"><b><%= link_to "Complete Customization", {:controller => :physician_relations, :action => :customize} %></font></b> to manage each physician relationship.
+				<p>By using MarketWare, hospitals and clinics are able to manage Physician Liaison’s visits, Physicians' Statistical Trends, Physician Retention, Healthcare Marketing activities, Physician Issues, and much more.</p> 
 				
-				<p>It connects everyone in the organization including-physician relations, marketing, administration, business development, service line directors and marketers, recruiting, and credentialing.</p>
+				<p>MarketWare's Healthcare CRM becomes the eyes and ears of your hospital or clinic. It keeps everyone in your organization on-top of what's going on with referring physicians including - Physician Relations, Marketing, Administration, Business Development, Service Line Directors, Recruiting, Medical Staff and Credentialing.</p>
+				<p>Learn how to improve your Physician Relations through MarketWare's <b><%= link_to "Physician Relations White Papers", white_papers_path %></b>.</p>
 			</div>
 		
 			<!-- <div id="footer-logo" class="grid_5 omega">
@@ -90,7 +94,7 @@
 		
 			<div id="footer-nav" class="grid_10 alpha omega">
 				<nav class="grid_3 alpha">
-					<h6>Physician Relations</h6>
+					<h6>Physician Relations CRM</h6>
 					<%= link_to "Product Demo",		{:controller => :physician_relations} %>
 					<%= link_to "Customize It", 	{:controller => :physician_relations, :action => :customize} %>
 					<%= link_to "Reporting",		{:controller => :physician_relations, :action => :reporting} %>
@@ -104,7 +108,7 @@
 					<%= link_to "Technical Specs",	{:controller => :physician_recruiting, :action => :tech_specs} %>
 				</nav>
 				<nav class="grid_3 omega">
-					<h6>Fully Customized CRM</h6>
+					<h6>Custom Healthcare CRM</h6>
 					<%= link_to "Product Demo",		{:controller => :custom_crm} %>
 					<%= link_to "Customize It", 	{:controller => :custom_crm, :action => :customize} %>
 					<%= link_to "Reporting",		{:controller => :custom_crm, :action => :reporting} %>
