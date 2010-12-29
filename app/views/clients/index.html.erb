@@ -29,11 +29,11 @@
 	<h5>MarketWare Downloads</h5>
 
 	<ul>
-		<li><a href="http://www.marketware.com/files/marketware_setup.exe">MarketWare Version 9</a></li>
+	
+		<li><a href= "#download-register-form" id="marketware_10_download" class="register_user">MarketWare Version 9</a></li>
 		<li><a href="http://www.marketware.com/files/mwupdate9.exe">MarketWare Version 9 Update</a></li>
 		<li><a href="#download-register-form" id="marketware_10_download" class="register_user">MarketWare Version 10</a></li>
-	</ul>
-	<div style="display:none">
+		<div style="display:none">
 		<div id="download-register-form" class="margin-md fancybox-content">
 			<h5>Contact Information:</h5>
 			<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "product_demo"} %>
@@ -43,10 +43,10 @@
 	<div style="display:none">
 		<div id="thank_you" class="margin-md fancybox-content">
 			<h5>Thank you.</h5>
-			<p>One of our consultants will contact you with instructions to download MarketWare 10.</p>
+			<p>One of our consultants will contact you with instructions to download MarketWare.</p>
 		</div>
 	</div>
-	
+
 	<h6>Other Downloads</h6>
 	<ul>
 		<li><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=0856eacb-4362-4b0d-8edd-aab15c5e04f5&displaylang=en">Microsoft .NET Framework 2.0</a></li>
@@ -54,19 +54,32 @@
 		<li><a href="http://www.microsoft.com/Sqlserver/2005/en/us/express-down.aspx#SP3">Microsoft SQL Server Management Studio Express</a></li>
 		<li><a href="https://www1.gotomeeting.com/island/download.tmpl?Portal=www.gotomeeting.com">GoToMeeting.com Software</a></li>
 	</ul>
-</div>
+	</div>
 
 <div class="grid_5 prefix_1 omega">
+
 	<h6>Training Videos</h6>
 	<ul>
-		<li><a href="http://marketwarecrm.com/files/training_videos9.html">MarketWare 9 Training Videos</a></li>
+		<li><a href="#download-register-form" id="marketware_10_download" class="register_user">MarketWare Version 10 Training Videos</a></li>
+		<li><a href="#download-register-form" id="marketware_10_download" class="register_user">MarketWare Version 9 Training Videos</a></li>
+		<div style="display:none">
+		<div id="download-register-form" class="margin-md fancybox-content">
+			<h5>Contact Information:</h5>
+			<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "product_demo"} %>
+		</div>
+	</div>
+	<a id="thank_you_link" href="#thank_you" class="fancybox" style="display:none">&nbsp;</a>
+	<div style="display:none">
+		<div id="thank_you" class="margin-md fancybox-content">
+			<h5>Thank you.</h5>
+			<p>One of our consultants will contact you with instructions get to the MarketWare Training Videos</p>
+		</div>
+		<li><a href= "#download-register-form" id="marketware_10_download" class="register_user">MarketWare Version 9</a></li>
 		<li><a href="http://marketwarecrm.com/files/training_videos.html">MarketWare 10 Training Videos</a></li>
 	</ul>
 	
 	<h6>Documentation</h6>
-	<p><string>MarketWare Version 10</string></p>
 	<ul>
-		<li><a href="http://www.marketwarecrm.com/files/marketware10_user_manual.pdf">MarketWare 10 User Manual</a></li>
 		<li><a href="http://marketware.com.s3.amazonaws.com/files/technical_review_faqs.pdf">Technical Review &amp; FAQs</a></li>
 		<li><a href="http://marketware.com.s3.amazonaws.com/files/marketware_brochure.pdf">MarketWare Brochure</a></li>
 		<li><a href="http://marketware.com.s3.amazonaws.com/files/marketware_statistics.pdf">Statistics: The GPS of your Facility</a></li>

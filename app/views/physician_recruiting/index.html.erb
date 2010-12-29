@@ -1,4 +1,4 @@
-<% content_for :header do %>
+﻿<% content_for :header do %>
 	<%= stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true %>
 	
 	<%= javascript_include_tag "flowplayer-3.2.2.min", :cache => true %>
@@ -19,7 +19,7 @@
 <% end -%>
 
 <div class="page-header">
-	<h2 class="grid_4 alpha">Physician Recruiting</h2>
+	<h2 class="grid_4 alpha">Physician Recruiting Software</h2>
 	
 	<%= render :partial => 'nav' %>
 
@@ -64,7 +64,7 @@
 		
 				<div class="product-calls-to-action grid_4 omega">
 					<div id="demo-register-form" class="">
-						<h5>Contact Information:</h5>
+						<h5>Learn more about MarketWare's Physician Recruiting Software</h5>
 						<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "product_demo"} %>
 					</div>
 				</div>
@@ -76,17 +76,24 @@
 <div class="small-content-box grid_6 alpha">
 	<div class="small-content-box-inset">
 		<div class="margin-md">	
-		  	<p>MarketWare’s Recruiting manages each phase in the physician recruiting process. Easily move a potential recruit through recruiting into physician relationship management.</p>
+			<p><H5>Physician Recruiting Software </H5></p>
+		  	<p>MarketWare’s Recruiting manages each phase in the physician recruiting process. <font color="#D94827"><b>Easily move a potential recruit through recruiting into physician relationship management.</font></b> MarketWare's Physician Recruiting software manages:</p>
 			<ul>
-				<li>Maintains physician information</li>
-				<li>Tracks every physician interaction</li>
-				<li>Manages site visit preparation</li>
-                <li>Supervises potential recruit issues</li>
-                <li>Manages marketing campaigns</li>
-                <li>Handles on-boarding and retention</li>
+				<li>Site Visit Preparation</li>
+                		<li>Potential Recruit Issues</li>
+                		<li>Mailing Campaigns</li>
+                		<li>On-boarding Physicians</li>
+				<li>Physician Retention</li>
 			</ul>
-
-			<strong>MarketWare is being utilized in:</strong>
+			
+			<strong>With 23 years of experience we provide:</strong>
+			<ul>
+				<li><%= link_to "Physician Recruiting Reports",		{:controller => :physician_recruiting, :action => :reporting} %></li>
+				<li><%= link_to "Custom Data Screens", 	{:controller => :physician_recruiting, :action => :customize} %>
+				<li><%= link_to "Healthcare Marketing Strategies","http://www.physicianrelationships.com/p/physician-recruiting.html" %></li>
+				<li><%= link_to "Relationship Management Best Practices&hellip;", success_stories_path %></li>
+			</ul>
+			<strong>MarketWare is managing physician recruiting in:</strong>
 			<ul>
 				<li>Hospitals</li>
 				<li>Medical Imaging Centers</li>

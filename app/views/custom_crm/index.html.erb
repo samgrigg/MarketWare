@@ -1,4 +1,4 @@
-<% content_for :header do %>
+﻿<% content_for :header do %>
 	<%= stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true %>
 	
 	<%= javascript_include_tag "jquery.fancybox-1.3.1", "flowplayer-3.2.2.min", 'product', "easySlider1.7" %>
@@ -18,7 +18,7 @@
 <% end -%>
 
 <div class="page-header">
-	<h2 class="grid_4 alpha">Custom CRM</h2>
+	<h2 class="grid_4 alpha">Custom Healthcare CRM</h2>
 	
 	<%= render :partial => 'nav' %>
 
@@ -63,7 +63,7 @@
 		
 				<div class="product-calls-to-action grid_4 omega">
 					<div id="demo-register-form" class="">
-						<h5>Contact Information:</h5>
+						<h5>Learn more about MarketWare's Custom Healthcare CRM</h5>
 						<%= render :partial => "shared/user_form", :object => User.new, :locals => {:product => "physician_relations", :response_type => "product_demo"} %>
 					</div>
 				</div>
@@ -75,19 +75,25 @@
 <div class="small-content-box grid_6 alpha">
 	<div class="small-content-box-inset">
 		<div class="margin-md">	
-		  	<p>MarketWare’s Customized CRM is a CRM customizable to any company or industry. Manage your relationships exactly how you need to in the way you what. MarketWare will tailor a CRM especially to you.</p>
-			<strong>MarketWare Customized CRM:</strong>
+		  	<p>MarketWare’s Custom Healthcare CRM is a CRM customizable to any healthcare organization.<font color="#D94827"><b> Manage your physician relationships exactly how you want!</font></b> MarketWare will tailor a CRM especially to you.</p>
+			<strong>Custom Healthcare CRM includes:</strong>
 			<ul>
-				<li>Maintains contact information</li>
-                <li>Indentifies specific goals and opportunities</li>
-                <li>Manages customer concerns</li>
-                <li>Tracks sales cycle</li>
-                <li>Creates quotes/proposals</li>
-                <li>Creates invoices</li>
-                <li>Maintains project management</li>
+				<li>Physician Relations</li>
+                		<li>Physician Recruiting</li>
+                		<li>Referral Call Center</li>
+                		<li>Event Management</li>
+                		<li>CME Management</li>
+                		<li>Mergers and Acquisitions</li>
 			</ul>
 
-			<strong>MarketWare is being used in:</strong>
+			<strong>With 23 years of experience we provide:</strong>
+			<ul>
+				<li><%= link_to "Completely Customizable Reports",		{:controller => :custom_crm, :action => :reporting} %></li>
+				<li><%= link_to "Custom Data Screens", 	{:controller => :custom_crm, :action => :customize} %>
+				<li><%= link_to "Healthcare Marketing Strategies","http://www.physicianrelationships.com/p/strategic-physician-visits.html" %></li>
+				<li><%= link_to "Relationship Management Best Practices&hellip;", success_stories_path %></li>
+			</ul>
+			<strong>MarketWare is managing physician relationships in:</strong>
 			<ul>
 				<li>Hospitals</li>
 				<li>Medical Imaging Centers</li>
