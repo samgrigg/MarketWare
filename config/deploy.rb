@@ -4,7 +4,7 @@ set :user, "mktware"
 set :domain, "marketwarecrm.com"
 set :application, "marketware"
 
-set :repository,  "git@heroku.com:electric-mist-29.git"
+set :repository,  "git@github.com:samgrigg/MarketWare.git"
 set :deploy_to, "/home/#{user}/#{domain}/"
 set :deploy_via, :copy
 set :scm, :git
