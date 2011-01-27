@@ -1,7 +1,7 @@
 default_run_options[:pty] = true
 
 set :user, "mktware"
-set :domain, "marketwarecrm.com"
+set :domain, "marketware.com"
 set :application, "marketware"
 
 set :repository,  "git@github.com:samgrigg/MarketWare.git"
@@ -39,4 +39,4 @@ namespace :deploy do
 	end
 end
 
-after 'deploy:update_code', 'deploy:symlink_marketware'
+# after 'deploy:update_code', 'deploy:symlink_marketware'
