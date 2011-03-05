@@ -30,8 +30,8 @@
 	</script>
 <% end -%>
 
-<div class="grid_8 alpha omega prefix_2 suffix_2">
-<p>
+<div class="grid_8 alpha">
+
 <h2>White Papers</h2>
 
 <ul class="mktwr_list">
@@ -74,7 +74,41 @@
 			</a>
 		</li>
 </ul>
+
 </div>
+
+<!--put yer stuff here-->
+<div class="grid_4 omega">
+<br />
+<h6>Links to Physician Relations Articles</h6>
+
+<ul>
+	<li><a href="http://findarticles.com/p/articles/mi_m4422/is_1_19/ai_82353626/?tag=content;col1">10 Steps to better communication</a></li>
+	<li><a href="http://fortepartnersllc.com/tag/basic-marketing-intelligence/">Basic Healthcare Competitive Analysis</a></li>
+	<li><a href="http://www.beckershospitalreview.com/hospital-physician-relationships/5-best-practice-concepts-to-improve-marketing-to-physicians.html">5 Best Practice Concepts to Improve Marketing to Physicians</a></li>
+	<li><a href="http://www.marketwarecrm.com/files/TheFourInnovativeWays%20toMarket%20Physicians.pdf">Four Innovative Ways to Market Physicians</a></li>
+	<li><a href="http://www.marketwarecrm.com/files/EstablishingPhysicianRelationsTrust.pdf">Establishing Physician Loyalty</a></li>
+</ul>
+
+<h6>MarketWare</h6>
+<ul>
+	<li><%= link_to "Physician Relations", :physician_relations %></li>
+	<li><%= link_to "Physician Recruiting", :physician_recruiting %></li>
+	<li><%= link_to "Custom Healthcare CRM", :custom_crm %></li>
+</ul>
+
+<!-- ================ -->
+<!-- = Testimonials = -->
+<!-- ================ -->
+<h6>Testimonials</h6>
+<div class="testimonials">
+	<div id="slideshow">
+		<ul>
+			<%= render :partial => 'shared/testimonials' %>
+		</ul>
+	</div>
+</div>
+
 <div style="display:none">
 	<div id="whitepaper-register-form" class="margin-md fancybox-content">
 		<h5>Please enter your contact information.</h5>
