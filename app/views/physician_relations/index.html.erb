@@ -73,45 +73,62 @@
 	</div>
 </div>
 
-<div class="small-content-box grid_6 alpha">
+<div class="small-content-box grid_8 alpha">
 	<div class="small-content-box-inset">
-		<div class="margin-md">	
-		  	<p><H5>MarketWare’s Physician Relations CRM </H5></p>
-				<p><font color="#D94827"><b>MarketWare's Physician Relations CRM is the complete physician relationship management (PRM) database.</font></b> 
-			<ul></p>
-				<strong>MarketWare's Physician Relations CRM manages:</strong>
-				<li>Physician Demographics</li>
-				<li>Physician Liaison Visits</li>
-				<li>Physician Referral Statistics</li>
-				<li>Physician Issues - Retention</li>
-				<li>Strategic Marketing Campaigns</li>
-				<li>Physician Segmenting</li>
+		<div class="margin-md">
+		  	<H2>MarketWare’s Physician Relations CRM </H2>
+			<%= image_tag "physician_liaisons.jpg", :class => "img-left" %>
+			<ul class="mktwr_list boxed-list right">
+				<li>Identify Referral Opportunities</li>
+				<li>Red Flag Physicians</li>
+				<li>Physician Issue Resolution</li>
+				<li>Microsoft Outlook/ Mobile integration</li>
 			</ul>
-			
-			<strong>With 23 years of experience we provide:</strong>
-			<ul>
-				<li><%= link_to "Physician Relations Reports",		{:controller => :physician_relations, :action => :reporting} %></li>
-				<li><%= link_to "Custom Data Screens", 	{:controller => :physician_relations, :action => :customize} %>
-				<li><%= link_to "Healthcare Marketing Strategies","http://www.physicianrelationships.com" %></li>
-				<li><%= link_to "Physician Relations Best Practices&hellip;", success_stories_path %></li>
-			</ul>
+			<p>MarketWare's Physician Relations CRM is the complete physician relationship management database. Manage all the key areas of Physician Relations: Physician Demographics, Liaison visits, Referral Statistics, Physician Issues, Marketing Campaigns, Physician Segments, and much more.</p>
 
-			<strong>MarketWare is managing physician relationships in:</strong>
-			<ul>
-				<li>Hospitals</li>
-				<li>Medical Imaging Centers</li>
-				<li>Specialty Medical Groups</li>
-				<li>Labs</li>
-			</ul>
+			<H6>Identify Referral Opportunities </H6>
+			<%= image_tag "physician_referral_growth.png", :class => "img-right", :alt => "physician referral growth" %>
+			<p>Knowing the Return on Investment of a Physician Relations program is central to every healthcare organization. MarketWare's Physician Relations CRM can become the GPS for a hospital or a clinic through tracking physician referral statistics and trends. MarketWare shows the ROI of every referral intuitive!</p>
+			
+			<H6>Red Flag Physicians</H6>
+			<p>Quickly see physicians who are decreasing their referrals. Through MarketWare's ability to red flag physicians, Physician Liaisons and Physician Relations teams can identify and manage potential retention issues before they become problems.</p>
+
+			<H6>Physician Issue Resolution</H6>
+			<p>Effective management of physician issues is key to the success of Physician Relations. MarketWare's built-in Issue Management provides the tools, reports, and process to organize, delegate, and report on every physician issue. MarketWare's Issue Management makes sure no issue falls through the cracks.</p>
+			
+			<H6>Microsoft Outlook/ Mobile Integration</H6>
+			<%= image_tag "phyciian_relationship_management.png", :class => "img-left", :alt => "physician relationship management" %>
+			<p>Through a tight relationship with Microsoft Office®, MarketWare integrates directly with MS Outlook®. This enables Liaisons to auto populate Outlook® emails, letters, contacts, and calendaring. Also, have access to MarketWare through a mobile connection via free offline views, mobile phones, and the internet</p>
+
+			<H6>Strategic Marketing Campaigns</H6>
+			<p>Do your Physician Relations team have strategic marketing campaigns? Use MarketWare to manage a target market, and a type of marketing communication (visits, emails, letters). Then see the results of the marketing campaign.</p>
+
+			<H6>Physician Segmenting</H6>
+			<%= image_tag "physician_recruiting_issues.png", :class => "img-right", :alt => "physician segmenting" %>
+			<p>Segment physicians by many different categories. There are dozens of Physician Relations specific segments including: referral volume or loyalty level, demographics (city, zip code, market area), attitude, or any other category (hospitalist users, CME attendees, etc)</p>
+			
+			<%= mail_to "sales@marketware.com", "Request a Quote...", {:subject => "I'd like a quote on MarketWare's services"} %> |<!-- mailto link to info@marketware.com subject: Quote Request -->
+
 		</div>
 	</div>
 </div>
 
-<div class="boxless-content grid_6 omega">
+<div class="boxless-content grid_4 omega">
 	<div class="margin-md">
-	<div id="slideshow" class="testimonials wide">
+	<div id="slideshow" class="testimonials">
 		<ul>
 			<%= render :partial => 'shared/testimonials' %>
+		</ul>
+	</div>
+	<div>
+		<H3><strong>Interesting Articles</strong></H3>
+		<ul>
+			<li><%= link_to "Four Innovative Ways to Market Physicians","http://www.marketwarecrm.com/files/TheFourInnovativeWays%20toMarket%20Physicians.pdf" %></li>
+
+               		<li><%= link_to "Creating Referrals through Credibility","http://www.marketwarecrm.com/files/creatingcredibility.pdf" %></li>
+
+               		<li><%= link_to "Establishing Physician Loyalty","http://www.marketwarecrm.com/files/EstablishingPhysicianRelationsTrust.pdf" %></li>
+
 		</ul>
 	</div>
 	</div>

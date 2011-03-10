@@ -53,7 +53,9 @@
 		<div class='margin-md'>
 			<div id="demo" class="product-content">
 				<div class="product-demo grid_6 suffix_1 alpha">
-					<object width="512px" height="288px" id="qgiaDriveS3Player"><param name="wmode" value="transparent"></param><param name="movie" value="http://qgiadrive.us.s3.amazonaws.com/player/player020.swf"></param><param name="quality" value="high"></param><param name="bgcolor" value="#FF6600"></param><param name="allowscriptaccess" value="always"></param><param name="swliveconnect" value="true"></param><param name="allowfullscreen" value="false"></param><param name="flashvars" value="id=qgiaDriveS3Player&lzproxied=false&enableGeoIP=false&rid=qgia&cid=MarketWare&pid=Marketware Homepage&affiliateId="></param><embed id="qgiaDriveS3Player" width="512px" height="288px" flashvars="id=qgiaDriveS3Player&lzproxied=false&enableGeoIP=false&rid=qgia&cid=MarketWare&pid=Marketware Homepage&affiliateId=" allowfullscreen="false" allowscriptaccess="always" wmode="transparent" name="qgiaDriveS3Player" swliveconnect="true" quality="high" bgcolor="#FF6600" style="" src="http://qgiadrive.us.s3.amazonaws.com/player/player020.swf" type="application/x-shockwave-flash"></embed></object>
+					
+					<%= image_tag "computer_crowd.jpg", :alt => "Custom Healthcare CRM" %>
+
 					<div class="product-call-to-action-buttons">
 						<%= mail_to "sales@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
@@ -72,39 +74,45 @@
 	</div>
 </div>
 
-<div class="small-content-box grid_6 alpha">
-	<div class="small-content-box-inset">
-		<div class="margin-md">	
-		  	<p>MarketWare’s Custom Healthcare CRM is a CRM customizable to any healthcare organization.<font color="#D94827"><b> Manage your physician relationships exactly how you want!</font></b> MarketWare will tailor a CRM especially to you.</p>
-			<strong>Custom Healthcare CRM includes:</strong>
-			<ul>
+<div class="product-main small-content-box grid_8 alpha">
+	<div class="content-box-inset">
+		<div class='margin-md'>
+		  	<H2>MarketWare’s Custom Healthcare CRM</H2>
+			<ul class="mktwr-list boxed-list right">
 				<li>Physician Relations</li>
-                		<li>Physician Recruiting</li>
-                		<li>Referral Call Center</li>
-                		<li>Event Management</li>
-                		<li>CME Management</li>
-                		<li>Mergers and Acquisitions</li>
+				<li>Physician Recruiting</li>
+				<li>Referral Call Center</li>
+				<li>Custom Screens</li>
 			</ul>
+			<p>MarketWare's Custom Healthcare CRM is the complete database for managing relationships with physicians. Bring all the key areas of a healthcare organization together to improve referral growth, recruiting, and retention.
+			</p>
 
-			<strong>With 23 years of experience we provide:</strong>
-			<ul>
-				<li><%= link_to "Completely Customizable Reports",		{:controller => :custom_crm, :action => :reporting} %></li>
-				<li><%= link_to "Custom Data Screens", 	{:controller => :custom_crm, :action => :customize} %>
-				<li><%= link_to "Healthcare Marketing Strategies","http://www.physicianrelationships.com/p/strategic-physician-visits.html" %></li>
-				<li><%= link_to "Relationship Management Best Practices&hellip;", success_stories_path %></li>
-			</ul>
-			<strong>MarketWare is managing physician relationships in:</strong>
-			<ul>
-				<li>Hospitals</li>
-				<li>Medical Imaging Centers</li>
-				<li>Specialty Medical Groups</li>
-				<li>Labs</li>
-			</ul>
+			<H6><strong>Physician Relations</strong></H6>
+			<%= image_tag "physician_relations_thumb.jpg", :class => "img-left", :alt => "physician relations" %>
+			<p>Physician Relations is central to managing physician relationships. MarketWare's Custom Healthcare CRM includes everything that is in the Physician Relations CRM. View physician contact information, history, referral statistics, issue resolution, and more. <%= link_to "See more...", :physician_relations %>
+			</p>
+			
+			<H6><strong>Physician Recruiting</strong></H6>
+			<%= image_tag "physician_recruiting_thumb.jpg", :class => "img-left", :alt => "physician recruiting" %>
+			<p>Physician Recruiting provides everything a Recruiter needs to track the recruiting process from the beginning at sourcing to on-boarding and retention. Tailor the recruiting piece to a Recruiter's unique process. <%= link_to "See more...", :physician_recruiting %></p>
+
+			<H6><strong>Referral Call Center</strong></H6>
+			<%= image_tag "physician_referral_call_center.jpg", :class => "img-right", :alt => "physician referral call center" %>
+			<p>The Referral Call Center provides the tools to capture patient referrals and assign them to appropriate physicians. Have all the physician history and demographic information to make the Referral Call Center seamless and efficient.</p>
+			
+			<H6><strong>CME Management</strong></H6>
+			<p>Manage events and CMEs within MarketWare. See who is attending what CMEs, and the effects of each CME and event attendance on referral growth. Track all expenses by physician within CMEs and events attended</p>
+
+			<H6><strong>Employer Relations</strong></H6>
+			<p>Manage other activities your hospital or clinic is doing. These activities may include working with local businesses or government organizations. Custom new screens to unique and specialized processes.</p>
+
+			<%= mail_to "sales@marketware.com", "Request a Quote...", {:subject => "I'd like a quote on MarketWare's services"} %> |<!-- mailto link to info@marketware.com subject: Quote Request -->
+
 		</div>
 	</div>
 </div>
 
-<div class="boxless-content grid_6 omega">
+<div class="boxless-content grid_4 omega">
 	<div class="margin-md">
 	<div id="slideshow" class="testimonials wide">
 		<ul>

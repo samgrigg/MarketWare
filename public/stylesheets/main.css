@@ -79,6 +79,9 @@ font-size: 80%;
 .float-right {float:right!important;}
 .float-left {float:left!important;}
 
+#white-paper-list li {
+	padding:1em;
+}
 .mktwr_list {
 	margin:0;padding:0;
 }
@@ -157,18 +160,74 @@ background-position: -78px right;
 }
 
 .content-box {
-	background: url(../images/content-bg-main-top.png) no-repeat left top;
+	background-color:#eee;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow:0px 0px 5px #888;
+	-webkit-box-shadow:0px 0px 5px #888;
+	-moz-box-shadow:0px 0px 5px #888;
 }
-.content-box-inset {
-	background: url(../images/content-bg-main-bottom.png) no-repeat left bottom;
-}
+
 .content-box-inset:after,
 .small-content-box-inset:after {content:".";clear:both;display:block;height:0;visibility:hidden;}
 .small-content-box {
-	background: url(../images/content-bg-small-top.png) no-repeat left top;
+	background-color:#eee;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow:0px 0px 3px #888;
+	-webkit-box-shadow:0px 0px 3px #888;
+	-moz-box-shadow:0px 0px 3px #888;
 }
-.small-content-box-inset {
-	background: url(../images/content-bg-small-bottom.png) no-repeat left bottom;	
+
+.small-content-box h2, .small-content-box h6 {
+	margin-top:1em;
+	clear:both;
+}
+
+.content-trio {
+	clear:both;
+}
+.img-left {
+	float:left;
+	margin:0 10px 10px 0;
+}
+.img-right {
+	float:right;
+	margin:0 0 10px 10px;
+}
+.content-trio a {
+	display:block;clear:left;
+}
+.content-trio p {
+	float:left;
+	width:590px;
+}
+.content-trio.wide-image p {
+	width:540px;
+}
+.boxed-list {
+	margin:-10px 10px 10px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow:0px 0px 3px #888;
+	-webkit-box-shadow:0px 0px 3px #888;
+	-moz-box-shadow:0px 0px 3px #888;
+	width:160px;
+}
+.boxed-list.right {
+	float:right;
+	margin-right:-60px;
+}
+.boxed-list.left {
+	float:left;
+	margin-left:-60px;
+}
+.boxed-list li {
+	background-color:#ddd;
+	border-top:1px solid #eee;
+	list-style-type:none;
+	margin:0;
+	padding:10px 10px 0 10px;
 }
 
 .flash-notice, .flash-error {
@@ -302,6 +361,37 @@ height: 52px;
 line-height: 52px;
 }
 
+/* ================= */
+/* = New User Form = */
+/* ================= */
+#new_user p {
+	clear:both;
+	margin:10px 0;
+}
+#new_user p:after {
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+#new_user p label {
+	float:left;
+	text-align:right;
+	width:6em;
+	margin-right:10px;
+}
+#new_user p input {
+	float:left;
+}
+#new_user p.submitter input {
+	float:none;
+	display:block;
+	margin:0 auto;
+	width:100px;
+}
+
+
 /*
 	Testimonials
 */
@@ -312,6 +402,11 @@ line-height: 52px;
 */
 #super-footer {
 background-color: #D4D6D9;
+-moz-border-radius: 5px;
+border-radius: 5px;
+box-shadow:inset 0px 0px 5px #666;
+-webkit-box-shadow:inset 0px 0px 5px #666;
+-moz-box-shadow:inset 0px 0px 5px #666;
 color: #555;
 padding-top: 40px;
 padding-bottom: 40px;

@@ -8,22 +8,23 @@
 <%= hidden_field_tag "download_url", "" %>
 
   <p>
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :company %><br />
+    <%= f.label :company %>
     <%= f.text_field :company %>
   </p>
   <p>
-    <%= f.label :phone %><br />
+    <%= f.label :phone %>
     <%= f.text_field :phone %>
   </p>
   <p>
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.text_field :email %>
   </p>
-  <p>
+	<hr />
+  <p class="submitter">
     <%= f.submit 'Submit' %>
   </p>
 <% end %>

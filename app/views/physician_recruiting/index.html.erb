@@ -54,7 +54,10 @@
 		<div class='margin-md'>
 			<div id="demo" class="product-content">
 				<div class="product-demo grid_6 suffix_1 alpha">
-					<object width="512px" height="288px" id="qgiaDriveS3Player"><param name="wmode" value="transparent"></param><param name="movie" value="http://qgiadrive.us.s3.amazonaws.com/player/player020.swf"></param><param name="quality" value="high"></param><param name="bgcolor" value="#FF6600"></param><param name="allowscriptaccess" value="always"></param><param name="swliveconnect" value="true"></param><param name="allowfullscreen" value="false"></param><param name="flashvars" value="id=qgiaDriveS3Player&lzproxied=false&enableGeoIP=false&rid=qgia&cid=MarketWare&pid=Marketware Homepage&affiliateId="></param><embed id="qgiaDriveS3Player" width="512px" height="288px" flashvars="id=qgiaDriveS3Player&lzproxied=false&enableGeoIP=false&rid=qgia&cid=MarketWare&pid=Marketware Homepage&affiliateId=" allowfullscreen="false" allowscriptaccess="always" wmode="transparent" name="qgiaDriveS3Player" swliveconnect="true" quality="high" bgcolor="#FF6600" style="" src="http://qgiadrive.us.s3.amazonaws.com/player/player020.swf" type="application/x-shockwave-flash"></embed></object>
+					<%= image_tag "recruiting_masthead.jpg", :alt => "MarketWare Custom CRM Solutions" %>
+					<p>
+						MarketWare's Recruiting manages each step in  recruiting a physician. Have all the information required to provide a recruit the seamless transition into the organization.
+					</p>
 					<div class="product-call-to-action-buttons">
 						<%= mail_to "sales@marketware.com", "<span>Request Web Demo</span>", {:subject => "I'd like to request a MarketWare web demo", :class => "btn-orange"} %>
 					
@@ -73,40 +76,44 @@
 	</div>
 </div>
 
-<div class="small-content-box grid_6 alpha">
+<div class="small-content-box grid_8 alpha">
 	<div class="small-content-box-inset">
-		<div class="margin-md">	
-			<p><H5>Physician Recruiting Software </H5></p>
-		  	<p>MarketWare’s Recruiting manages each phase in the physician recruiting process. <font color="#D94827"><b>Easily move a potential recruit through recruiting into physician relationship management.</font></b> MarketWare's Physician Recruiting software manages:</p>
-			<ul>
-				<li>Site Visit Preparation</li>
-                		<li>Potential Recruit Issues</li>
-                		<li>Mailing Campaigns</li>
-                		<li>On-boarding Physicians</li>
-				<li>Physician Retention</li>
+		<div class="margin-md">
+			<H5>MarketWare’s Physician Relations CRM</H5>
+			<ul class="mktwr-list boxed-list right">
+				<li>Sourcing</li>
+				<li>Site Visit</li>
+				<li>On-Boarding</li>
+				<li>Retention </li>
 			</ul>
-			
-			<strong>With 23 years of experience we provide:</strong>
-			<ul>
-				<li><%= link_to "Physician Recruiting Reports",		{:controller => :physician_recruiting, :action => :reporting} %></li>
-				<li><%= link_to "Custom Data Screens", 	{:controller => :physician_recruiting, :action => :customize} %>
-				<li><%= link_to "Healthcare Marketing Strategies","http://www.physicianrelationships.com/p/physician-recruiting.html" %></li>
-				<li><%= link_to "Relationship Management Best Practices&hellip;", success_stories_path %></li>
-			</ul>
-			<strong>MarketWare is managing physician recruiting in:</strong>
-			<ul>
-				<li>Hospitals</li>
-				<li>Medical Imaging Centers</li>
-				<li>Specialty Medical Groups</li>
-				<li>Labs</li>
-			</ul>
+		  	<p>MarketWare's Physician Recruiting takes a potential recruit through each phase in the recruiting process - sourcing, site visit, on-boarding, and retention.</p>
+
+			<H6>Sourcing</H6>
+			<%= image_tag "recruiting_physicians.jpg", :class => "img-left", :alt => "recruiting physicians" %>
+			<p>Track the recruiting activities from the beginning of the sourcing process. Tag recruits, red flags, and other key information in the sourcing stage of the recruiting process.</p>
+
+			<H6>Site Visit</H6>
+			<p>The site visit is key to recruiting a physician. Using MarketWare you can make sure everything is managed and done right during the site visit. Track expenses and travel information and have everything ready for a salary offer.</p>
+
+		<H6>On-Boarding and Retention</H6>
+		<%= image_tag "physician_recruits.jpg", :class => "img-right" %>
+		<p>Each Recruiter has a unique processes to on-board and recruit physicians. MarketWare's ability to be customized allows a Recruiter to define their unique on-boarding process. This process can be tailored and customized right into the software.</p>
+
+		<H6>Practice Recruiting Opportunities</H6>
+		<p>Affiliated physician practices often need a Recruiter's or a Liaison's help to find new associates to hire. Through MarketWare, a Recruiter or a Liaison can help guide a physician in hiring new associates.</p>
+
+		<H6>Recruiting Issues</H6>
+		<%= image_tag "physician_recruiting_issues.png", :class => "img-left", :alt => "physician segmenting" %>
+		<p>There are always issues to be managed during the recruiting of a physician. Through MarketWare, Physician Recruiters can streamline potential recruit's issues and make sure no issue falls through the cracks</p>
+		
+			<%= mail_to "sales@marketware.com", "Request a Quote...", {:subject => "I'd like a quote on MarketWare's services"} %>
 		</div>
 	</div>
 </div>
 
-<div class="boxless-content grid_6 omega">
+<div class="boxless-content grid_4 omega">
 	<div class="margin-md">
-	<div id="slideshow" class="testimonials wide">
+	<div id="slideshow" class="testimonials">
 		<ul>
 			<%= render :partial => 'shared/testimonials' %>
 		</ul>
@@ -115,5 +122,14 @@
 	<div class="margin-md">	
 		<%= render :partial => 'shared/white_papers' %>
 
+	</div>
+	<div class="margin-md">
+		<H3>Interesting Articles</H3>
+		<ul>
+			<li><%= link_to "Four Innovative Ways to Market Physicians","http://www.marketwarecrm.com/files/TheFourInnovativeWays%20toMarket%20Physicians.pdf" %></li>
+               		<li><%= link_to "Creating Referrals through Credibility","http://www.marketwarecrm.com/files/creatingcredibility.pdf" %></li>
+               		<li><%= link_to "Establishing Physician Loyalty","http://www.marketwarecrm.com/files/EstablishingPhysicianRelationsTrust.pdf" %></li>
+			<li><%= link_to "Physician Relations Strategies Blog","http://www.physicianrelationshipsc.com." %></li>
+		</ul>
 	</div>
 </div>

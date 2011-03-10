@@ -19,3 +19,17 @@
 	float:left;
 	margin-right:2.5em;
 }
+
+.content-box {
+	background: #eee url(../images/content-bg-main-top.png) no-repeat left top;
+}
+.content-box-inset {
+	background: #eee url(../images/content-bg-main-bottom.png) no-repeat left bottom;
+}
+
+.small-content-box {
+	background: url(../images/content-bg-small-top.png) no-repeat left top;
+}
+.small-content-box-inset {
+	background: url(../images/content-bg-small-bottom.png) no-repeat left bottom;	
+}
