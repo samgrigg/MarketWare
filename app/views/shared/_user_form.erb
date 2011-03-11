@@ -7,22 +7,34 @@
 
 <%= hidden_field_tag "download_url", "" %>
 
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :company %>
-    <%= f.text_field :company %>
-  </p>
-  <p>
-    <%= f.label :phone %>
-    <%= f.text_field :phone %>
-  </p>
-  <p>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </p>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :company %>
+		<%= f.text_field :company %>
+	</p>
+	<p>
+		<%= f.label :phone %>
+		<%= f.text_field :phone %>
+	</p>
+	<p>
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+	</p>
+	<p>
+		<%= f.label :number_of_users %>
+		<%= f.text_field :number_of_users %>
+	</p>
+	<p>
+		<%= f.label :interest_level %>
+		<%= f.text_field :interest_level %>
+	</p>
+	<p>
+		<%= f.label :time_range %>
+		<%= f.text_field :time_range %>
+	</p>
 	<hr />
   <p class="submitter">
     <%= f.submit 'Submit' %>

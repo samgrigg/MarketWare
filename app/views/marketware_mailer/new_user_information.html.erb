@@ -2,9 +2,12 @@
 
 Here are the details:
 ---------------------
-Name:		<%= @user.name %>
-Company:	<%= @user.company %>
-Phone:		<%= @user.phone %>
-Email:		<%= @user.email %>
+Name:				<%= @user.name %>
+Company:			<%= @user.company %>
+Phone:				<%= @user.phone %>
+Email:				<%= @user.email %>
+Number of Users:	<%= @user.number_of_users %>
+Interest Level:		<%= @user.interest_level %>
+Time Range:			<%= @user.time_range %>
 
 <%= "#{@user.name}'s" %> info was recorded on <%= Time.now.strftime("%x") %> at <%= Time.now.strftime("%X%p") %>

@@ -17,4 +17,7 @@ class User < ActiveRecord::Base
   column :company, :string
   column :phone, :string
   column :email, :string
+	column :number_of_users, :string
+	column :interest_level, :string
+	column :time_range, :string
 end
