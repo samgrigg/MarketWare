@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Healthcare CRM: MarketWare</title>
+	<title><%= @page_title || "Healthcare CRM: MarketWare" %></title>
 	<meta name="generator" content="TextMate http://macromates.com/">
+	<%= yield(:meta_tags) %>
 	<!--[if IE]>
 	<meta name="Description" content="Healthcare CRM: CRM for Physician Relations, Physician Recruiting, Physician Relationship Management, Physician Liaisons, and Referral Call Center" /> 
 	<meta name="Keywords" content="Healthcare CRM, Physician Relationship Management, Physician Relations, Marketing to Doctors, Physician Liaison, and physician referrals" /> 

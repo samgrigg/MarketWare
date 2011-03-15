@@ -383,6 +383,7 @@ line-height: 52px;
 }
 #new_user p input {
 	float:left;
+	width:14em;
 }
 #new_user p.submitter input {
 	float:none;

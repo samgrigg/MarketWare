@@ -77,7 +77,7 @@
 <div class="product-main small-content-box grid_8 alpha">
 	<div class="content-box-inset">
 		<div class='margin-md'>
-		  	<H2>MarketWare’s Custom Healthcare CRM</H2>
+		  	<H2>Custom Healthcare CRM</H2>
 			<ul class="mktwr-list boxed-list right">
 				<li>Physician Relations</li>
 				<li>Physician Recruiting</li>
@@ -97,7 +97,7 @@
 			<p>Physician Recruiting provides everything a Recruiter needs to track the recruiting process from the beginning at sourcing to on-boarding and retention. Tailor the recruiting piece to a Recruiter's unique process. <%= link_to "See more...", :physician_recruiting %></p>
 
 			<H6><strong>Referral Call Center</strong></H6>
-			<%= image_tag "physician_referral_call_center.jpg", :class => "img-right", :alt => "physician referral call center" %>
+			<%= image_tag "physician_referral_call_center.jpg", :class => "img-left", :alt => "physician referral call center" %>
 			<p>The Referral Call Center provides the tools to capture patient referrals and assign them to appropriate physicians. Have all the physician history and demographic information to make the Referral Call Center seamless and efficient.</p>
 			
 			<H6><strong>CME Management</strong></H6>
@@ -106,7 +106,11 @@
 			<H6><strong>Employer Relations</strong></H6>
 			<p>Manage other activities your hospital or clinic is doing. These activities may include working with local businesses or government organizations. Custom new screens to unique and specialized processes.</p>
 
-			<%= mail_to "sales@marketware.com", "Request a Quote...", {:subject => "I'd like a quote on MarketWare's services"} %> <!--| mailto link to info@marketware.com subject: Quote Request -->
+			<%= mail_to "sales@marketware.com", "Request a Quote", {:subject => "I'd like a quote on MarketWare's services"} %> <!--| mailto link to info@marketware.com subject: Quote Request -->
+			|
+			<%= link_to "Customize It", 	{:controller => :custom_crm, :action => :customize} %>
+			|
+			<%= link_to "Reporting",		{:controller => :custom_crm, :action => :reporting} %>
 
 		</div>
 	</div>
@@ -122,6 +126,14 @@
 	</div>
 	<div class="margin-md">	
 		<%= render :partial => 'shared/white_papers' %>
-
+	</div>
+	<div class="margin-md">
+		<H3>Interesting Articles</H3>
+		<ul>
+			<li><%= link_to "Four Innovative Ways to Market Physicians","http://www.marketwarecrm.com/files/TheFourInnovativeWays%20toMarket%20Physicians.pdf" %></li>
+               		<li><%= link_to "Creating Referrals through Credibility","http://www.marketwarecrm.com/files/creatingcredibility.pdf" %></li>
+               		<li><%= link_to "Establishing Physician Loyalty","http://www.marketwarecrm.com/files/EstablishingPhysicianRelationsTrust.pdf" %></li>
+			<li><%= link_to "Physician Relations Strategies Blog","http://www.physicianrelationshipsc.com." %></li>
+		</ul>
 	</div>
 </div>

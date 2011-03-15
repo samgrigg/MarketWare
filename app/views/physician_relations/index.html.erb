@@ -1,4 +1,11 @@
-﻿<% content_for :header do %>
+﻿<% @page_title = "Physician Relationship Management, Physician Relations CRM, Patient Referral Growth, Physician Segmenting, MarketWare Systems" %>
+
+<% content_for :meta_tags do %>
+<meta name="Description" content="Physician Relationship Management for healthcare organizations. Increase physician referrals though detailed referral information and physician issue resolution, proven best practices. Learn more about MarketWare’s Physician Relations CRM" />
+
+<meta name="Keywords" content= "Physician Relationship Management, Physician Relations CRM, Patient Referral Growth, Physician Segmenting,  Physician Liaisons, Strategic Marketing Campaign, PRM, Providers, Provider Relations, Customer Relationship Management, Physician Marketing, Physician Referrals, Marketing to Doctors" />
+<% end %>
+<% content_for :header do %>
 	<%= stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true %>
 	
 	<%= javascript_include_tag "flowplayer-3.2.2.min", :cache => true %>
@@ -107,7 +114,11 @@
 			<%= image_tag "physician_recruiting_issues.png", :class => "img-right", :alt => "physician segmenting" %>
 			<p>Segment physicians by many different categories. There are dozens of Physician Relations specific segments including: referral volume or loyalty level, demographics (city, zip code, market area), attitude, or any other category (hospitalist users, CME attendees, etc)</p>
 			
-			<%= mail_to "sales@marketware.com", "Request a Quote...", {:subject => "I'd like a quote on MarketWare's services"} %> <!--| mailto link to info@marketware.com subject: Quote Request -->
+			<%= mail_to "sales@marketware.com", "Request a Quote", {:subject => "I'd like a quote on MarketWare's services"} %> <!--| mailto link to info@marketware.com subject: Quote Request -->
+			|
+			<%= link_to "Customize It", 	{:controller => :physician_relations, :action => :customize} %>
+			|
+			<%= link_to "Reporting",		{:controller => :physician_relations, :action => :reporting} %>
 
 		</div>
 	</div>

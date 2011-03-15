@@ -1,4 +1,12 @@
-﻿<% content_for :header do %>
+﻿<% @page_title = "Physician Relations White Papers, Physician Relations Articles, Physician Relationship Management ideas, Physician Referral Growth Articles, How to Increase Physician Referrals, Physician Recruiting, Physician Retention, Physician Satisfaction, Physician Sourcing, Healthcare CRM, Physician Relations CRM, MarketWare Systems" %>
+
+<% content_for :meta_tags do %>
+	<meta name="description" content="MarketWare’s White Papers offer Physician Relations and Physician Recruiting best practices. Learn how to increase physician referrals and physician retention." />
+	
+	<meta name="keywords" content="Physician Relations White Papers, Physician Relations Articles, Physician Relationship Management ideas, Physician Referral Growth Articles, How to Increase Physician Referrals, Physician Recruiting, Physician Retention, Physician Satisfaction, Physician Sourcing, Healthcare CRM, Physician Relations CRM, Patient Referral Growth, Customer Relationship Management, Marketing to Physicians, Marketing to Doctors" />
+	
+<% end %>
+<% content_for :header do %>
 	<%= stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true %>
 	
 	<%= javascript_include_tag "jquery.fancybox-1.3.1" %>
@@ -30,9 +38,11 @@
 	</script>
 <% end -%>
 
-<div class="grid_8 alpha">
+<div class="page_header">
+	<h2>White Papers</h2>
+</div>
 
-<h2>White Papers</h2>
+<div class="grid_8 alpha">
 <div >
 <ul id="white-paper-list" class="mktwr_list content-box">
 	<li>
@@ -79,7 +89,6 @@
 
 <!--put yer stuff here-->
 <div class="grid_4 omega">
-	<br />
 	<h6>Links to Physician Relations Articles</h6>
 
 	<ul>
@@ -90,11 +99,28 @@
 		<li><a href="http://www.marketwarecrm.com/files/EstablishingPhysicianRelationsTrust.pdf">Establishing Physician Loyalty</a></li>
 	</ul>
 
-	<h6>MarketWare</h6>
+	<h6>MarketWare’s Healthcare Solutions</h6>
+	<h6><%= link_to "Physician Relations", :physician_relations %></h6>
 	<ul>
-		<li><%= link_to "Physician Relations", :physician_relations %></li>
-		<li><%= link_to "Physician Recruiting", :physician_recruiting %></li>
-		<li><%= link_to "Custom Healthcare CRM", :custom_crm %></li>
+		<li>Identify Referral Opportunities</li>
+		<li>Red Flag Physicians</li>
+		<li>Physician Issue Resolution</li>
+		<li>Microsoft Outlook/ Mobile Integration</li>
+	</ul>
+	
+	<h6><%= link_to "Physician Recruiting", :physician_recruiting %></h6>
+	<ul>
+		<li>Sourcing</li>
+		<li>Site Visit</li>
+		<li>On-boarding</li>
+		<li>Retention</li>
+	</ul>
+	<h6><%= link_to "Custom Healthcare CRM", :custom_crm %></h6>
+	<ul>
+		<li>Physician Relations</li>
+		<li>Physician Recruiting</li>
+		<li>Referral Call Center</li>
+		<li>Custom Screens</li>
 	</ul>
 
 	<!-- ================ -->

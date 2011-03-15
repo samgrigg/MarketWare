@@ -5,26 +5,41 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>The page you were looking for doesn't exist (404)</title>
+	<link cash="true" href="/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
+	<link cash="true" href="/stylesheets/text.css" media="screen" rel="stylesheet" type="text/css" />
+	<link cash="true" href="/stylesheets/960.css" media="screen" rel="stylesheet" type="text/css" />
+	<link cash="true" href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <title>The page you were looking for doesn't exist (Error #: 404)</title>
 	<style type="text/css">
 		body { background-color: #fff; color: #666; text-align: center; font-family: arial, sans-serif; }
 		div.dialog {
-			width: 25em;
 			padding: 0 4em;
-			margin: 4em auto 0 auto;
+			margin: 0em auto 0 auto;
 			border: 1px solid #ccc;
-			border-right-color: #999;
-			border-bottom-color: #999;
+			background-color:#eee;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			box-shadow:0px 0px 5px #888;
+			-webkit-box-shadow:0px 0px 5px #888;
+			-moz-box-shadow:0px 0px 5px #888;
 		}
-		h1 { font-size: 100%; color: #f00; line-height: 1.5em; }
 	</style>
 </head>
 
 <body>
+<div class="container_12 clearfix">	
+	<header>
+	<div class="grid_6 alpha">
+		<h1><a href="http://marketware.com">MarketWare</a></h1>
+	</div>
+	</header>
   <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <h1>The page you were looking for doesn't exist.</h1>
+  <div class="content-box grid_12 alpha omega">
+    <h2>The page you were looking for doesn't exist.</h2>
     <p>You may have mistyped the address or the page may have moved.</p>
+	<p>Please try again, or go to the <a href="http://marketware.com">MarketWare.com Home Page</a></p>
   </div>
+</div>
 </body>
 </html>

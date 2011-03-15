@@ -1,4 +1,12 @@
-﻿<% content_for :header do %>
+﻿<% @page_title = "Custom Healthcare CRM, Physician Relations, Physician Recruiting, Physician Referral Call Center, Physician Relationship Management, Issue Management, CME Management, Employer Relations MarketWare Systems" %>
+
+<% content_for :meta_tags do %>
+<meta name="Description" content"Custom Healthcare CRM brings the entire healthcare organization together including: Physician Relations, Physician Recruiting, Physician Referral Call Center, Physician Relationship Management, CME Management, Employer Relations. Learn more about MarketWare’s Custom Healthcare CRM" />
+
+<meta name="Keywords" content="Custom Healthcare CRM, Physician Relations, Physician Recruiting, Physician Referral Call Center, Physician Relationship Management, CME Management, Employer Relations, Issue Management, Physician On-boarding, Physician Satisfaction, Physician Sourcing, Physician Relations, Physician Survey, Physician Recruiter, Physician Relations CRM, Patient Referral Growth, Physician Relationship Management, Customer Relationship Management" />
+
+<% end %>
+<% content_for :header do %>
 	<%= stylesheet_link_tag "jquery.fancybox-1.3.1", "product", :cache => true %>
 	
 	<%= javascript_include_tag "flowplayer-3.2.2.min", :cache => true %>
@@ -106,7 +114,11 @@
 		<%= image_tag "physician_recruiting_issues.png", :class => "img-left", :alt => "physician segmenting" %>
 		<p>There are always issues to be managed during the recruiting of a physician. Through MarketWare, Physician Recruiters can streamline potential recruit's issues and make sure no issue falls through the cracks</p>
 		
-			<%= mail_to "sales@marketware.com", "Request a Quote...", {:subject => "I'd like a quote on MarketWare's services"} %>
+			<%= mail_to "sales@marketware.com", "Request a Quote", {:subject => "I'd like a quote on MarketWare's services"} %>
+			|
+			<%= link_to "Customize It", 	{:controller => :physician_recruiting, :action => :customize} %>
+			|
+			<%= link_to "Reporting",		{:controller => :physician_recruiting, :action => :reporting} %>
 		</div>
 	</div>
 </div>

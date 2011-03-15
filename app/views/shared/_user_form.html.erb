@@ -25,15 +25,15 @@
 	</p>
 	<p>
 		<%= f.label :number_of_users %>
-		<%= f.text_field :number_of_users %>
+		<%= f.select :number_of_users, options_for_select(["1-5 Users", "6-15 Users", "16-50 Users", "50+ Users"]) %>
 	</p>
 	<p>
 		<%= f.label :interest_level %>
-		<%= f.text_field :interest_level %>
+		<%= f.select :interest_level, options_for_select(["Very Interested", "Interested", "Browsing", "Not Interested"]) %>
 	</p>
 	<p>
 		<%= f.label :time_range %>
-		<%= f.text_field :time_range %>
+		<%= f.select :time_range, options_for_select(["Immediately", "Next Three Months", "Next Six Months", "Next Year", "Not Interested"]) %>
 	</p>
 	<hr />
   <p class="submitter">
