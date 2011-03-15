@@ -111,14 +111,15 @@
 			<%= link_to "Customize It", 	{:controller => :custom_crm, :action => :customize} %>
 			|
 			<%= link_to "Reporting",		{:controller => :custom_crm, :action => :reporting} %>
-
+			|
+			<%= link_to "Success Stories", success_stories_path %>
 		</div>
 	</div>
 </div>
 
 <div class="boxless-content grid_4 omega">
 	<div class="margin-md">
-	<div id="slideshow" class="testimonials wide">
+	<div id="slideshow" class="testimonials">
 		<ul>
 			<%= render :partial => 'shared/testimonials' %>
 		</ul>
